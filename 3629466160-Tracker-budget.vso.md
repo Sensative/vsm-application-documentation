@@ -259,26 +259,39 @@ no report will be generated (saves battery and radio air time).
 ### Sensor ACC_X
 
 > - Request current value: Send 1a (hex) on lora port 2
+Current accelerometer reading
 
 ### Sensor ACC_Y
 
 > - Request current value: Send 1b (hex) on lora port 2
+Current accelerometer reading
 
 ### Sensor ACC_Z
 
 > - Request current value: Send 1c (hex) on lora port 2
+Current accelerometer reading
 
 ### Sensor AIR_TEMPERATURE
 
 > - Request current value: Send 04 (hex) on lora port 2
+> - Unit: CentiCelcius
+
+Air temperature sensor (logical)
 
 ### Sensor NFC_FIELD
 
 > - Request current value: Send 08 (hex) on lora port 2
+> - Type: Boolean
+
+NFC field present sensor (logical)
+
 
 ### Sensor VOLTAGE
 
 > - Request current value: Send 0a (hex) on lora port 2
+> - Unit: mV (milliVolts)
+
+Measured voltage on the board.
 
 ## Application Registers used (device controls)
 
@@ -286,14 +299,39 @@ no report will be generated (saves battery and radio air time).
 ### Register APP_CONFIG
 
 > - Request current value: Send ca (hex) on lora port 2
+> - Mode: RW
+> - Unit: Bit mask
+
+Enable or disable certain functions of the device, such as power on/off behaviours.
+
 
 ### Register DEVICE_STATE
 
 > - Request current value: Send c8 (hex) on lora port 2
+> - Mode: RW
+> - Unit: Enumeration
+
+Current application state of the device. Can be written by application to affect the devices application state.
+
+> - DEVICE_STATE_ACTIVE_UNJOINED (running but not joined to network)
+> - DEVICE_STATE_ACTIVE_JOINING (running and attempting to join network)
+> - DEVICE_STATE_ACTIVE_JOINED (running and joined to network)
+> - DEVICE_STATE_ACTIVE_STREAMING (running and uploading pending data packages)
+> - DEVICE_STATE_ACTIVE_ON_RADIO (running and currently working with the radio)
+> - DEVICE_STATE_OFF (normally not accessible from VM but possible to write to turn off the device)
+> - Others Reserved by runtime
 
 ### Register GNSS
 
 > - Request current value: Send cc (hex) on lora port 2
+> - Mode: -W
+> - Type: Two * 1 bytes
+
+Trigger GNSS scans
+
+> - Byte 0: 0 = Attempt assisted scan if device knows GPS time and has GNSS almanac. 1 = force unassisted scan.
+> - Byte 1: Minimum number of found satellites to trigger an uplink
+
 
 ### Register JOIN_SETTINGS
 
@@ -302,18 +340,40 @@ no report will be generated (saves battery and radio air time).
 ### Register LED
 
 > - Request current value: Send c9 (hex) on lora port 2
+> - Mode: -W
+> - Unit: Enumeration
+
+Write in order to effect the application LED (not available on all device models)
+
 
 ### Register LINKCHECK_TIME
 
 > - Request current value: Send d0 (hex) on lora port 2
+> Mode: RW
+> Unit: seconds
+
+Once 80% of this time has passed, the device will make all messages confirmed until it gets a confirmation.
+Should this time pass without the device hearing a confirmed response, it will go to DEVICE_STATE_ACTIVE_UNJOINED.
+
 
 ### Register SATELLITE_COUNT
 
 > - Request current value: Send ce (hex) on lora port 2
+> - Mode: R-
+> - Unit: integer
+
+Reads as the number of satellites seen in the last GNSS scan.
+
 
 ### Register STREAMING_RATE
 
 > - Request current value: Send d6 (hex) on lora port 2
+> - Mode: RW
+> - Unit: Seconds
+
+The average rate at which the device streams data, e.g. delay between lora transactions.
+Actual rate is randomized at this value +- 50% to avoid potential repeat collisions, for instance if the device is
+triggered by sound or acceleration.
 
 ### Register TX_POWER_INDEX
 
