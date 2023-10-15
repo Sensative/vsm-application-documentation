@@ -1,0 +1,395 @@
+
+# Application Airport-int
+
+
+## Lower Power Temperature Sensing and Reporting Module
+
+
+### General Temperature Operation
+
+> The temperature is measured every 15 minutes and then processed.
+
+When the sensor detects an air temperature which has changed from the previous uploaded temperature by more than
+the set tempHysteresis it will upload a new temp reading.
+
+
+### Temperature Alarms
+
+When a temperature is detected which exceeds the tempAlarmHighLevel the tempAlarm will be set to 1.
+
+
+When a temperature is detected which is below the tempAlarmLowLevel the tempAlarm will be set to -1.
+
+
+### Current Temperature Reporting
+
+The current temperature is uploaded should the temperature have changed more than the set tempHysteresis
+
+
+### Average Temperature Reporting
+
+When averageTempIntervalMinutes have passed, and if the average temperature has changed more than tempHysteresis degrees,
+the sensor will upload a new averageTemp value.
+
+
+## Motion Triggered Tracking
+
+This application has an emphasis on WiFi scanning for positions, although it also
+supports GNSS scans (GPS and Beidou).
+
+Each time motion is detected, or when motion has stopped, the app will start a "scan train".
+1) After 1 minute, a limited wifi scan will be run. If it finds the required numnber of WIFI
+MAC addresses, these will be uplinked and the scan train stops.
+2) At a set minute, a second limited wifi scan will be run. Again, if the required number
+of MAC addresses are found, they will be uplinked and the scan train stops.
+3) After a set period, a full wifi scan will be run. Again, if the required number
+of MAC addresses are found, they will be uplinked and the scan train stops.
+4) After a set period, a GNSS scan will be run. At this time the scan train stops.
+
+There is a scan budget allowance every 15 minutes. Should the scan budget run out during
+the scanning train, the remaining scans will stop unless the budget is once again filled.
+
+> For correct functioning of the GNSS functionality
+> it is recommended to run the vsm-mqtt-client in the backend to keep clocks in sync
+> and GNSS almanac updated on the devices.
+
+NFC can be used to manually trigger a join attempt
+There is a daily rejoin attempt should the device not be joined.
+
+## Application Outputs
+
+
+### Output averageTemp (unconfirmed)
+
+> - Size: 2 bytes
+> - Translation factor: 0.01
+> - Unit:C
+
+The average temperature uploaded with a resolution 0.01C.
+
+
+### Output motionCount (unconfirmed)
+
+> - Size: 4 bytes
+> - Translation factor: 1
+> - Unit: Motion count (Integer)
+Uplinked on an hourly basis should the number of detected motions have changed. It is the accumulated number of
+motions detected by the sensor since it was started. This reporting is enabled by setting the input
+motionCountEnabled to a value other than 0.
+
+### Output temp (unconfirmed)
+
+> - Size: 2 bytes
+> - Translation factor: 0.01
+> - Unit: C
+
+The temperature uploaded with a resolution of 0.01 C
+
+> Accuracy is limited by accuracy of temperature sensor in the product. Refer to datasheet.
+
+### Output tempAlarm (confirmed)
+
+> - Size: 1 bytes
+> - Translation factor: 1
+> - Unit: Enumeration
+> -- No alarm: 0
+> -- High alarm: 1
+> -- Low alarm: -1
+
+Confirmed uplink which will indicate if one of the set limits are exceeded
+
+
+## Application Inputs (settings)
+
+
+### Input averageTempIntervalHours (unconfirmed)
+
+> - Size: 1 bytes
+> - Translation factor: 1
+> - Request current value: Send a0 (hex) on lora port 2
+> - Update value to 1: Send a0 00 00 00 01 (hex) on lora port 2
+> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - Unit: Hours
+> - Min: 1h
+> - Max: 127h
+> - Default: 2h
+
+The interval at which average temperature is uploaded (provided that it has changed more than tempHysteresis).
+
+
+### Input fullScanChannels (unconfirmed)
+
+> - Size: 4 bytes
+> - Translation factor: 1
+> - Request current value: Send b9 (hex) on lora port 2
+> - Update value to 1: Send b9 00 00 00 01 (hex) on lora port 2
+> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - Unit: Wifi scan channel mask (binary)
+> - Default: 0 (all channels)
+If the application fails to collect the required number of gateways ()
+Should you want to scan only channel 1 and 3 you set this to binary 101, or decimal 5.
+
+### Input fullWifiScan_minutes (unconfirmed)
+
+> - Size: 1 bytes
+> - Translation factor: 1
+> - Request current value: Send a6 (hex) on lora port 2
+> - Update value to 1: Send a6 00 00 00 01 (hex) on lora port 2
+> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - Unit: Minutes
+> - Min: -1
+> - Max: 127
+How many minutes to wait after transition to try a full WIFI scan? Set to -1 to disable.
+Avoid the value 1 since there is a hard-coded scan which will occur at minute 1
+after change between moving and not moving and vice versa.
+> Note the minimumWifiCount setting, which may cancel a scan before reaching this scan stage.
+> Avoid setting this to the same value as fullWifiScan_minutes to create a deterministic scan sequence.
+
+### Input gpsScan_minutes (unconfirmed)
+
+> - Size: 1 bytes
+> - Translation factor: 1
+> - Request current value: Send a7 (hex) on lora port 2
+> - Update value to 1: Send a7 00 00 00 01 (hex) on lora port 2
+> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - Unit: Minutes
+> - Min: -1
+> - Max: 127
+How many minutes to wait after transition to try a GNSS scan? Set to -1 to disable.
+Avoid the value 1 since there is a hard-coded scan which will occur at minute 1
+after change between moving and not moving and vice versa.
+> Avoid setting this to the same value as fullWifiScan_minutes to create a deterministic scan sequence.
+> Note the minimumWifiCount setting, which may cancel a scan before reaching this scan stage.
+
+### Input limitedScanChannels (unconfirmed)
+
+> - Size: 4 bytes
+> - Translation factor: 1
+> - Request current value: Send b8 (hex) on lora port 2
+> - Update value to 1: Send b8 00 00 00 01 (hex) on lora port 2
+> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - Unit: Wifi scan channel mask (binary)
+> - Default: 0 (all channels)
+The app has the option to select only certain channels for WiFi scans in the first attempts to scan, to reduce power
+consumption and increase chance of finding WiFi beacons on known channels.
+Should you want to scan only channel 1 and 3 you set this to binary 101, or decimal 5.
+
+### Input maxBudget (unconfirmed)
+
+> - Size: 2 bytes
+> - Translation factor: 1
+> - Request current value: Send b4 (hex) on lora port 2
+> - Update value to 1: Send b4 00 00 00 01 (hex) on lora port 2
+> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - Unit: Positioning budgetary unit
+> - Min: 1
+> - Max: 32767
+> - Default: 100
+Limit the budget for scans. Each positioning scan consumes one budgetary unit.
+
+### Input minimumWifiCount (unconfirmed)
+
+> - Size: 1 bytes
+> - Translation factor: 1
+> - Request current value: Send a5 (hex) on lora port 2
+> - Update value to 1: Send a5 00 00 00 01 (hex) on lora port 2
+> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - Unit: Wifi MAC address count
+> - Min: 1
+> - Max: 15
+How many wifi MAC addresses to find to be satisfied that the scan sequence should stop.
+
+### Input motionCountEnabled (unconfirmed)
+
+> - Size: 1 bytes
+> - Translation factor: 1
+> - Request current value: Send a8 (hex) on lora port 2
+> - Update value to 1: Send a8 00 00 00 01 (hex) on lora port 2
+> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - Unit: Boolean
+> - Default: 0 (false)
+Set to non-zero to enable reporting the number of motions detected. See motionCount.
+
+### Input motionThreshold_mm_s2 (unconfirmed)
+
+> - Size: 2 bytes
+> - Translation factor: 1
+> - Request current value: Send b3 (hex) on lora port 2
+> - Update value to 1: Send b3 00 00 00 01 (hex) on lora port 2
+> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - Unit: mm/s2
+> - Min: 5 mm/s2
+> - Max: 500 mm/s2
+> - Default: 50 mm/s2
+The accelerometer threshold to use for detection of motion. **If set too low it means the device will
+believe it is in constant motion and will not trigger a chain of position scans when still** It is recommended
+to start from high values and then decrease should sensitivity be too low.
+
+
+### Input quarterlyScanBudget (unconfirmed)
+
+> - Size: 1 bytes
+> - Translation factor: 1
+> - Request current value: Send a3 (hex) on lora port 2
+> - Update value to 1: Send a3 00 00 00 01 (hex) on lora port 2
+> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - Unit: Positioning budgetary unit
+> - Min: 1
+> - Max: 127
+How many scans are added to the budget per 15 minutes?
+
+### Input singleWifiScanAgain_minutes (unconfirmed)
+
+> - Size: 1 bytes
+> - Translation factor: 1
+> - Request current value: Send a4 (hex) on lora port 2
+> - Update value to 1: Send a4 00 00 00 01 (hex) on lora port 2
+> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - Unit: Minutes
+> - Min: -1
+> - Max: 127
+How many minutes to wait after transition to try again? Set to -1 to disable.
+Avoid the value 1 since there is a hard-coded scan which will occur at minute 1
+after change between moving and not moving and vice versa.
+
+### Input tempAlarmHighLevel (unconfirmed)
+
+> - Size: 1 bytes
+> - Translation factor: 1
+> - Request current value: Send a2 (hex) on lora port 2
+> - Update value to 1: Send a2 00 00 00 01 (hex) on lora port 2
+> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - Unit: C
+> - Min: -127C
+> - Max: 127C
+> - Default: 60C (near product max ambient temperature)
+
+The high level for temperature alarm. Set higher than tempAlarmLowLevel or the alarm function is disabled.
+
+
+### Input tempAlarmLowLevel (unconfirmed)
+
+> - Size: 1 bytes
+> - Translation factor: 1
+> - Request current value: Send a1 (hex) on lora port 2
+> - Update value to 1: Send a1 00 00 00 01 (hex) on lora port 2
+> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - Unit: C
+> - Min: -128 C
+> - Max: 126 C
+> - Default: 2 C (near freezing point)
+
+The low level for temperature alarm. Set lower than tempAlarmHighLevel or the alarm function is disabled.
+
+
+### Input tempHysteresis (unconfirmed)
+
+> - Size: 2 bytes
+> - Translation factor: 0.01
+> - Request current value: Send b2 (hex) on lora port 2
+> - Update value to 1: Send b2 00 00 00 01 (hex) on lora port 2
+> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - Unit:C
+> - Min: 0.1C
+> - Max: 127C
+> - Default: 2C
+
+The hysteresis for temperature readings. If temperature changes lower than this value are detected
+no report will be generated (saves battery and radio air time).
+
+
+## Application Sensors (logical sensors)
+
+
+### Sensor AIR_TEMPERATURE
+
+> - Request current value: Send 04 (hex) on lora port 2
+
+### Sensor MOTION
+
+> - Request current value: Send 16 (hex) on lora port 2
+
+### Sensor NFC_FIELD
+
+> - Request current value: Send 08 (hex) on lora port 2
+
+## Application Registers used (device controls)
+
+
+### Register APP_CONFIG
+
+> - Request current value: Send ca (hex) on lora port 2
+
+### Register DEVICE_STATE
+
+> - Request current value: Send c8 (hex) on lora port 2
+
+### Register GNSS
+
+> - Request current value: Send cc (hex) on lora port 2
+
+### Register LED
+
+> - Request current value: Send c9 (hex) on lora port 2
+
+### Register LINKCHECK_TIME
+
+> - Request current value: Send d0 (hex) on lora port 2
+
+### Register MOTION_CONTROL
+
+> - Request current value: Send ef (hex) on lora port 2
+
+### Register STREAMING_RATE
+
+> - Request current value: Send d6 (hex) on lora port 2
+
+### Register TX_POWER_RANGE
+
+> - Request current value: Send d8 (hex) on lora port 2
+
+### Register WIFI
+
+> - Request current value: Send da (hex) on lora port 2
+
+### Register WIFI_CHANNELS
+
+> - Request current value: Send f6 (hex) on lora port 2
+
+### Register WIFI_COUNT
+
+> - Request current value: Send db (hex) on lora port 2
+
+## Meta-Information for this application version
+
+
+
+### Application CRC (decimal)
+
+ > 368353876
+
+### Application Sensor Mask (hex)
+
+ > 400110
+
+### Map Data for vsm-translator-open-source
+
+M output temp 176 0xb0  0.01
+M output averageTemp 177 0xb1  0.01
+M input tempHysteresis 178 0xb2  0.01
+M input averageTempIntervalHours 160 0xa0  1
+M output tempAlarm 128 0x80  1
+M input tempAlarmLowLevel 161 0xa1  1
+M input tempAlarmHighLevel 162 0xa2  1
+M input motionThreshold_mm_s2 179 0xb3  1
+M input limitedScanChannels 184 0xb8  1
+M input fullScanChannels 185 0xb9  1
+M output motionCount 186 0xba  1
+M input quarterlyScanBudget 163 0xa3  1
+M input maxBudget 180 0xb4  1
+M input singleWifiScanAgain_minutes 164 0xa4  1
+M input minimumWifiCount 165 0xa5  1
+M input fullWifiScan_minutes 166 0xa6  1
+M input gpsScan_minutes 167 0xa7  1
+M input motionCountEnabled 168 0xa8  1
+
