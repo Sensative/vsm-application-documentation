@@ -277,6 +277,7 @@ triggered by sound or acceleration.
 
 ### Map Data for vsm-translator-open-source
 
+```
 M output temp 176 0xb0  0.01
 M output averageTemp 177 0xb1  0.01
 M input tempHysteresis 178 0xb2  0.01
@@ -291,4 +292,6 @@ M input alarmAck 164 0xa4  1
 M output motion 163 0xa3  1
 M output motionAlarm 165 0xa5  1
 M input motionThreshold 180 0xb4  0.001
+
+```
 

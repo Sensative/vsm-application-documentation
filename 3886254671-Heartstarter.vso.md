@@ -327,6 +327,7 @@ triggered by sound or acceleration.
 
 ### Map Data for vsm-translator-open-source
 
+```
 M output temp 176 0xb0  0.01
 M output averageTemp 177 0xb1  0.01
 M input tempHysteresis 178 0xb2  0.01
@@ -342,4 +343,6 @@ M output soundIntervalS 152 0x98  0.001
 M output soundRepeat 131 0x83  1
 M input motionThresholdG 180 0xb4  0.001
 M output volts 181 0xb5  0.001
+
+```
 

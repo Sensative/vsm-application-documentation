@@ -45,4 +45,7 @@ Enable or disable certain functions of the device, such as power on/off behaviou
 
 ### Map Data for vsm-translator-open-source
 
+```
+
+```
 

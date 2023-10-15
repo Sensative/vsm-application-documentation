@@ -283,6 +283,7 @@ When set to non-zero value the VM will wake up at at this interval. Make rules d
 
 ### Map Data for vsm-translator-open-source
 
+```
 M output temp 176 0xb0  0.01
 M output averageTemp 177 0xb1  0.01
 M input tempHysteresis 178 0xb2  0.01
@@ -293,4 +294,6 @@ M input tempAlarmHighLevel 162 0xa2  1
 M input roamNetworkCount 163 0xa3  1
 M output volts 179 0xb3  0.001
 M input motionThresholdG 180 0xb4  0.001
+
+```
 

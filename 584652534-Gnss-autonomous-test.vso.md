@@ -133,7 +133,10 @@ When set to non-zero value the VM will wake up at at this interval. Make rules d
 
 ### Map Data for vsm-translator-open-source
 
+```
 M output numSatellites 160 0xa0  1
 M output bestSatellites 184 0xb8  1
 M output scanCount 185 0xb9  1
+
+```
 

@@ -413,6 +413,7 @@ triggered by sound or acceleration.
 
 ### Map Data for vsm-translator-open-source
 
+```
 M output temp 176 0xb0  0.01
 M output averageTemp 177 0xb1  0.01
 M input tempHysteresis 178 0xb2  0.01
@@ -433,4 +434,6 @@ M input fullWifiScan_minutes 167 0xa7  1
 M input gpsScan_minutes 168 0xa8  1
 M input gpsScanAgain_minutes 169 0xa9  1
 M input minimumSatelliteCount 170 0xaa  1
+
+```
 

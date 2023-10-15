@@ -339,6 +339,7 @@ Also, it will start emitting DEVICE_TIME requests on the LoRaWan network once 80
 
 ### Map Data for vsm-translator-open-source
 
+```
 M input roamNetworkCount 160 0xa0  1
 M output temp 176 0xb0  0.01
 M output averageTemp 177 0xb1  0.01
@@ -355,4 +356,6 @@ M output lux 181 0xb5  1
 M output averageLux 145 0x91  1
 M input luxTresholdPercent 182 0xb6  1
 M input averageLuxIntervalMinutes 165 0xa5  1
+
+```
 

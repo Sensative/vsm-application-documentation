@@ -216,6 +216,7 @@ When set to non-zero value the VM will wake up at at this interval. Make rules d
 
 ### Map Data for vsm-translator-open-source
 
+```
 M output volts 176 0xb0  0.001
 M input gnssIntervalMinutes 160 0xa0  1
 M input gnssScanMode 177 0xb1  1
@@ -226,4 +227,6 @@ M output gpsTime 186 0xba  1
 M output downlinkRssi 162 0xa2  1
 M input air_pressure_hysteresis_bar 163 0xa3  1
 M output air_pressure 187 0xbb  0.01
+
+```
 
