@@ -32,7 +32,7 @@ When averageTempIntervalMinutes have passed, and if the average temperature has 
 the sensor will upload a new averageTemp value.
 
 
-Roaming module
+## Roaming module
 
 Enable the device to roam through multiple LoRaWan networks, but changing the last digit of the NwkKey to the
 currently set network.

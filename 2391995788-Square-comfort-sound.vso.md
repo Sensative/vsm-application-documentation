@@ -2,7 +2,7 @@
 # Application Square-comfort-sound
 
 
-Roaming module
+## Roaming module
 
 Enable the device to roam through multiple LoRaWan networks, but changing the last digit of the NwkKey to the
 currently set network.
