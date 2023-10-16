@@ -167,6 +167,8 @@
 
 
 
+[3747755895](3747755895-Square-air.vso.md)  Unreleased
+
 [875676680](875676680-Square-air.vso.md)  Release R7 R6
 
 
@@ -176,6 +178,8 @@
 > Documented CRCs
 
 
+[1788446321](1788446321-Square-comfort-sound.vso.md)  Unreleased
+
 [2391995788](2391995788-Square-comfort-sound.vso.md)  Release R8 R7 R6 R5
 
 
@@ -184,6 +188,8 @@
 
 > Documented CRCs
 
+
+[3952168436](3952168436-Square-comfort.vso.md)  Unreleased
 
 [656740722](656740722-Square-comfort.vso.md)  Release R8 R7 R6 R5
 
@@ -261,6 +267,13 @@
 [Tracker-time](1643871491-Tracker-time.vso.md)  Release R8 R7
 
 
+
+## 1788446321
+
+> Documented Apps
+
+
+[Square-comfort-sound](1788446321-Square-comfort-sound.vso.md)  Unreleased
 
 ## 1816763371
 
@@ -375,6 +388,13 @@
 
 
 
+## 3747755895
+
+> Documented Apps
+
+
+[Square-air](3747755895-Square-air.vso.md)  Unreleased
+
 ## 376700598
 
 > Documented Apps
@@ -392,6 +412,13 @@
 [Heartstarter](3886254671-Heartstarter.vso.md)  Release R8 R7
 
 
+
+## 3952168436
+
+> Documented Apps
+
+
+[Square-comfort](3952168436-Square-comfort.vso.md)  Unreleased
 
 ## 4058561182
 
