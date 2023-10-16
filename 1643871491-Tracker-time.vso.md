@@ -43,6 +43,44 @@ Every 24 hours, the join network is reset to 0 (default)
 
 Should the device enter unjoined state and there are more networks to try, the device will try the next network.
 
+## Application for basic interval-based tracking, without motion sensitivity
+
+This application does both WIFI and GNSS scans at set intervals.
+It is sensitive to NFC for starting and joining.
+
+> The application checks LoRaWan connection every few hours, max 4 hours until it reattempts joining.
+
+It reports board voltage when it has changed by 0.1 volts.
+Every 5 days the GPS time is updated. It is important that the network supports
+LoRaWan Device Time requests.
+
+> For full functioning it is also of essence that the backend updates the GNSS
+> almanac of the devices, e.g. through running the vsm-mqtt-client or that the
+> devices get their GNSS almanac updated at least every 2 months through NFC.
+
+This application will only do GNSS&WIFI scanning when the device is joined.
+> - When there is an application led visible on the device it will indicate by GREEN blink after a
+scan should it find 7 or more GNSS satellites at a scan.
+> - A yellow blink indicates 4-6 satellites, which sometimes is enough to resolve the position.
+> - A red blink indicates 0-3 satellites, which likely is not enough to resolve the position.
+If the device has a button, pressing the button will blink the application led
+green and trigger a GNSS scan.
+
+If the device is not joined, the first green blink on a button press will be followed by
+a red blink.
+
+If the device is in process of joining, the first green blink on a button press will be followed by
+an orange blink.
+
+Every 24 hours the device will attempt to re-join if it is not already joined.
+In case of rejoin being successful, the device will do an immediate GNSS and
+WIFI scan.
+The application will attempt a join if exposed to NFC field and if it is not
+already joined.
+The application will attempt a join every hour should it not already be
+joined.
+If an NFC field is sensed, the application will blink the led GREEN upon field entry
+and red upon field removal.
 
 ## Application Outputs
 
@@ -108,6 +146,12 @@ The interval at which average temperature is uploaded (provided that it has chan
 > - Request current value: Send a4 (hex) on lora port 2
 > - Update value to 1: Send a4 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - Unit: Minutes
+> - Min: 2
+> - Max: 127 Minutes
+
+Interval between GNSS scans.
+
 
 ### Input roamNetworkCount (unconfirmed)
 
@@ -180,6 +224,12 @@ no report will be generated (saves battery and radio air time).
 > - Request current value: Send a5 (hex) on lora port 2
 > - Update value to 1: Send a5 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - Unit: Minutes
+> - Min: 2
+> - Max: 127 Minutes
+
+Interval between WIFI scans.
+
 
 ## Application Sensors (logical sensors)
 
