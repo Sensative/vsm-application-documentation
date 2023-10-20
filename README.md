@@ -251,6 +251,8 @@
 
 [2990392526](2990392526-Tracker.vso.md)  Unreleased
 
+[534670557](534670557-Tracker.vso.md)  Unreleased
+
 ## Wifi-tracker
 
 > Documented CRCs
@@ -522,6 +524,13 @@
 
 
 [Default](524204482-Default.vso.md)  Unreleased
+
+## 534670557
+
+> Documented Apps
+
+
+[Tracker](534670557-Tracker.vso.md)  Unreleased
 
 ## 57715230
 
