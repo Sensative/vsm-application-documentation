@@ -249,6 +249,8 @@
 
 
 
+[915094797](915094797-Square-air.vso.md)  Unreleased
+
 ## Square-comfort-sound
 
 > Documented CRCs
@@ -259,6 +261,8 @@
 
 
 [1788446321](1788446321-Square-comfort-sound.vso.md)  Unreleased
+
+[2387046759](2387046759-Square-comfort-sound.vso.md)  Unreleased
 
 [2391995788](2391995788-Square-comfort-sound.vso.md)  Release R8 R7 R6 R5
 
@@ -272,6 +276,8 @@
 [3264322911](3264322911-Square-comfort.vso.md)  Release R9 R10
 
 
+
+[3530880224](3530880224-Square-comfort.vso.md)  Unreleased
 
 [3952168436](3952168436-Square-comfort.vso.md)  Unreleased
 
@@ -523,6 +529,13 @@
 
 
 
+## 2387046759
+
+> Documented Apps
+
+
+[Square-comfort-sound](2387046759-Square-comfort-sound.vso.md)  Unreleased
+
 ## 2391995788
 
 > Documented Apps
@@ -606,6 +619,13 @@
 [Sniffer](3509502476-Sniffer.vso.md)  Release R9 R8 R7 R6 R5 R4 R2 R10
 
 
+
+## 3530880224
+
+> Documented Apps
+
+
+[Square-comfort](3530880224-Square-comfort.vso.md)  Unreleased
 
 ## 3605076574
 
@@ -828,4 +848,11 @@
 [Square-air](875676680-Square-air.vso.md)  Release R7 R6
 
 
+
+## 915094797
+
+> Documented Apps
+
+
+[Square-air](915094797-Square-air.vso.md)  Unreleased
 > Copyright (C) 2023 Sensative AB, all rights reserved. This file is generated. See LICENSE for license information.
