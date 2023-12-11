@@ -56,6 +56,15 @@
 
 [524204482](524204482-Default.vso.md)  Unreleased
 
+## Digital-gpio
+
+> Documented CRCs
+
+
+[1044255602](1044255602-Digital-gpio.vso.md)  Unreleased
+
+[1835511761](1835511761-Digital-gpio.vso.md)  Unreleased
+
 ## Empty
 
 > Documented CRCs
@@ -345,6 +354,13 @@
 # Index of Documentation by Application CRC
 
 
+## 1044255602
+
+> Documented Apps
+
+
+[Digital-gpio](1044255602-Digital-gpio.vso.md)  Unreleased
+
 ## 1092709886
 
 > Documented Apps
@@ -478,6 +494,13 @@
 [Lifefinder-squad](1816763371-Lifefinder-squad.vso.md)  Release R6 R5
 
 
+
+## 1835511761
+
+> Documented Apps
+
+
+[Digital-gpio](1835511761-Digital-gpio.vso.md)  Unreleased
 
 ## 1937430598
 
