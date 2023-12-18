@@ -67,6 +67,8 @@
 
 [1835511761](1835511761-Digital-gpio.vso.md)  Unreleased
 
+[3497448490](3497448490-Digital-gpio.vso.md)  Unreleased
+
 ## Empty
 
 > Documented CRCs
@@ -651,6 +653,13 @@
 [Square-comfort](3264322911-Square-comfort.vso.md)  Release R9 R10
 
 
+
+## 3497448490
+
+> Documented Apps
+
+
+[Digital-gpio](3497448490-Digital-gpio.vso.md)  Unreleased
 
 ## 3509502476
 
