@@ -346,6 +346,13 @@
 
 
 
+## US-Frequency-hop-test
+
+> Documented CRCs
+
+
+[3578571565](3578571565-US-Frequency-hop-test.vso.md)  Unreleased
+
 ## Wifi-tracker
 
 > Documented CRCs
@@ -676,6 +683,13 @@
 
 
 [Square-comfort](3530880224-Square-comfort.vso.md)  Unreleased
+
+## 3578571565
+
+> Documented Apps
+
+
+[US-Frequency-hop-test](3578571565-US-Frequency-hop-test.vso.md)  Unreleased
 
 ## 3605076574
 
