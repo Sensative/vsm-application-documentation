@@ -225,6 +225,13 @@
 
 
 
+## Radiotest-measure
+
+> Documented CRCs
+
+
+[190349531](190349531-Radiotest-measure.vso.md)  Unreleased
+
 ## Radiotest
 
 > Documented CRCs
@@ -519,6 +526,13 @@
 
 
 [Digital-gpio](1835511761-Digital-gpio.vso.md)  Unreleased
+
+## 190349531
+
+> Documented Apps
+
+
+[Radiotest-measure](190349531-Radiotest-measure.vso.md)  Unreleased
 
 ## 1937430598
 
