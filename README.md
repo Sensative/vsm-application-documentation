@@ -362,6 +362,8 @@
 
 [3578571565](3578571565-US-Frequency-hop-test.vso.md)  Unreleased
 
+[3999624005](3999624005-US-Frequency-hop-test.vso.md)  Unreleased
+
 ## Wifi-tracker
 
 > Documented CRCs
@@ -804,6 +806,13 @@
 [Lifefinder-squad](399948366-Lifefinder-squad.vso.md)  Release R9 R10
 
 
+
+## 3999624005
+
+> Documented Apps
+
+
+[US-Frequency-hop-test](3999624005-US-Frequency-hop-test.vso.md)  Unreleased
 
 ## 4058561182
 
