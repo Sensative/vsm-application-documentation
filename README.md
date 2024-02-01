@@ -205,6 +205,10 @@
 
 
 
+[729172455](729172455-Puck-radar-fast-rejoin.vso.md)  Unreleased
+
+[990743701](990743701-Puck-radar-fast-rejoin.vso.md)  Unreleased
+
 ## Puck-radar-v6
 
 > Documented CRCs
@@ -971,6 +975,13 @@
 
 
 
+## 729172455
+
+> Documented Apps
+
+
+[Puck-radar-fast-rejoin](729172455-Puck-radar-fast-rejoin.vso.md)  Unreleased
+
 ## 79276854
 
 > Documented Apps
@@ -1006,4 +1017,11 @@
 [Square-air](915094797-Square-air.vso.md)  Release R11
 
 
+
+## 990743701
+
+> Documented Apps
+
+
+[Puck-radar-fast-rejoin](990743701-Puck-radar-fast-rejoin.vso.md)  Unreleased
 > Copyright (C) 2023 Sensative AB, all rights reserved. This file is generated. See LICENSE for license information.
