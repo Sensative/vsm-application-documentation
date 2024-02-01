@@ -196,6 +196,15 @@
 
 [3038191195](3038191195-Motion-measure.vso.md)  Unreleased
 
+## Puck-radar-fast-rejoin
+
+> Documented CRCs
+
+
+[1325798073](1325798073-Puck-radar-fast-rejoin.vso.md)  Release R11
+
+
+
 ## Puck-radar-v6
 
 > Documented CRCs
@@ -450,6 +459,10 @@
 ## 1325798073
 
 > Documented Apps
+
+
+[Puck-radar-fast-rejoin](1325798073-Puck-radar-fast-rejoin.vso.md)  Release R11
+
 
 
 [Puck-radar](1325798073-Puck-radar.vso.md)  Release R11
