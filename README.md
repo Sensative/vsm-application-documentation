@@ -22,7 +22,7 @@
 
 
 
-[1695912328](1695912328-Airport-int.vso.md)  Release R11
+[1695912328](1695912328-Airport-int.vso.md)  Release R12 R11
 
 
 
@@ -43,7 +43,7 @@
 > Documented CRCs
 
 
-[1319111708](1319111708-Compliance-test.vso.md)  Release R9 R8 R7 R6 R5 R4 R2 R11 R10
+[1319111708](1319111708-Compliance-test.vso.md)  Release R9 R8 R7 R6 R5 R4 R2 R12 R11 R10
 
 
 
@@ -54,7 +54,7 @@
 
 [2023137642](2023137642-Default.vso.md)  Unreleased
 
-[2132727044](2132727044-Default.vso.md)  Release R9 R11 R10
+[2132727044](2132727044-Default.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -69,7 +69,7 @@
 
 [1835511761](1835511761-Digital-gpio.vso.md)  Unreleased
 
-[3497448490](3497448490-Digital-gpio.vso.md)  Release R11
+[3497448490](3497448490-Digital-gpio.vso.md)  Release R12 R11
 
 
 
@@ -78,7 +78,7 @@
 > Documented CRCs
 
 
-[4058561182](4058561182-Empty.vso.md)  Release R9 R8 R7 R6 R5 R4 R2 R11 R10
+[4058561182](4058561182-Empty.vso.md)  Release R9 R8 R7 R6 R5 R4 R2 R12 R11 R10
 
 
 
@@ -87,7 +87,7 @@
 > Documented CRCs
 
 
-[1815337626](1815337626-Gnss-autonomous-test.vso.md)  Release R9 R11 R10
+[1815337626](1815337626-Gnss-autonomous-test.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -104,7 +104,7 @@
 > Documented CRCs
 
 
-[1727723267](1727723267-Heartstarter.vso.md)  Release R9 R11 R10
+[1727723267](1727723267-Heartstarter.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -117,7 +117,7 @@
 > Documented CRCs
 
 
-[1938827428](1938827428-Lifefinder-motion.vso.md)  Release R9 R11 R10
+[1938827428](1938827428-Lifefinder-motion.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -134,7 +134,7 @@
 
 
 
-[399948366](399948366-Lifefinder-squad.vso.md)  Release R9 R11 R10
+[399948366](399948366-Lifefinder-squad.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -151,7 +151,7 @@
 
 
 
-[3994244140](3994244140-Lifefinder-wifi.vso.md)  Release R9 R11 R10
+[3994244140](3994244140-Lifefinder-wifi.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -160,7 +160,7 @@
 > Documented CRCs
 
 
-[47853213](47853213-Lifefinder.vso.md)  Release R9 R11 R10
+[47853213](47853213-Lifefinder.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -181,7 +181,7 @@
 
 
 
-[4120107816](4120107816-Linkcheck.vso.md)  Release R9 R11 R10
+[4120107816](4120107816-Linkcheck.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -190,7 +190,7 @@
 > Documented CRCs
 
 
-[2297466901](2297466901-Motion-measure.vso.md)  Release R9 R11 R10
+[2297466901](2297466901-Motion-measure.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -201,11 +201,13 @@
 > Documented CRCs
 
 
-[1325798073](1325798073-Puck-radar-fast-rejoin.vso.md)  Release R11
+[1325798073](1325798073-Puck-radar-fast-rejoin.vso.md)  Release R12 R11
 
 
 
-[729172455](729172455-Puck-radar-fast-rejoin.vso.md)  Unreleased
+[729172455](729172455-Puck-radar-fast-rejoin.vso.md)  Release R12
+
+
 
 [990743701](990743701-Puck-radar-fast-rejoin.vso.md)  Unreleased
 
@@ -225,7 +227,7 @@
 > Documented CRCs
 
 
-[1325798073](1325798073-Puck-radar.vso.md)  Release R11
+[1325798073](1325798073-Puck-radar.vso.md)  Release R12 R11
 
 
 
@@ -249,7 +251,9 @@
 > Documented CRCs
 
 
-[190349531](190349531-Radiotest-measure.vso.md)  Unreleased
+[190349531](190349531-Radiotest-measure.vso.md)  Release R12
+
+
 
 ## Radiotest
 
@@ -260,14 +264,18 @@
 
 
 
-[2230085897](2230085897-Radiotest.vso.md)  Unreleased
+[2230085897](2230085897-Radiotest.vso.md)  Release R12
+
+
 
 ## Sniffer
 
 > Documented CRCs
 
 
-[1047034189](1047034189-Sniffer.vso.md)  Unreleased
+[1047034189](1047034189-Sniffer.vso.md)  Release R12
+
+
 
 [3509502476](3509502476-Sniffer.vso.md)  Release R9 R8 R7 R6 R5 R4 R2 R11 R10
 
@@ -294,7 +302,7 @@
 
 
 
-[915094797](915094797-Square-air.vso.md)  Release R11
+[915094797](915094797-Square-air.vso.md)  Release R12 R11
 
 
 
@@ -309,7 +317,7 @@
 
 [1788446321](1788446321-Square-comfort-sound.vso.md)  Unreleased
 
-[2387046759](2387046759-Square-comfort-sound.vso.md)  Release R11
+[2387046759](2387046759-Square-comfort-sound.vso.md)  Release R12 R11
 
 
 
@@ -326,7 +334,7 @@
 
 
 
-[3530880224](3530880224-Square-comfort.vso.md)  Release R11
+[3530880224](3530880224-Square-comfort.vso.md)  Release R12 R11
 
 
 
@@ -350,7 +358,7 @@
 > Documented CRCs
 
 
-[1711284143](1711284143-Tracker-stats.vso.md)  Release R9 R11 R10
+[1711284143](1711284143-Tracker-stats.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -374,7 +382,7 @@
 
 [2990392526](2990392526-Tracker.vso.md)  Unreleased
 
-[489186430](489186430-Tracker.vso.md)  Release R11 R10
+[489186430](489186430-Tracker.vso.md)  Release R12 R11 R10
 
 
 
@@ -391,7 +399,9 @@
 
 [3578571565](3578571565-US-Frequency-hop-test.vso.md)  Unreleased
 
-[3999624005](3999624005-US-Frequency-hop-test.vso.md)  Unreleased
+[3999624005](3999624005-US-Frequency-hop-test.vso.md)  Release R12
+
+
 
 ## Wifi-tracker
 
@@ -417,7 +427,9 @@
 > Documented Apps
 
 
-[Sniffer](1047034189-Sniffer.vso.md)  Unreleased
+[Sniffer](1047034189-Sniffer.vso.md)  Release R12
+
+
 
 ## 1092709886
 
@@ -456,7 +468,7 @@
 > Documented Apps
 
 
-[Compliance-test](1319111708-Compliance-test.vso.md)  Release R9 R8 R7 R6 R5 R4 R2 R11 R10
+[Compliance-test](1319111708-Compliance-test.vso.md)  Release R9 R8 R7 R6 R5 R4 R2 R12 R11 R10
 
 
 
@@ -465,11 +477,11 @@
 > Documented Apps
 
 
-[Puck-radar-fast-rejoin](1325798073-Puck-radar-fast-rejoin.vso.md)  Release R11
+[Puck-radar-fast-rejoin](1325798073-Puck-radar-fast-rejoin.vso.md)  Release R12 R11
 
 
 
-[Puck-radar](1325798073-Puck-radar.vso.md)  Release R11
+[Puck-radar](1325798073-Puck-radar.vso.md)  Release R12 R11
 
 
 
@@ -503,7 +515,7 @@
 > Documented Apps
 
 
-[Airport-int](1695912328-Airport-int.vso.md)  Release R11
+[Airport-int](1695912328-Airport-int.vso.md)  Release R12 R11
 
 
 
@@ -512,7 +524,7 @@
 > Documented Apps
 
 
-[Tracker-stats](1711284143-Tracker-stats.vso.md)  Release R9 R11 R10
+[Tracker-stats](1711284143-Tracker-stats.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -521,7 +533,7 @@
 > Documented Apps
 
 
-[Heartstarter](1727723267-Heartstarter.vso.md)  Release R9 R11 R10
+[Heartstarter](1727723267-Heartstarter.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -555,7 +567,7 @@
 > Documented Apps
 
 
-[Gnss-autonomous-test](1815337626-Gnss-autonomous-test.vso.md)  Release R9 R11 R10
+[Gnss-autonomous-test](1815337626-Gnss-autonomous-test.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -580,7 +592,9 @@
 > Documented Apps
 
 
-[Radiotest-measure](190349531-Radiotest-measure.vso.md)  Unreleased
+[Radiotest-measure](190349531-Radiotest-measure.vso.md)  Release R12
+
+
 
 ## 1937430598
 
@@ -596,7 +610,7 @@
 > Documented Apps
 
 
-[Lifefinder-motion](1938827428-Lifefinder-motion.vso.md)  Release R9 R11 R10
+[Lifefinder-motion](1938827428-Lifefinder-motion.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -619,7 +633,7 @@
 > Documented Apps
 
 
-[Default](2132727044-Default.vso.md)  Release R9 R11 R10
+[Default](2132727044-Default.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -637,14 +651,16 @@
 > Documented Apps
 
 
-[Radiotest](2230085897-Radiotest.vso.md)  Unreleased
+[Radiotest](2230085897-Radiotest.vso.md)  Release R12
+
+
 
 ## 2297466901
 
 > Documented Apps
 
 
-[Motion-measure](2297466901-Motion-measure.vso.md)  Release R9 R11 R10
+[Motion-measure](2297466901-Motion-measure.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -653,7 +669,7 @@
 > Documented Apps
 
 
-[Square-comfort-sound](2387046759-Square-comfort-sound.vso.md)  Release R11
+[Square-comfort-sound](2387046759-Square-comfort-sound.vso.md)  Release R12 R11
 
 
 
@@ -744,7 +760,7 @@
 > Documented Apps
 
 
-[Digital-gpio](3497448490-Digital-gpio.vso.md)  Release R11
+[Digital-gpio](3497448490-Digital-gpio.vso.md)  Release R12 R11
 
 
 
@@ -762,7 +778,7 @@
 > Documented Apps
 
 
-[Square-comfort](3530880224-Square-comfort.vso.md)  Release R11
+[Square-comfort](3530880224-Square-comfort.vso.md)  Release R12 R11
 
 
 
@@ -851,7 +867,7 @@
 > Documented Apps
 
 
-[Lifefinder-wifi](3994244140-Lifefinder-wifi.vso.md)  Release R9 R11 R10
+[Lifefinder-wifi](3994244140-Lifefinder-wifi.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -860,7 +876,7 @@
 > Documented Apps
 
 
-[Lifefinder-squad](399948366-Lifefinder-squad.vso.md)  Release R9 R11 R10
+[Lifefinder-squad](399948366-Lifefinder-squad.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -869,14 +885,16 @@
 > Documented Apps
 
 
-[US-Frequency-hop-test](3999624005-US-Frequency-hop-test.vso.md)  Unreleased
+[US-Frequency-hop-test](3999624005-US-Frequency-hop-test.vso.md)  Release R12
+
+
 
 ## 4058561182
 
 > Documented Apps
 
 
-[Empty](4058561182-Empty.vso.md)  Release R9 R8 R7 R6 R5 R4 R2 R11 R10
+[Empty](4058561182-Empty.vso.md)  Release R9 R8 R7 R6 R5 R4 R2 R12 R11 R10
 
 
 
@@ -894,7 +912,7 @@
 > Documented Apps
 
 
-[Linkcheck](4120107816-Linkcheck.vso.md)  Release R9 R11 R10
+[Linkcheck](4120107816-Linkcheck.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -910,7 +928,7 @@
 > Documented Apps
 
 
-[Lifefinder](47853213-Lifefinder.vso.md)  Release R9 R11 R10
+[Lifefinder](47853213-Lifefinder.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -919,7 +937,7 @@
 > Documented Apps
 
 
-[Tracker](489186430-Tracker.vso.md)  Release R11 R10
+[Tracker](489186430-Tracker.vso.md)  Release R12 R11 R10
 
 
 
@@ -980,7 +998,9 @@
 > Documented Apps
 
 
-[Puck-radar-fast-rejoin](729172455-Puck-radar-fast-rejoin.vso.md)  Unreleased
+[Puck-radar-fast-rejoin](729172455-Puck-radar-fast-rejoin.vso.md)  Release R12
+
+
 
 ## 79276854
 
@@ -1014,7 +1034,7 @@
 > Documented Apps
 
 
-[Square-air](915094797-Square-air.vso.md)  Release R11
+[Square-air](915094797-Square-air.vso.md)  Release R12 R11
 
 
 
