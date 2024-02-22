@@ -209,6 +209,8 @@
 > Documented CRCs
 
 
+[1121182195](1121182195-Puck-radar-fast-rejoin.vso.md)  Unreleased
+
 [1325798073](1325798073-Puck-radar-fast-rejoin.vso.md)  Release R12 R11
 
 
@@ -244,6 +246,8 @@
 
 
 [314587945](314587945-Puck-radar.vso.md)  Unreleased
+
+[561898260](561898260-Puck-radar.vso.md)  Unreleased
 
 ## Puck-tracker
 
@@ -457,6 +461,13 @@
 
 
 [Puck-radar-v6](1092709886-Puck-radar-v6.vso.md)  Unreleased
+
+## 1121182195
+
+> Documented Apps
+
+
+[Puck-radar-fast-rejoin](1121182195-Puck-radar-fast-rejoin.vso.md)  Unreleased
 
 ## 1128699053
 
@@ -1039,6 +1050,13 @@
 [Tracker](534670557-Tracker.vso.md)  Release R9
 
 
+
+## 561898260
+
+> Documented Apps
+
+
+[Puck-radar](561898260-Puck-radar.vso.md)  Unreleased
 
 ## 57715230
 
