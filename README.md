@@ -121,6 +121,8 @@
 
 
 
+[3031484599](3031484599-Lifefinder-motion.vso.md)  Unreleased
+
 [3685415244](3685415244-Lifefinder-motion.vso.md)  Release R8 R7
 
 
@@ -133,6 +135,8 @@
 [1816763371](1816763371-Lifefinder-squad.vso.md)  Release R6 R5
 
 
+
+[3505805917](3505805917-Lifefinder-squad.vso.md)  Unreleased
 
 [399948366](399948366-Lifefinder-squad.vso.md)  Release R9 R12 R11 R10
 
@@ -155,10 +159,14 @@
 
 
 
+[691254335](691254335-Lifefinder-wifi.vso.md)  Unreleased
+
 ## Lifefinder
 
 > Documented CRCs
 
+
+[3321548430](3321548430-Lifefinder.vso.md)  Unreleased
 
 [47853213](47853213-Lifefinder.vso.md)  Release R9 R12 R11 R10
 
@@ -296,7 +304,11 @@
 
 
 
+[3119667698](3119667698-Square-air.vso.md)  Unreleased
+
 [3747755895](3747755895-Square-air.vso.md)  Unreleased
+
+[472391447](472391447-Square-air.vso.md)  Unreleased
 
 [875676680](875676680-Square-air.vso.md)  Release R7 R6
 
@@ -317,6 +329,8 @@
 
 [1788446321](1788446321-Square-comfort-sound.vso.md)  Unreleased
 
+[20845976](20845976-Square-comfort-sound.vso.md)  Unreleased
+
 [2387046759](2387046759-Square-comfort-sound.vso.md)  Release R12 R11
 
 
@@ -325,10 +339,14 @@
 
 
 
+[2766427005](2766427005-Square-comfort-sound.vso.md)  Unreleased
+
 ## Square-comfort
 
 > Documented CRCs
 
+
+[1561169951](1561169951-Square-comfort.vso.md)  Unreleased
 
 [3264322911](3264322911-Square-comfort.vso.md)  Release R9 R10
 
@@ -339,6 +357,8 @@
 
 
 [3952168436](3952168436-Square-comfort.vso.md)  Unreleased
+
+[4174894842](4174894842-Square-comfort.vso.md)  Unreleased
 
 [656740722](656740722-Square-comfort.vso.md)  Release R8 R7 R6 R5
 
@@ -492,6 +512,13 @@
 
 [Square-air](1351707787-Square-air.vso.md)  Unreleased
 
+## 1561169951
+
+> Documented Apps
+
+
+[Square-comfort](1561169951-Square-comfort.vso.md)  Unreleased
+
 ## 1619903829
 
 > Documented Apps
@@ -628,6 +655,13 @@
 
 [Default](2023137642-Default.vso.md)  Unreleased
 
+## 20845976
+
+> Documented Apps
+
+
+[Square-comfort-sound](20845976-Square-comfort-sound.vso.md)  Unreleased
+
 ## 2132727044
 
 > Documented Apps
@@ -698,6 +732,13 @@
 
 [US-Frequency-hop-test](2716482776-US-Frequency-hop-test.vso.md)  Unreleased
 
+## 2766427005
+
+> Documented Apps
+
+
+[Square-comfort-sound](2766427005-Square-comfort-sound.vso.md)  Unreleased
+
 ## 2794280370
 
 > Documented Apps
@@ -713,6 +754,13 @@
 
 
 [Tracker](2990392526-Tracker.vso.md)  Unreleased
+
+## 3031484599
+
+> Documented Apps
+
+
+[Lifefinder-motion](3031484599-Lifefinder-motion.vso.md)  Unreleased
 
 ## 3038191195
 
@@ -739,6 +787,13 @@
 
 
 
+## 3119667698
+
+> Documented Apps
+
+
+[Square-air](3119667698-Square-air.vso.md)  Unreleased
+
 ## 314587945
 
 > Documented Apps
@@ -755,6 +810,13 @@
 
 
 
+## 3321548430
+
+> Documented Apps
+
+
+[Lifefinder](3321548430-Lifefinder.vso.md)  Unreleased
+
 ## 3497448490
 
 > Documented Apps
@@ -763,6 +825,13 @@
 [Digital-gpio](3497448490-Digital-gpio.vso.md)  Release R12 R11
 
 
+
+## 3505805917
+
+> Documented Apps
+
+
+[Lifefinder-squad](3505805917-Lifefinder-squad.vso.md)  Unreleased
 
 ## 3509502476
 
@@ -923,6 +992,20 @@
 
 [Airport-int](416405893-Airport-int.vso.md)  Unreleased
 
+## 4174894842
+
+> Documented Apps
+
+
+[Square-comfort](4174894842-Square-comfort.vso.md)  Unreleased
+
+## 472391447
+
+> Documented Apps
+
+
+[Square-air](472391447-Square-air.vso.md)  Unreleased
+
 ## 47853213
 
 > Documented Apps
@@ -992,6 +1075,13 @@
 [Square-comfort](656740722-Square-comfort.vso.md)  Release R8 R7 R6 R5
 
 
+
+## 691254335
+
+> Documented Apps
+
+
+[Lifefinder-wifi](691254335-Lifefinder-wifi.vso.md)  Unreleased
 
 ## 729172455
 
