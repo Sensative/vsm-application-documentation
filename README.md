@@ -120,6 +120,13 @@
 
 
 
+## IR-proximity
+
+> Documented CRCs
+
+
+[2355202201](2355202201-IR-proximity.vso.md)  Unreleased
+
 ## Lifefinder-motion
 
 > Documented CRCs
@@ -166,6 +173,8 @@
 [3605076574](3605076574-Lifefinder-wifi.vso.md)  Release R8 R7
 
 
+
+[3677859834](3677859834-Lifefinder-wifi.vso.md)  Unreleased
 
 [3994244140](3994244140-Lifefinder-wifi.vso.md)  Release R9 R12 R11 R10
 
@@ -335,6 +344,8 @@
 [2228379912](2228379912-Square-air.vso.md)  Unreleased
 
 [3119667698](3119667698-Square-air.vso.md)  Unreleased
+
+[3241343967](3241343967-Square-air.vso.md)  Unreleased
 
 [3634715455](3634715455-Square-air.vso.md)  Release R15
 
@@ -846,6 +857,13 @@
 
 
 
+## 2355202201
+
+> Documented Apps
+
+
+[IR-proximity](2355202201-IR-proximity.vso.md)  Unreleased
+
 ## 2387046759
 
 > Documented Apps
@@ -971,6 +989,13 @@
 
 [Puck-radar](314587945-Puck-radar.vso.md)  Unreleased
 
+## 3241343967
+
+> Documented Apps
+
+
+[Square-air](3241343967-Square-air.vso.md)  Unreleased
+
 ## 3264322911
 
 > Documented Apps
@@ -1058,6 +1083,13 @@
 [Square-air](3634715455-Square-air.vso.md)  Release R15
 
 
+
+## 3677859834
+
+> Documented Apps
+
+
+[Lifefinder-wifi](3677859834-Lifefinder-wifi.vso.md)  Unreleased
 
 ## 368353876
 
