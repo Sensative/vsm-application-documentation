@@ -175,7 +175,7 @@ The interval at which average temperature is uploaded (provided that it has chan
 > - Unit: Percent
 > - Default: 2.00%
 > - Min: 0.1%
-> - Max: >100% (practically disabled when > 100%)
+> - Max: 100% (practically disabled when > 100%)
 
 The number of percent change required for an update over LoRaWan of humidity and/or averageHumidity.
 
