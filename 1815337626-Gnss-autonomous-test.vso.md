@@ -53,68 +53,12 @@ Physical button readout sensor
 ## Application Registers used (device controls)
 
 
-### Register APP_CONFIG
-
-> - Request current value: Send ca (hex) on lora port 2
-> - Mode: RW
-> - Unit: Bit mask
-
-Enable or disable certain functions of the device, such as power on/off behaviours.
-
-
 ### Register BATTERY_PERCENT
 
 > - Request current value: Send f4 (hex) on lora port 2
-
-### Register DEVICE_STATE
-
-> - Request current value: Send c8 (hex) on lora port 2
-> - Mode: RW
-> - Unit: Enumeration
-
-Current application state of the device. Can be written by application to affect the devices application state.
-
-> - DEVICE_STATE_ACTIVE_UNJOINED (running but not joined to network)
-> - DEVICE_STATE_ACTIVE_JOINING (running and attempting to join network)
-> - DEVICE_STATE_ACTIVE_JOINED (running and joined to network)
-> - DEVICE_STATE_ACTIVE_STREAMING (running and uploading pending data packages)
-> - DEVICE_STATE_ACTIVE_ON_RADIO (running and currently working with the radio)
-> - DEVICE_STATE_OFF (normally not accessible from VM but possible to write to turn off the device)
-> - Others Reserved by runtime
-
-### Register GNSS
-
-> - Request current value: Send cc (hex) on lora port 2
-> - Mode: -W
-> - Type: Two * 1 bytes
-
-Trigger GNSS scans
-
-> - Byte 0: 0 = Attempt assisted scan if device knows GPS time and has GNSS almanac. 1 = force unassisted scan.
-> - Byte 1: Minimum number of found satellites to trigger an uplink
-
-
-### Register LED
-
-> - Request current value: Send c9 (hex) on lora port 2
-> - Mode: -W
-> - Unit: Enumeration
-
-Write in order to effect the application LED (not available on all device models)
-
-
-### Register NOW
-
-> - Request current value: Send c5 (hex) on lora port 2
+Percent of (non-zero) battery capacity used
 > - Mode: R-
-> - Unit: Seconds
-
-Current time in seconds since device powered on.
-
-
-### Register SATELLITE_BEST_SNR
-
-> - Request current value: Send ec (hex) on lora port 2
+> - Unit: mAh
 
 ### Register SATELLITE_COUNT
 
@@ -124,19 +68,6 @@ Current time in seconds since device powered on.
 
 Reads as the number of satellites seen in the last GNSS scan.
 
-
-### Register SLEEP_PERIOD
-
-> - Request current value: Send cf (hex) on lora port 2
-> - Mode: RW
-> - Unit: seconds
-
-When set to non-zero value the VM will wake up at at this interval. Make rules dependent on NOW or
-
-
-### Register WIFI
-
-> - Request current value: Send da (hex) on lora port 2
 
 ## Meta-Information for this application version
 

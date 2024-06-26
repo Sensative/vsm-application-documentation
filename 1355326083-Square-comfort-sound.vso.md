@@ -442,61 +442,29 @@ Sound sensor
 ### Register BATTERY_PERCENT
 
 > - Request current value: Send f4 (hex) on lora port 2
-
-### Register DEVICE_STATE
-
-> - Request current value: Send c8 (hex) on lora port 2
-> - Mode: RW
-> - Unit: Enumeration
-
-Current application state of the device. Can be written by application to affect the devices application state.
-
-> - DEVICE_STATE_ACTIVE_UNJOINED (running but not joined to network)
-> - DEVICE_STATE_ACTIVE_JOINING (running and attempting to join network)
-> - DEVICE_STATE_ACTIVE_JOINED (running and joined to network)
-> - DEVICE_STATE_ACTIVE_STREAMING (running and uploading pending data packages)
-> - DEVICE_STATE_ACTIVE_ON_RADIO (running and currently working with the radio)
-> - DEVICE_STATE_OFF (normally not accessible from VM but possible to write to turn off the device)
-> - Others Reserved by runtime
-
-### Register GNSS
-
-> - Request current value: Send cc (hex) on lora port 2
-> - Mode: -W
-> - Type: Two * 1 bytes
-
-Trigger GNSS scans
-
-> - Byte 0: 0 = Attempt assisted scan if device knows GPS time and has GNSS almanac. 1 = force unassisted scan.
-> - Byte 1: Minimum number of found satellites to trigger an uplink
-
+Percent of (non-zero) battery capacity used
+> - Mode: R-
+> - Unit: mAh
 
 ### Register GPS_TIME_MAX_AGE
 
 > - Request current value: Send cd (hex) on lora port 2
 > - Mode: RW
 > - Unit: Seconds
-
+> - Default: 0
+> - Min: 0
+> - Max: 4294967295
 Read/Set GPS time maximum age. Reads 0 if no GPS time is set.
 Once this maximum age has passed the device will no longer trust its GPS_TIME.
 Also, it will start emitting DEVICE_TIME requests on the LoRaWan network once 80% of this time has passed.
 
 
-### Register JOIN_SETTINGS
-
-> - Request current value: Send e7 (hex) on lora port 2
-
 ### Register LIGHT_SCALING
 
 > - Request current value: Send ee (hex) on lora port 2
-
-### Register SOUND_CONTROL
-
-> - Request current value: Send ed (hex) on lora port 2
-
-### Register WIFI
-
-> - Request current value: Send da (hex) on lora port 2
+Light compensation for plastics and placement
+> - Mode: RW
+> - Unit: Light Plastics Calibration factor (%)
 
 ## Meta-Information for this application version
 

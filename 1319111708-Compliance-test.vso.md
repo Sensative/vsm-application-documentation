@@ -18,19 +18,6 @@ In this mode the device will run in ADR mode, and will handle compliance test ac
 ## Application Registers used (device controls)
 
 
-### Register APP_CONFIG
-
-> - Request current value: Send ca (hex) on lora port 2
-> - Mode: RW
-> - Unit: Bit mask
-
-Enable or disable certain functions of the device, such as power on/off behaviours.
-
-
-### Register DATA_RATE
-
-> - Request current value: Send d4 (hex) on lora port 2
-
 ## Meta-Information for this application version
 
 

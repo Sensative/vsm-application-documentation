@@ -23,14 +23,6 @@ The command can be cancelled when the repetitions is set to zero or less or comm
 ## Application Registers used (device controls)
 
 
-### Register DELAY_MS
-
-> - Request current value: Send f8 (hex) on lora port 2
-
-### Register RADIO_TEST_CMD
-
-> - Request current value: Send dd (hex) on lora port 2
-
 ## Meta-Information for this application version
 
 
