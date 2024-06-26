@@ -11,11 +11,9 @@
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[3922413892](3922413892-Airport-budget)  Release R6
-
-
+* [3922413892](3922413892-Airport-budget.vso.md) R7
 
 ## Airport-int
 
@@ -26,41 +24,33 @@ Settings and translation compatible with:
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[174308877](174308877-Airport-int)  Release R9
-
-
+* [174308877](174308877-Airport-int.vso.md) R10
 
 [1695912328](1695912328-Airport-int.vso.md)  Release R15 R14 R13 R12 R11
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[1872032769](1872032769-Airport-int)  Release R15 R14 R13 R12 R11
-
-
+* [1872032769](1872032769-Airport-int.vso.md) R15 R14 R13
 
 [174308877](174308877-Airport-int.vso.md)  Release R10
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[1274106153](1274106153-Airport-int)  Release R10
-
-
+* [1274106153](1274106153-Airport-int.vso.md) R9
 
 [1872032769](1872032769-Airport-int.vso.md)  Release R15 R14 R13
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[1695912328](1695912328-Airport-int)  Release R15 R14 R13
-
-
+* [1695912328](1695912328-Airport-int.vso.md) R15 R14 R13 R12 R11
 
 ## Compliance-test
 
@@ -89,21 +79,17 @@ Settings and translation compatible with:
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[3497448490](3497448490-Digital-gpio)  Release R15 R14 R13
-
-
+* [3497448490](3497448490-Digital-gpio.vso.md) R12 R11
 
 [3497448490](3497448490-Digital-gpio.vso.md)  Release R12 R11
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[1617091456](1617091456-Digital-gpio)  Release R12 R11
-
-
+* [1617091456](1617091456-Digital-gpio.vso.md) R15 R14 R13
 
 ## Empty
 
@@ -127,11 +113,9 @@ Settings and translation compatible with:
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[2631574295](2631574295-dots,gnss-autonomous-scan-test)  Release R4 R2
-
-
+* [2631574295](2631574295-dots,gnss-autonomous-scan-test.vso.md) R1
 
 [584652534](584652534-Gnss-autonomous-test.vso.md)  Release R8 R7
 
@@ -159,21 +143,17 @@ Settings and translation compatible with:
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[3031484599](3031484599-Lifefinder-motion)  Release R9 R12 R11 R10
-
-
+* [3031484599](3031484599-Lifefinder-motion.vso.md) R15 R14 R13
 
 [3031484599](3031484599-Lifefinder-motion.vso.md)  Release R15 R14 R13
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[1938827428](1938827428-Lifefinder-motion)  Release R15 R14 R13
-
-
+* [1938827428](1938827428-Lifefinder-motion.vso.md) R9 R12 R11 R10
 
 [3685415244](3685415244-Lifefinder-motion.vso.md)  Release R8 R7
 
@@ -192,21 +172,17 @@ Settings and translation compatible with:
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[399948366](399948366-Lifefinder-squad)  Release R15 R14 R13
-
-
+* [399948366](399948366-Lifefinder-squad.vso.md) R9 R12 R11 R10
 
 [399948366](399948366-Lifefinder-squad.vso.md)  Release R9 R12 R11 R10
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[3505805917](3505805917-Lifefinder-squad)  Release R9 R12 R11 R10
-
-
+* [3505805917](3505805917-Lifefinder-squad.vso.md) R15 R14 R13
 
 [79276854](79276854-Lifefinder-squad.vso.md)  Release R8 R7
 
@@ -225,21 +201,17 @@ Settings and translation compatible with:
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[691254335](691254335-Lifefinder-wifi)  Release R9 R12 R11 R10
-
-
+* [691254335](691254335-Lifefinder-wifi.vso.md) R15 R14 R13
 
 [691254335](691254335-Lifefinder-wifi.vso.md)  Release R15 R14 R13
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[3994244140](3994244140-Lifefinder-wifi)  Release R15 R14 R13
-
-
+* [3994244140](3994244140-Lifefinder-wifi.vso.md) R9 R12 R11 R10
 
 ## Lifefinder
 
@@ -250,21 +222,17 @@ Settings and translation compatible with:
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[47853213](47853213-Lifefinder)  Release R15 R14 R13
-
-
+* [47853213](47853213-Lifefinder.vso.md) R9 R12 R11 R10
 
 [47853213](47853213-Lifefinder.vso.md)  Release R9 R12 R11 R10
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[3321548430](3321548430-Lifefinder)  Release R9 R12 R11 R10
-
-
+* [3321548430](3321548430-Lifefinder.vso.md) R15 R14 R13
 
 [596652351](596652351-Lifefinder.vso.md)  Release R6 R5
 
@@ -322,11 +290,9 @@ Settings and translation compatible with:
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[924779957](924779957-Puck-radar-v6)  Release R6 R5
-
-
+* [924779957](924779957-Puck-radar-v6.vso.md) R8 R7
 
 ## Puck-radar
 
@@ -402,23 +368,15 @@ Settings and translation compatible with:
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[472391447](472391447-Square-air)  Release R9 R10
+* [472391447](472391447-Square-air.vso.md) R13
 
+* [915094797](915094797-Square-air.vso.md) R12 R11
 
+* [3634715455](3634715455-Square-air.vso.md) R15
 
-[915094797](915094797-Square-air)  Release R9 R10
-
-
-
-[3634715455](3634715455-Square-air)  Release R9 R10
-
-
-
-[4002204643](4002204643-Square-air)  Release R9 R10
-
-
+* [4002204643](4002204643-Square-air.vso.md) R14
 
 [1937430598](1937430598-Square-air.vso.md)  Release R8
 
@@ -428,67 +386,43 @@ Settings and translation compatible with:
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[472391447](472391447-Square-air)  Release R15
+* [472391447](472391447-Square-air.vso.md) R13
 
+* [915094797](915094797-Square-air.vso.md) R12 R11
 
+* [1128699053](1128699053-Square-air.vso.md) R9 R10
 
-[915094797](915094797-Square-air)  Release R15
-
-
-
-[1128699053](1128699053-Square-air)  Release R15
-
-
-
-[4002204643](4002204643-Square-air)  Release R15
-
-
+* [4002204643](4002204643-Square-air.vso.md) R14
 
 [4002204643](4002204643-Square-air.vso.md)  Release R14
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[472391447](472391447-Square-air)  Release R14
+* [472391447](472391447-Square-air.vso.md) R13
 
+* [915094797](915094797-Square-air.vso.md) R12 R11
 
+* [1128699053](1128699053-Square-air.vso.md) R9 R10
 
-[915094797](915094797-Square-air)  Release R14
-
-
-
-[1128699053](1128699053-Square-air)  Release R14
-
-
-
-[3634715455](3634715455-Square-air)  Release R14
-
-
+* [3634715455](3634715455-Square-air.vso.md) R15
 
 [472391447](472391447-Square-air.vso.md)  Release R13
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[915094797](915094797-Square-air)  Release R13
+* [915094797](915094797-Square-air.vso.md) R12 R11
 
+* [1128699053](1128699053-Square-air.vso.md) R9 R10
 
+* [3634715455](3634715455-Square-air.vso.md) R15
 
-[1128699053](1128699053-Square-air)  Release R13
-
-
-
-[3634715455](3634715455-Square-air)  Release R13
-
-
-
-[4002204643](4002204643-Square-air)  Release R13
-
-
+* [4002204643](4002204643-Square-air.vso.md) R14
 
 [875676680](875676680-Square-air.vso.md)  Release R7 R6
 
@@ -498,23 +432,15 @@ Settings and translation compatible with:
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[472391447](472391447-Square-air)  Release R12 R11
+* [472391447](472391447-Square-air.vso.md) R13
 
+* [1128699053](1128699053-Square-air.vso.md) R9 R10
 
+* [3634715455](3634715455-Square-air.vso.md) R15
 
-[1128699053](1128699053-Square-air)  Release R12 R11
-
-
-
-[3634715455](3634715455-Square-air)  Release R12 R11
-
-
-
-[4002204643](4002204643-Square-air)  Release R12 R11
-
-
+* [4002204643](4002204643-Square-air.vso.md) R14
 
 ## Square-comfort-sound
 
@@ -525,67 +451,43 @@ Settings and translation compatible with:
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[517999093](517999093-Square-comfort-sound)  Release R9 R10
+* [517999093](517999093-Square-comfort-sound.vso.md) R14
 
+* [2338085954](2338085954-Square-comfort-sound.vso.md) R15
 
+* [2387046759](2387046759-Square-comfort-sound.vso.md) R12 R11
 
-[2338085954](2338085954-Square-comfort-sound)  Release R9 R10
-
-
-
-[2387046759](2387046759-Square-comfort-sound)  Release R9 R10
-
-
-
-[2766427005](2766427005-Square-comfort-sound)  Release R9 R10
-
-
+* [2766427005](2766427005-Square-comfort-sound.vso.md) R13
 
 [2338085954](2338085954-Square-comfort-sound.vso.md)  Release R15
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[517999093](517999093-Square-comfort-sound)  Release R15
+* [517999093](517999093-Square-comfort-sound.vso.md) R14
 
+* [1742321452](1742321452-Square-comfort-sound.vso.md) R9 R10
 
+* [2387046759](2387046759-Square-comfort-sound.vso.md) R12 R11
 
-[1742321452](1742321452-Square-comfort-sound)  Release R15
-
-
-
-[2387046759](2387046759-Square-comfort-sound)  Release R15
-
-
-
-[2766427005](2766427005-Square-comfort-sound)  Release R15
-
-
+* [2766427005](2766427005-Square-comfort-sound.vso.md) R13
 
 [2387046759](2387046759-Square-comfort-sound.vso.md)  Release R12 R11
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[517999093](517999093-Square-comfort-sound)  Release R12 R11
+* [517999093](517999093-Square-comfort-sound.vso.md) R14
 
+* [1742321452](1742321452-Square-comfort-sound.vso.md) R9 R10
 
+* [2338085954](2338085954-Square-comfort-sound.vso.md) R15
 
-[1742321452](1742321452-Square-comfort-sound)  Release R12 R11
-
-
-
-[2338085954](2338085954-Square-comfort-sound)  Release R12 R11
-
-
-
-[2766427005](2766427005-Square-comfort-sound)  Release R12 R11
-
-
+* [2766427005](2766427005-Square-comfort-sound.vso.md) R13
 
 [2391995788](2391995788-Square-comfort-sound.vso.md)  Release R8 R7 R6 R5
 
@@ -595,45 +497,29 @@ Settings and translation compatible with:
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[517999093](517999093-Square-comfort-sound)  Release R13
+* [517999093](517999093-Square-comfort-sound.vso.md) R14
 
+* [1742321452](1742321452-Square-comfort-sound.vso.md) R9 R10
 
+* [2338085954](2338085954-Square-comfort-sound.vso.md) R15
 
-[1742321452](1742321452-Square-comfort-sound)  Release R13
-
-
-
-[2338085954](2338085954-Square-comfort-sound)  Release R13
-
-
-
-[2387046759](2387046759-Square-comfort-sound)  Release R13
-
-
+* [2387046759](2387046759-Square-comfort-sound.vso.md) R12 R11
 
 [517999093](517999093-Square-comfort-sound.vso.md)  Release R14
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[1742321452](1742321452-Square-comfort-sound)  Release R14
+* [1742321452](1742321452-Square-comfort-sound.vso.md) R9 R10
 
+* [2338085954](2338085954-Square-comfort-sound.vso.md) R15
 
+* [2387046759](2387046759-Square-comfort-sound.vso.md) R12 R11
 
-[2338085954](2338085954-Square-comfort-sound)  Release R14
-
-
-
-[2387046759](2387046759-Square-comfort-sound)  Release R14
-
-
-
-[2766427005](2766427005-Square-comfort-sound)  Release R14
-
-
+* [2766427005](2766427005-Square-comfort-sound.vso.md) R13
 
 ## Square-comfort
 
@@ -644,63 +530,47 @@ Settings and translation compatible with:
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[2696231198](2696231198-Square-comfort)  Release R15
-
-
+* [2696231198](2696231198-Square-comfort.vso.md) R14
 
 [2696231198](2696231198-Square-comfort.vso.md)  Release R14
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[2266505222](2266505222-Square-comfort)  Release R14
-
-
+* [2266505222](2266505222-Square-comfort.vso.md) R15
 
 [3264322911](3264322911-Square-comfort.vso.md)  Release R9 R10
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[3530880224](3530880224-Square-comfort)  Release R9 R10
+* [3530880224](3530880224-Square-comfort.vso.md) R12 R11
 
-
-
-[4174894842](4174894842-Square-comfort)  Release R9 R10
-
-
+* [4174894842](4174894842-Square-comfort.vso.md) R13
 
 [3530880224](3530880224-Square-comfort.vso.md)  Release R12 R11
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[3264322911](3264322911-Square-comfort)  Release R12 R11
+* [3264322911](3264322911-Square-comfort.vso.md) R9 R10
 
-
-
-[4174894842](4174894842-Square-comfort)  Release R12 R11
-
-
+* [4174894842](4174894842-Square-comfort.vso.md) R13
 
 [4174894842](4174894842-Square-comfort.vso.md)  Release R13
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[3264322911](3264322911-Square-comfort)  Release R13
+* [3264322911](3264322911-Square-comfort.vso.md) R9 R10
 
-
-
-[3530880224](3530880224-Square-comfort)  Release R13
-
-
+* [3530880224](3530880224-Square-comfort.vso.md) R12 R11
 
 [656740722](656740722-Square-comfort.vso.md)  Release R8 R7 R6 R5
 
@@ -746,21 +616,17 @@ Settings and translation compatible with:
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[534670557](534670557-Tracker)  Release R15 R14 R13 R12 R11 R10
-
-
+* [534670557](534670557-Tracker.vso.md) R9
 
 [534670557](534670557-Tracker.vso.md)  Release R9
 
 
 
-Settings and translation compatible with:
+> Settings and translation compatible with:
 
-[489186430](489186430-Tracker)  Release R9
-
-
+* [489186430](489186430-Tracker.vso.md) R15 R14 R13 R12 R11 R10
 
 ## US-Frequency-hop-test
 
