@@ -7,8 +7,7 @@
 > Documented CRCs
 
 
-[1619903829](1619903829-Airport-budget.vso.md) 
-### Release R6
+### [1619903829](1619903829-Airport-budget.vso.md)  Release R6
 
 
 
@@ -21,8 +20,7 @@
 > Documented CRCs
 
 
-[1274106153](1274106153-Airport-int.vso.md) 
-### Release R9
+### [1274106153](1274106153-Airport-int.vso.md)  Release R9
 
 
 
@@ -30,8 +28,7 @@
 
 * [174308877](174308877-Airport-int.vso.md) R10
 
-[1695912328](1695912328-Airport-int.vso.md) 
-### Release R15 R14 R13 R12 R11
+### [1695912328](1695912328-Airport-int.vso.md)  Release R15 R14 R13 R12 R11
 
 
 
@@ -39,8 +36,7 @@
 
 * [1872032769](1872032769-Airport-int.vso.md) R15 R14 R13
 
-[174308877](174308877-Airport-int.vso.md) 
-### Release R10
+### [174308877](174308877-Airport-int.vso.md)  Release R10
 
 
 
@@ -48,8 +44,7 @@
 
 * [1274106153](1274106153-Airport-int.vso.md) R9
 
-[1872032769](1872032769-Airport-int.vso.md) 
-### Release R15 R14 R13
+### [1872032769](1872032769-Airport-int.vso.md)  Release R15 R14 R13
 
 
 
@@ -62,8 +57,7 @@
 > Documented CRCs
 
 
-[1319111708](1319111708-Compliance-test.vso.md) 
-### Release R9 R8 R7 R6 R5 R4 R2 R15 R14 R13 R12 R11 R10
+### [1319111708](1319111708-Compliance-test.vso.md)  Release R9 R8 R7 R6 R5 R4 R2 R15 R14 R13 R12 R11 R10
 
 
 
@@ -72,8 +66,7 @@
 > Documented CRCs
 
 
-[2132727044](2132727044-Default.vso.md) 
-### Release R9 R15 R14 R13 R12 R11 R10
+### [2132727044](2132727044-Default.vso.md)  Release R9 R15 R14 R13 R12 R11 R10
 
 
 
@@ -82,8 +75,7 @@
 > Documented CRCs
 
 
-[1617091456](1617091456-Digital-gpio.vso.md) 
-### Release R15 R14 R13
+### [1617091456](1617091456-Digital-gpio.vso.md)  Release R15 R14 R13
 
 
 
@@ -91,8 +83,7 @@
 
 * [3497448490](3497448490-Digital-gpio.vso.md) R12 R11
 
-[3497448490](3497448490-Digital-gpio.vso.md) 
-### Release R12 R11
+### [3497448490](3497448490-Digital-gpio.vso.md)  Release R12 R11
 
 
 
@@ -105,8 +96,7 @@
 > Documented CRCs
 
 
-[4058561182](4058561182-Empty.vso.md) 
-### Release R9 R8 R7 R6 R5 R4 R2 R15 R14 R13 R12 R11 R10
+### [4058561182](4058561182-Empty.vso.md)  Release R9 R8 R7 R6 R5 R4 R2 R15 R14 R13 R12 R11 R10
 
 
 
@@ -115,13 +105,11 @@
 > Documented CRCs
 
 
-[1815337626](1815337626-Gnss-autonomous-test.vso.md) 
-### Release R9 R15 R14 R13 R12 R11 R10
+### [1815337626](1815337626-Gnss-autonomous-test.vso.md)  Release R9 R15 R14 R13 R12 R11 R10
 
 
 
-[3099888482](3099888482-Gnss-autonomous-test.vso.md) 
-### Release R4 R2
+### [3099888482](3099888482-Gnss-autonomous-test.vso.md)  Release R4 R2
 
 
 
@@ -129,8 +117,7 @@
 
 * [2631574295](2631574295-dots,gnss-autonomous-scan-test.vso.md) R1
 
-[584652534](584652534-Gnss-autonomous-test.vso.md) 
-### Release R8 R7
+### [584652534](584652534-Gnss-autonomous-test.vso.md)  Release R8 R7
 
 
 
@@ -139,13 +126,11 @@
 > Documented CRCs
 
 
-[1727723267](1727723267-Heartstarter.vso.md) 
-### Release R9 R15 R14 R13 R12 R11 R10
+### [1727723267](1727723267-Heartstarter.vso.md)  Release R9 R15 R14 R13 R12 R11 R10
 
 
 
-[3886254671](3886254671-Heartstarter.vso.md) 
-### Release R8 R7
+### [3886254671](3886254671-Heartstarter.vso.md)  Release R8 R7
 
 
 
@@ -154,8 +139,7 @@
 > Documented CRCs
 
 
-[1938827428](1938827428-Lifefinder-motion.vso.md) 
-### Release R9 R12 R11 R10
+### [1938827428](1938827428-Lifefinder-motion.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -163,8 +147,7 @@
 
 * [3031484599](3031484599-Lifefinder-motion.vso.md) R15 R14 R13
 
-[3031484599](3031484599-Lifefinder-motion.vso.md) 
-### Release R15 R14 R13
+### [3031484599](3031484599-Lifefinder-motion.vso.md)  Release R15 R14 R13
 
 
 
@@ -172,8 +155,7 @@
 
 * [1938827428](1938827428-Lifefinder-motion.vso.md) R9 R12 R11 R10
 
-[3685415244](3685415244-Lifefinder-motion.vso.md) 
-### Release R8 R7
+### [3685415244](3685415244-Lifefinder-motion.vso.md)  Release R8 R7
 
 
 
@@ -182,13 +164,11 @@
 > Documented CRCs
 
 
-[1816763371](1816763371-Lifefinder-squad.vso.md) 
-### Release R6 R5
+### [1816763371](1816763371-Lifefinder-squad.vso.md)  Release R6 R5
 
 
 
-[3505805917](3505805917-Lifefinder-squad.vso.md) 
-### Release R15 R14 R13
+### [3505805917](3505805917-Lifefinder-squad.vso.md)  Release R15 R14 R13
 
 
 
@@ -196,8 +176,7 @@
 
 * [399948366](399948366-Lifefinder-squad.vso.md) R9 R12 R11 R10
 
-[399948366](399948366-Lifefinder-squad.vso.md) 
-### Release R9 R12 R11 R10
+### [399948366](399948366-Lifefinder-squad.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -205,8 +184,7 @@
 
 * [3505805917](3505805917-Lifefinder-squad.vso.md) R15 R14 R13
 
-[79276854](79276854-Lifefinder-squad.vso.md) 
-### Release R8 R7
+### [79276854](79276854-Lifefinder-squad.vso.md)  Release R8 R7
 
 
 
@@ -215,13 +193,11 @@
 > Documented CRCs
 
 
-[3605076574](3605076574-Lifefinder-wifi.vso.md) 
-### Release R8 R7
+### [3605076574](3605076574-Lifefinder-wifi.vso.md)  Release R8 R7
 
 
 
-[3994244140](3994244140-Lifefinder-wifi.vso.md) 
-### Release R9 R12 R11 R10
+### [3994244140](3994244140-Lifefinder-wifi.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -229,8 +205,7 @@
 
 * [691254335](691254335-Lifefinder-wifi.vso.md) R15 R14 R13
 
-[691254335](691254335-Lifefinder-wifi.vso.md) 
-### Release R15 R14 R13
+### [691254335](691254335-Lifefinder-wifi.vso.md)  Release R15 R14 R13
 
 
 
@@ -243,8 +218,7 @@
 > Documented CRCs
 
 
-[3321548430](3321548430-Lifefinder.vso.md) 
-### Release R15 R14 R13
+### [3321548430](3321548430-Lifefinder.vso.md)  Release R15 R14 R13
 
 
 
@@ -252,8 +226,7 @@
 
 * [47853213](47853213-Lifefinder.vso.md) R9 R12 R11 R10
 
-[47853213](47853213-Lifefinder.vso.md) 
-### Release R9 R12 R11 R10
+### [47853213](47853213-Lifefinder.vso.md)  Release R9 R12 R11 R10
 
 
 
@@ -261,13 +234,11 @@
 
 * [3321548430](3321548430-Lifefinder.vso.md) R15 R14 R13
 
-[596652351](596652351-Lifefinder.vso.md) 
-### Release R6 R5
+### [596652351](596652351-Lifefinder.vso.md)  Release R6 R5
 
 
 
-[871865531](871865531-Lifefinder.vso.md) 
-### Release R8 R7
+### [871865531](871865531-Lifefinder.vso.md)  Release R8 R7
 
 
 
@@ -276,13 +247,11 @@
 > Documented CRCs
 
 
-[3086277881](3086277881-Linkcheck.vso.md) 
-### Release R8 R7 R6 R5 R4 R2
+### [3086277881](3086277881-Linkcheck.vso.md)  Release R8 R7 R6 R5 R4 R2
 
 
 
-[4120107816](4120107816-Linkcheck.vso.md) 
-### Release R9 R15 R14 R13 R12 R11 R10
+### [4120107816](4120107816-Linkcheck.vso.md)  Release R9 R15 R14 R13 R12 R11 R10
 
 
 
@@ -291,8 +260,7 @@
 > Documented CRCs
 
 
-[2297466901](2297466901-Motion-measure.vso.md) 
-### Release R9 R15 R14 R13 R12 R11 R10
+### [2297466901](2297466901-Motion-measure.vso.md)  Release R9 R15 R14 R13 R12 R11 R10
 
 
 
@@ -301,18 +269,15 @@
 > Documented CRCs
 
 
-[1121182195](1121182195-Puck-radar-fast-rejoin.vso.md) 
-### Release R15 R14 R13
+### [1121182195](1121182195-Puck-radar-fast-rejoin.vso.md)  Release R15 R14 R13
 
 
 
-[1325798073](1325798073-Puck-radar-fast-rejoin.vso.md) 
-### Release R12 R11
+### [1325798073](1325798073-Puck-radar-fast-rejoin.vso.md)  Release R12 R11
 
 
 
-[729172455](729172455-Puck-radar-fast-rejoin.vso.md) 
-### Release R12
+### [729172455](729172455-Puck-radar-fast-rejoin.vso.md)  Release R12
 
 
 
@@ -321,8 +286,7 @@
 > Documented CRCs
 
 
-[4078507651](4078507651-Puck-radar-v6.vso.md) 
-### Release R6 R5
+### [4078507651](4078507651-Puck-radar-v6.vso.md)  Release R6 R5
 
 
 
@@ -335,18 +299,15 @@
 > Documented CRCs
 
 
-[1325798073](1325798073-Puck-radar.vso.md) 
-### Release R12 R11
+### [1325798073](1325798073-Puck-radar.vso.md)  Release R12 R11
 
 
 
-[2604624720](2604624720-Puck-radar.vso.md) 
-### Release R9 R10
+### [2604624720](2604624720-Puck-radar.vso.md)  Release R9 R10
 
 
 
-[561898260](561898260-Puck-radar.vso.md) 
-### Release R15 R14 R13
+### [561898260](561898260-Puck-radar.vso.md)  Release R15 R14 R13
 
 
 
@@ -355,8 +316,7 @@
 > Documented CRCs
 
 
-[376700598](376700598-Puck-tracker.vso.md) 
-### Release R6 R5
+### [376700598](376700598-Puck-tracker.vso.md)  Release R6 R5
 
 
 
@@ -365,13 +325,11 @@
 > Documented CRCs
 
 
-[190349531](190349531-Radiotest-measure.vso.md) 
-### Release R13 R12
+### [190349531](190349531-Radiotest-measure.vso.md)  Release R13 R12
 
 
 
-[2944831603](2944831603-Radiotest-measure.vso.md) 
-### Release R15 R14
+### [2944831603](2944831603-Radiotest-measure.vso.md)  Release R15 R14
 
 
 
@@ -380,13 +338,11 @@
 > Documented CRCs
 
 
-[2182170139](2182170139-Radiotest.vso.md) 
-### Release R9 R8 R7 R6 R5 R4 R2 R11 R10
+### [2182170139](2182170139-Radiotest.vso.md)  Release R9 R8 R7 R6 R5 R4 R2 R11 R10
 
 
 
-[2230085897](2230085897-Radiotest.vso.md) 
-### Release R15 R14 R13 R12
+### [2230085897](2230085897-Radiotest.vso.md)  Release R15 R14 R13 R12
 
 
 
@@ -395,13 +351,11 @@
 > Documented CRCs
 
 
-[1047034189](1047034189-Sniffer.vso.md) 
-### Release R15 R14 R13 R12
+### [1047034189](1047034189-Sniffer.vso.md)  Release R15 R14 R13 R12
 
 
 
-[3509502476](3509502476-Sniffer.vso.md) 
-### Release R9 R8 R7 R6 R5 R4 R2 R11 R10
+### [3509502476](3509502476-Sniffer.vso.md)  Release R9 R8 R7 R6 R5 R4 R2 R11 R10
 
 
 
@@ -410,8 +364,7 @@
 > Documented CRCs
 
 
-[1128699053](1128699053-Square-air.vso.md) 
-### Release R9 R10
+### [1128699053](1128699053-Square-air.vso.md)  Release R9 R10
 
 
 
@@ -425,13 +378,11 @@
 
 * [4002204643](4002204643-Square-air.vso.md) R14
 
-[1937430598](1937430598-Square-air.vso.md) 
-### Release R8
+### [1937430598](1937430598-Square-air.vso.md)  Release R8
 
 
 
-[3634715455](3634715455-Square-air.vso.md) 
-### Release R15
+### [3634715455](3634715455-Square-air.vso.md)  Release R15
 
 
 
@@ -445,8 +396,7 @@
 
 * [4002204643](4002204643-Square-air.vso.md) R14
 
-[4002204643](4002204643-Square-air.vso.md) 
-### Release R14
+### [4002204643](4002204643-Square-air.vso.md)  Release R14
 
 
 
@@ -460,8 +410,7 @@
 
 * [3634715455](3634715455-Square-air.vso.md) R15
 
-[472391447](472391447-Square-air.vso.md) 
-### Release R13
+### [472391447](472391447-Square-air.vso.md)  Release R13
 
 
 
@@ -475,13 +424,11 @@
 
 * [4002204643](4002204643-Square-air.vso.md) R14
 
-[875676680](875676680-Square-air.vso.md) 
-### Release R7 R6
+### [875676680](875676680-Square-air.vso.md)  Release R7 R6
 
 
 
-[915094797](915094797-Square-air.vso.md) 
-### Release R12 R11
+### [915094797](915094797-Square-air.vso.md)  Release R12 R11
 
 
 
@@ -500,8 +447,7 @@
 > Documented CRCs
 
 
-[1742321452](1742321452-Square-comfort-sound.vso.md) 
-### Release R9 R10
+### [1742321452](1742321452-Square-comfort-sound.vso.md)  Release R9 R10
 
 
 
@@ -515,8 +461,7 @@
 
 * [2766427005](2766427005-Square-comfort-sound.vso.md) R13
 
-[2338085954](2338085954-Square-comfort-sound.vso.md) 
-### Release R15
+### [2338085954](2338085954-Square-comfort-sound.vso.md)  Release R15
 
 
 
@@ -530,8 +475,7 @@
 
 * [2766427005](2766427005-Square-comfort-sound.vso.md) R13
 
-[2387046759](2387046759-Square-comfort-sound.vso.md) 
-### Release R12 R11
+### [2387046759](2387046759-Square-comfort-sound.vso.md)  Release R12 R11
 
 
 
@@ -545,13 +489,11 @@
 
 * [2766427005](2766427005-Square-comfort-sound.vso.md) R13
 
-[2391995788](2391995788-Square-comfort-sound.vso.md) 
-### Release R8 R7 R6 R5
+### [2391995788](2391995788-Square-comfort-sound.vso.md)  Release R8 R7 R6 R5
 
 
 
-[2766427005](2766427005-Square-comfort-sound.vso.md) 
-### Release R13
+### [2766427005](2766427005-Square-comfort-sound.vso.md)  Release R13
 
 
 
@@ -565,8 +507,7 @@
 
 * [2387046759](2387046759-Square-comfort-sound.vso.md) R12 R11
 
-[517999093](517999093-Square-comfort-sound.vso.md) 
-### Release R14
+### [517999093](517999093-Square-comfort-sound.vso.md)  Release R14
 
 
 
@@ -585,8 +526,7 @@
 > Documented CRCs
 
 
-[2266505222](2266505222-Square-comfort.vso.md) 
-### Release R15
+### [2266505222](2266505222-Square-comfort.vso.md)  Release R15
 
 
 
@@ -594,8 +534,7 @@
 
 * [2696231198](2696231198-Square-comfort.vso.md) R14
 
-[2696231198](2696231198-Square-comfort.vso.md) 
-### Release R14
+### [2696231198](2696231198-Square-comfort.vso.md)  Release R14
 
 
 
@@ -603,8 +542,7 @@
 
 * [2266505222](2266505222-Square-comfort.vso.md) R15
 
-[3264322911](3264322911-Square-comfort.vso.md) 
-### Release R9 R10
+### [3264322911](3264322911-Square-comfort.vso.md)  Release R9 R10
 
 
 
@@ -614,8 +552,7 @@
 
 * [4174894842](4174894842-Square-comfort.vso.md) R13
 
-[3530880224](3530880224-Square-comfort.vso.md) 
-### Release R12 R11
+### [3530880224](3530880224-Square-comfort.vso.md)  Release R12 R11
 
 
 
@@ -625,8 +562,7 @@
 
 * [4174894842](4174894842-Square-comfort.vso.md) R13
 
-[4174894842](4174894842-Square-comfort.vso.md) 
-### Release R13
+### [4174894842](4174894842-Square-comfort.vso.md)  Release R13
 
 
 
@@ -636,8 +572,7 @@
 
 * [3530880224](3530880224-Square-comfort.vso.md) R12 R11
 
-[656740722](656740722-Square-comfort.vso.md) 
-### Release R8 R7 R6 R5
+### [656740722](656740722-Square-comfort.vso.md)  Release R8 R7 R6 R5
 
 
 
@@ -646,8 +581,7 @@
 > Documented CRCs
 
 
-[3629466160](3629466160-Tracker-budget.vso.md) 
-### Release R8 R7
+### [3629466160](3629466160-Tracker-budget.vso.md)  Release R8 R7
 
 
 
@@ -656,13 +590,11 @@
 > Documented CRCs
 
 
-[1711284143](1711284143-Tracker-stats.vso.md) 
-### Release R9 R15 R14 R13 R12 R11 R10
+### [1711284143](1711284143-Tracker-stats.vso.md)  Release R9 R15 R14 R13 R12 R11 R10
 
 
 
-[57715230](57715230-Tracker-stats.vso.md) 
-### Release R8 R7 R6 R5
+### [57715230](57715230-Tracker-stats.vso.md)  Release R8 R7 R6 R5
 
 
 
@@ -671,8 +603,7 @@
 > Documented CRCs
 
 
-[1643871491](1643871491-Tracker-time.vso.md) 
-### Release R8 R7
+### [1643871491](1643871491-Tracker-time.vso.md)  Release R8 R7
 
 
 
@@ -681,8 +612,7 @@
 > Documented CRCs
 
 
-[489186430](489186430-Tracker.vso.md) 
-### Release R15 R14 R13 R12 R11 R10
+### [489186430](489186430-Tracker.vso.md)  Release R15 R14 R13 R12 R11 R10
 
 
 
@@ -690,8 +620,7 @@
 
 * [534670557](534670557-Tracker.vso.md) R9
 
-[534670557](534670557-Tracker.vso.md) 
-### Release R9
+### [534670557](534670557-Tracker.vso.md)  Release R9
 
 
 
@@ -704,8 +633,7 @@
 > Documented CRCs
 
 
-[3999624005](3999624005-US-Frequency-hop-test.vso.md) 
-### Release R15 R14 R13 R12
+### [3999624005](3999624005-US-Frequency-hop-test.vso.md)  Release R15 R14 R13 R12
 
 
 
@@ -714,8 +642,7 @@
 > Documented CRCs
 
 
-[2794280370](2794280370-Wifi-tracker.vso.md) 
-### Release R8 R7 R6 R5
+### [2794280370](2794280370-Wifi-tracker.vso.md)  Release R8 R7 R6 R5
 
 
 
