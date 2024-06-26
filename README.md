@@ -11,6 +11,12 @@
 
 
 
+Settings and translation compatible with:
+
+[3922413892](3922413892-Airport-budget)  Release R6
+
+
+
 ## Airport-int
 
 > Documented CRCs
@@ -20,7 +26,19 @@
 
 
 
+Settings and translation compatible with:
+
+[174308877](174308877-Airport-int)  Release R9
+
+
+
 [1695912328](1695912328-Airport-int.vso.md)  Release R15 R14 R13 R12 R11
+
+
+
+Settings and translation compatible with:
+
+[1872032769](1872032769-Airport-int)  Release R15 R14 R13 R12 R11
 
 
 
@@ -28,7 +46,19 @@
 
 
 
+Settings and translation compatible with:
+
+[1274106153](1274106153-Airport-int)  Release R10
+
+
+
 [1872032769](1872032769-Airport-int.vso.md)  Release R15 R14 R13
+
+
+
+Settings and translation compatible with:
+
+[1695912328](1695912328-Airport-int)  Release R15 R14 R13
 
 
 
@@ -59,7 +89,19 @@
 
 
 
+Settings and translation compatible with:
+
+[3497448490](3497448490-Digital-gpio)  Release R15 R14 R13
+
+
+
 [3497448490](3497448490-Digital-gpio.vso.md)  Release R12 R11
+
+
+
+Settings and translation compatible with:
+
+[1617091456](1617091456-Digital-gpio)  Release R12 R11
 
 
 
@@ -82,6 +124,12 @@
 
 
 [3099888482](3099888482-Gnss-autonomous-test.vso.md)  Release R4 R2
+
+
+
+Settings and translation compatible with:
+
+[2631574295](2631574295-dots,gnss-autonomous-scan-test)  Release R4 R2
 
 
 
@@ -111,7 +159,19 @@
 
 
 
+Settings and translation compatible with:
+
+[3031484599](3031484599-Lifefinder-motion)  Release R9 R12 R11 R10
+
+
+
 [3031484599](3031484599-Lifefinder-motion.vso.md)  Release R15 R14 R13
+
+
+
+Settings and translation compatible with:
+
+[1938827428](1938827428-Lifefinder-motion)  Release R15 R14 R13
 
 
 
@@ -132,7 +192,19 @@
 
 
 
+Settings and translation compatible with:
+
+[399948366](399948366-Lifefinder-squad)  Release R15 R14 R13
+
+
+
 [399948366](399948366-Lifefinder-squad.vso.md)  Release R9 R12 R11 R10
+
+
+
+Settings and translation compatible with:
+
+[3505805917](3505805917-Lifefinder-squad)  Release R9 R12 R11 R10
 
 
 
@@ -153,7 +225,19 @@
 
 
 
+Settings and translation compatible with:
+
+[691254335](691254335-Lifefinder-wifi)  Release R9 R12 R11 R10
+
+
+
 [691254335](691254335-Lifefinder-wifi.vso.md)  Release R15 R14 R13
+
+
+
+Settings and translation compatible with:
+
+[3994244140](3994244140-Lifefinder-wifi)  Release R15 R14 R13
 
 
 
@@ -166,7 +250,19 @@
 
 
 
+Settings and translation compatible with:
+
+[47853213](47853213-Lifefinder)  Release R15 R14 R13
+
+
+
 [47853213](47853213-Lifefinder.vso.md)  Release R9 R12 R11 R10
+
+
+
+Settings and translation compatible with:
+
+[3321548430](3321548430-Lifefinder)  Release R9 R12 R11 R10
 
 
 
@@ -223,6 +319,12 @@
 
 
 [4078507651](4078507651-Puck-radar-v6.vso.md)  Release R6 R5
+
+
+
+Settings and translation compatible with:
+
+[924779957](924779957-Puck-radar-v6)  Release R6 R5
 
 
 
@@ -300,6 +402,24 @@
 
 
 
+Settings and translation compatible with:
+
+[472391447](472391447-Square-air)  Release R9 R10
+
+
+
+[915094797](915094797-Square-air)  Release R9 R10
+
+
+
+[3634715455](3634715455-Square-air)  Release R9 R10
+
+
+
+[4002204643](4002204643-Square-air)  Release R9 R10
+
+
+
 [1937430598](1937430598-Square-air.vso.md)  Release R8
 
 
@@ -308,11 +428,65 @@
 
 
 
+Settings and translation compatible with:
+
+[472391447](472391447-Square-air)  Release R15
+
+
+
+[915094797](915094797-Square-air)  Release R15
+
+
+
+[1128699053](1128699053-Square-air)  Release R15
+
+
+
+[4002204643](4002204643-Square-air)  Release R15
+
+
+
 [4002204643](4002204643-Square-air.vso.md)  Release R14
 
 
 
+Settings and translation compatible with:
+
+[472391447](472391447-Square-air)  Release R14
+
+
+
+[915094797](915094797-Square-air)  Release R14
+
+
+
+[1128699053](1128699053-Square-air)  Release R14
+
+
+
+[3634715455](3634715455-Square-air)  Release R14
+
+
+
 [472391447](472391447-Square-air.vso.md)  Release R13
+
+
+
+Settings and translation compatible with:
+
+[915094797](915094797-Square-air)  Release R13
+
+
+
+[1128699053](1128699053-Square-air)  Release R13
+
+
+
+[3634715455](3634715455-Square-air)  Release R13
+
+
+
+[4002204643](4002204643-Square-air)  Release R13
 
 
 
@@ -321,6 +495,24 @@
 
 
 [915094797](915094797-Square-air.vso.md)  Release R12 R11
+
+
+
+Settings and translation compatible with:
+
+[472391447](472391447-Square-air)  Release R12 R11
+
+
+
+[1128699053](1128699053-Square-air)  Release R12 R11
+
+
+
+[3634715455](3634715455-Square-air)  Release R12 R11
+
+
+
+[4002204643](4002204643-Square-air)  Release R12 R11
 
 
 
@@ -333,11 +525,65 @@
 
 
 
+Settings and translation compatible with:
+
+[517999093](517999093-Square-comfort-sound)  Release R9 R10
+
+
+
+[2338085954](2338085954-Square-comfort-sound)  Release R9 R10
+
+
+
+[2387046759](2387046759-Square-comfort-sound)  Release R9 R10
+
+
+
+[2766427005](2766427005-Square-comfort-sound)  Release R9 R10
+
+
+
 [2338085954](2338085954-Square-comfort-sound.vso.md)  Release R15
 
 
 
+Settings and translation compatible with:
+
+[517999093](517999093-Square-comfort-sound)  Release R15
+
+
+
+[1742321452](1742321452-Square-comfort-sound)  Release R15
+
+
+
+[2387046759](2387046759-Square-comfort-sound)  Release R15
+
+
+
+[2766427005](2766427005-Square-comfort-sound)  Release R15
+
+
+
 [2387046759](2387046759-Square-comfort-sound.vso.md)  Release R12 R11
+
+
+
+Settings and translation compatible with:
+
+[517999093](517999093-Square-comfort-sound)  Release R12 R11
+
+
+
+[1742321452](1742321452-Square-comfort-sound)  Release R12 R11
+
+
+
+[2338085954](2338085954-Square-comfort-sound)  Release R12 R11
+
+
+
+[2766427005](2766427005-Square-comfort-sound)  Release R12 R11
 
 
 
@@ -349,7 +595,43 @@
 
 
 
+Settings and translation compatible with:
+
+[517999093](517999093-Square-comfort-sound)  Release R13
+
+
+
+[1742321452](1742321452-Square-comfort-sound)  Release R13
+
+
+
+[2338085954](2338085954-Square-comfort-sound)  Release R13
+
+
+
+[2387046759](2387046759-Square-comfort-sound)  Release R13
+
+
+
 [517999093](517999093-Square-comfort-sound.vso.md)  Release R14
+
+
+
+Settings and translation compatible with:
+
+[1742321452](1742321452-Square-comfort-sound)  Release R14
+
+
+
+[2338085954](2338085954-Square-comfort-sound)  Release R14
+
+
+
+[2387046759](2387046759-Square-comfort-sound)  Release R14
+
+
+
+[2766427005](2766427005-Square-comfort-sound)  Release R14
 
 
 
@@ -362,7 +644,19 @@
 
 
 
+Settings and translation compatible with:
+
+[2696231198](2696231198-Square-comfort)  Release R15
+
+
+
 [2696231198](2696231198-Square-comfort.vso.md)  Release R14
+
+
+
+Settings and translation compatible with:
+
+[2266505222](2266505222-Square-comfort)  Release R14
 
 
 
@@ -370,11 +664,41 @@
 
 
 
+Settings and translation compatible with:
+
+[3530880224](3530880224-Square-comfort)  Release R9 R10
+
+
+
+[4174894842](4174894842-Square-comfort)  Release R9 R10
+
+
+
 [3530880224](3530880224-Square-comfort.vso.md)  Release R12 R11
 
 
 
+Settings and translation compatible with:
+
+[3264322911](3264322911-Square-comfort)  Release R12 R11
+
+
+
+[4174894842](4174894842-Square-comfort)  Release R12 R11
+
+
+
 [4174894842](4174894842-Square-comfort.vso.md)  Release R13
+
+
+
+Settings and translation compatible with:
+
+[3264322911](3264322911-Square-comfort)  Release R13
+
+
+
+[3530880224](3530880224-Square-comfort)  Release R13
 
 
 
@@ -422,7 +746,19 @@
 
 
 
+Settings and translation compatible with:
+
+[534670557](534670557-Tracker)  Release R15 R14 R13 R12 R11 R10
+
+
+
 [534670557](534670557-Tracker.vso.md)  Release R9
+
+
+
+Settings and translation compatible with:
+
+[489186430](489186430-Tracker)  Release R9
 
 
 
