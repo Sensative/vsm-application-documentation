@@ -67,6 +67,28 @@
 
 * [1695912328](1695912328-Airport-int.vso.md) R15 R14 R13 R12 R11
 
+### [3532693249](3532693249-Airport-int.vso.md)
+> Versions
+
+ R16
+
+
+
+> Settings and translation compatible with:
+
+* [3625056904](3625056904-Airport-int.vso.md) R16
+
+### [3625056904](3625056904-Airport-int.vso.md)
+> Versions
+
+ R16
+
+
+
+> Settings and translation compatible with:
+
+* [3532693249](3532693249-Airport-int.vso.md) R16
+
 ## Compliance-test
 
 > Documented CRCs
@@ -75,7 +97,7 @@
 ### [1319111708](1319111708-Compliance-test.vso.md)
 > Versions
 
- R9 R8 R7 R6 R5 R4 R2 R15 R14 R13 R12 R11 R10
+ R9 R8 R7 R6 R5 R4 R2 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -87,7 +109,7 @@
 ### [2132727044](2132727044-Default.vso.md)
 > Versions
 
- R9 R15 R14 R13 R12 R11 R10
+ R9 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -99,7 +121,7 @@
 ### [1617091456](1617091456-Digital-gpio.vso.md)
 > Versions
 
- R15 R14 R13
+ R16 R15 R14 R13
 
 
 
@@ -116,7 +138,7 @@
 
 > Settings and translation compatible with:
 
-* [1617091456](1617091456-Digital-gpio.vso.md) R15 R14 R13
+* [1617091456](1617091456-Digital-gpio.vso.md) R16 R15 R14 R13
 
 ## Empty
 
@@ -126,7 +148,7 @@
 ### [4058561182](4058561182-Empty.vso.md)
 > Versions
 
- R9 R8 R7 R6 R5 R4 R2 R15 R14 R13 R12 R11 R10
+ R9 R8 R7 R6 R5 R4 R2 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -138,7 +160,7 @@
 ### [1815337626](1815337626-Gnss-autonomous-test.vso.md)
 > Versions
 
- R9 R15 R14 R13 R12 R11 R10
+ R9 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -168,7 +190,7 @@
 ### [1727723267](1727723267-Heartstarter.vso.md)
 > Versions
 
- R9 R15 R14 R13 R12 R11 R10
+ R9 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -176,6 +198,18 @@
 > Versions
 
  R8 R7
+
+
+
+## IR-proximity
+
+> Documented CRCs
+
+
+### [2355202201](2355202201-IR-proximity.vso.md)
+> Versions
+
+ R16
 
 
 
@@ -257,6 +291,13 @@
 ## Lifefinder-wifi
 
 > Documented CRCs
+
+
+### [2274655646](2274655646-Lifefinder-wifi.vso.md)
+> Versions
+
+ R16
+
 
 
 ### [3605076574](3605076574-Lifefinder-wifi.vso.md)
@@ -344,7 +385,7 @@
 ### [4120107816](4120107816-Linkcheck.vso.md)
 > Versions
 
- R9 R15 R14 R13 R12 R11 R10
+ R9 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -356,7 +397,7 @@
 ### [2297466901](2297466901-Motion-measure.vso.md)
 > Versions
 
- R9 R15 R14 R13 R12 R11 R10
+ R9 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -368,7 +409,7 @@
 ### [1121182195](1121182195-Puck-radar-fast-rejoin.vso.md)
 > Versions
 
- R15 R14 R13
+ R16 R15 R14 R13
 
 
 
@@ -424,7 +465,7 @@
 ### [561898260](561898260-Puck-radar.vso.md)
 > Versions
 
- R15 R14 R13
+ R16 R15 R14 R13
 
 
 
@@ -455,7 +496,7 @@
 ### [2944831603](2944831603-Radiotest-measure.vso.md)
 > Versions
 
- R15 R14
+ R16 R15 R14
 
 
 
@@ -474,7 +515,7 @@
 ### [2230085897](2230085897-Radiotest.vso.md)
 > Versions
 
- R15 R14 R13 R12
+ R16 R15 R14 R13 R12
 
 
 
@@ -486,7 +527,7 @@
 ### [1047034189](1047034189-Sniffer.vso.md)
 > Versions
 
- R15 R14 R13 R12
+ R16 R15 R14 R13 R12
 
 
 
@@ -523,6 +564,13 @@
 > Versions
 
  R8
+
+
+
+### [3241343967](3241343967-Square-air.vso.md)
+> Versions
+
+ R16
 
 
 
@@ -604,6 +652,13 @@
 ## Square-comfort-sound
 
 > Documented CRCs
+
+
+### [1355326083](1355326083-Square-comfort-sound.vso.md)
+> Versions
+
+ R16
+
 
 
 ### [1742321452](1742321452-Square-comfort-sound.vso.md)
@@ -706,7 +761,7 @@
 ### [2266505222](2266505222-Square-comfort.vso.md)
 > Versions
 
- R15
+ R16 R15
 
 
 
@@ -723,7 +778,7 @@
 
 > Settings and translation compatible with:
 
-* [2266505222](2266505222-Square-comfort.vso.md) R15
+* [2266505222](2266505222-Square-comfort.vso.md) R16 R15
 
 ### [3264322911](3264322911-Square-comfort.vso.md)
 > Versions
@@ -791,7 +846,7 @@
 ### [1711284143](1711284143-Tracker-stats.vso.md)
 > Versions
 
- R9 R15 R14 R13 R12 R11 R10
+ R9 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -822,7 +877,7 @@
 ### [489186430](489186430-Tracker.vso.md)
 > Versions
 
- R15 R14 R13 R12 R11 R10
+ R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -839,7 +894,7 @@
 
 > Settings and translation compatible with:
 
-* [489186430](489186430-Tracker.vso.md) R15 R14 R13 R12 R11 R10
+* [489186430](489186430-Tracker.vso.md) R16 R15 R14 R13 R12 R11 R10
 
 ## US-Frequency-hop-test
 
@@ -849,7 +904,7 @@
 ### [3999624005](3999624005-US-Frequency-hop-test.vso.md)
 > Versions
 
- R15 R14 R13 R12
+ R16 R15 R14 R13 R12
 
 
 
