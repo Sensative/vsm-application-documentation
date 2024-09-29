@@ -183,11 +183,11 @@ High level for distance alarm
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: Average Distance Interval
 > - Unit: Minutes
-> - Default 1440
-> - Min: 0
+> - Default: 1440
+> - Min: 2
 > - Max: 32767
 
-Minutes for average distance reporting
+Minutes for average distance calculation
 
 
 ### Input averageDistanceLowAlarmLevel (unconfirmed)
@@ -203,7 +203,7 @@ Minutes for average distance reporting
 > - Min: 0
 > - Max: 32767
 
-Low level for distance alarm
+Low level for distance alarm. 0 means disabled.
 
 
 ### Input distanceHysteresis (unconfirmed)
