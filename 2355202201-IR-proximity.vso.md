@@ -136,6 +136,7 @@ Confirmed uplink which will indicate if one of the set limits are exceeded
 > - Request current value: Send a3 (hex) on lora port 2
 > - Update value to 1: Send a3 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - UI: Average Temp Interval
 > - Unit: Hours
 > - Min: 1h
 > - Max: 127h
@@ -215,10 +216,11 @@ How much of a change from previously reported value that is required to uplink d
 > - Request current value: Send a5 (hex) on lora port 2
 > - Update value to 1: Send a5 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - UI: Temperature Alarm High Level
 > - Unit: C
-> - Min: -127C
-> - Max: 127C
-> - Default: 60C (near product max ambient temperature)
+> - Min: -127
+> - Max: 127
+> - Default: 60
 
 The high level for temperature alarm. Set higher than tempAlarmLowLevel or the alarm function is disabled.
 
@@ -230,10 +232,11 @@ The high level for temperature alarm. Set higher than tempAlarmLowLevel or the a
 > - Request current value: Send a4 (hex) on lora port 2
 > - Update value to 1: Send a4 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - UI: Temperature Alarm Low Level
 > - Unit: C
-> - Min: -128 C
-> - Max: 126 C
-> - Default: 2 C (near freezing point)
+> - Min: -128
+> - Max: 126
+> - Default: 2
 
 The low level for temperature alarm. Set lower than tempAlarmHighLevel or the alarm function is disabled.
 
@@ -245,10 +248,11 @@ The low level for temperature alarm. Set lower than tempAlarmHighLevel or the al
 > - Request current value: Send b3 (hex) on lora port 2
 > - Update value to 1: Send b3 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - UI: Temperature Hysteresis
 > - Unit:C
-> - Min: 0.1C
-> - Max: 127C
-> - Default: 2C
+> - Min: 0.1
+> - Max: 127
+> - Default: 2
 
 The hysteresis for temperature readings. If temperature changes lower than this value are detected
 no report will be generated (saves battery and radio air time).
