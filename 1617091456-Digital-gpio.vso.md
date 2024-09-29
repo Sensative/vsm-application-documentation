@@ -112,6 +112,14 @@ Confirmed uplink which will indicate if one of the set limits are exceeded
 > - Request current value: Send 81 (hex) on lora port 2
 > - Update value to 1: Send 81 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> UI: Activate Digital Output
+> Min: 0
+> Max: 1
+> Default: 0
+> Unit: bit
+
+When this device is used to drive a digital output (actuator) this value determines the value.
+
 
 ### Input averageTempIntervalHours (unconfirmed)
 
@@ -142,9 +150,9 @@ The interval at which average temperature is uploaded (provided that it has chan
 > - Default: 1
 
 The number of LoRaWan network identities this device shall have.
+In case the device needs to rejoin, it will iteratively attempt join in priority order from 0 to this value.
 
-> The identities are based on the network key, but replacing the last digit of the network key with hexadecimal
-value 0-F. In case the device needs to rejoin, it will iteratively attempt join in priority order 0 to roamNetworkCount-1.
+> The device replaces the last digit of the network key with hexadecimal value 0-F when joining.
 
 
 ### Input tempAlarmHighLevel (unconfirmed)

@@ -232,9 +232,9 @@ to send an uplink with new measures.
 > - Default: 1
 
 The number of LoRaWan network identities this device shall have.
+In case the device needs to rejoin, it will iteratively attempt join in priority order from 0 to this value.
 
-> The identities are based on the network key, but replacing the last digit of the network key with hexadecimal
-value 0-F. In case the device needs to rejoin, it will iteratively attempt join in priority order 0 to roamNetworkCount-1.
+> The device replaces the last digit of the network key with hexadecimal value 0-F when joining.
 
 
 ## Application Sensors (logical sensors)
