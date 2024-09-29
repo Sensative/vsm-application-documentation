@@ -148,10 +148,11 @@ Some fluctuations in voltage is normal in operation, do not react to a single or
 > - Request current value: Send b0 (hex) on lora port 2
 > - Update value to 1: Send b0 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - UI: Radar Amplitude Hysteresis
 > - Unit: Radar Echo Amplitude
 > - Default: 250
 > - Max: 32767
-> - Min: 0 (no hysteresis)
+> - Min: 0
 
 The amplitude hysteresis value is how much the radar amplitude must change in order for the device
 to send an uplink with new measures.
@@ -164,9 +165,10 @@ to send an uplink with new measures.
 > - Request current value: Send b3 (hex) on lora port 2
 > - Update value to 1: Send b3 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
-> - Unit: Minutes
+> - UI: Distance Alarm High Level
+> - Unit: Meters
 > - Default: 10
-> - Min: 0 (off)
+> - Min: 0
 > - Max: 327.67
 
 High level for distance alarm
@@ -179,12 +181,13 @@ High level for distance alarm
 > - Request current value: Send b1 (hex) on lora port 2
 > - Update value to 1: Send b1 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - UI: Average Distance Interval
 > - Unit: Minutes
-> - Default 24*60 (24 hours)
-> - Min: 0 (off)
+> - Default 1440
+> - Min: 0
 > - Max: 32767
 
-Minutes for average distance calculation
+Minutes for average distance reporting
 
 
 ### Input averageDistanceLowAlarmLevel (unconfirmed)
@@ -194,9 +197,10 @@ Minutes for average distance calculation
 > - Request current value: Send b2 (hex) on lora port 2
 > - Update value to 1: Send b2 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - UI: Distance Alarm Low Level
 > - Unit: Meters
 > - Default: 0
-> - Min: 0 (off)
+> - Min: 0
 > - Max: 32767
 
 Low level for distance alarm
@@ -209,10 +213,11 @@ Low level for distance alarm
 > - Request current value: Send a1 (hex) on lora port 2
 > - Update value to 1: Send a1 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - UI: Radar Distance Hysteresis
 > - Unit: m
 > - Default: 0.10
 > - Max: 1.27
-> - Min: 0.00 (no hysteresis)
+> - Min: 0.00
 
 The distanceHysteresis value is how much the radar distance must change in order for the device
 to send an uplink with new measures.
