@@ -43,7 +43,7 @@ Battery remaining esimates are measured on a weekly basis.
 
 > - Size: 2 bytes
 > - Translation factor: 0.01
-> - Unit:C
+> - Unit: C
 
 The average temperature uploaded with a resolution 0.01C.
 
@@ -125,10 +125,11 @@ Temperature alarm state
 > - Request current value: Send a0 (hex) on lora port 2
 > - Update value to 1: Send a0 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - UI: Temperature Interval
 > - Unit: Minutes
 > - Min: 2
 > - Max: 127
-> - Default: 60 minutes
+> - Default: 60
 
 The interval at which average temperature is uploaded (provided that it has changed more than tempHysteresis).
 
@@ -156,9 +157,10 @@ The interval at which average temperature is uploaded (provided that it has chan
 > - Request current value: Send a2 (hex) on lora port 2
 > - Update value to 1: Send a2 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - UI: Temperature High Alarm Level
 > - Unit: C
-> - Min: -127C
-> - Max: 127C
+> - Min: -50
+> - Max: 80C
 > - Default: 60C (near product max ambient temperature)
 
 The high level for temperature alarm. Set higher than tempAlarmLowLevel or the alarm function is disabled.
@@ -171,10 +173,11 @@ The high level for temperature alarm. Set higher than tempAlarmLowLevel or the a
 > - Request current value: Send a1 (hex) on lora port 2
 > - Update value to 1: Send a1 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - UI: Temperature Low Alarm Level
 > - Unit: C
-> - Min: -128 C
-> - Max: 126 C
-> - Default: 2 C (near freezing point)
+> - Min: -50 C
+> - Max: 70 C
+> - Default: 2
 
 The low level for temperature alarm. Set lower than tempAlarmHighLevel or the alarm function is disabled.
 
@@ -186,10 +189,11 @@ The low level for temperature alarm. Set lower than tempAlarmHighLevel or the al
 > - Request current value: Send b2 (hex) on lora port 2
 > - Update value to 1: Send b2 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
-> - Unit:C
-> - Min: 0.1C
-> - Max: 127C
-> - Default: 0.5C
+> - UI: Temperature Hysteresis
+> - Unit: C
+> - Min: 0.1
+> - Max: 127
+> - Default: 0.5
 
 The hysteresis for temperature readings. If temperature changes lower than this value are detected
 no report will be generated (saves battery and radio air time).
@@ -239,47 +243,34 @@ Measured voltage on the board.
 ## Application Registers used (device controls)
 
 
-### Register BATTERY_PERCENT
-
-> - Request current value: Send f4 (hex) on lora port 2
-Percent of (non-zero) battery capacity used
-> - Mode: R-
-> - Unit: mAh
-
 ### Register GPS_TIME_MAX_AGE
 
 > - Request current value: Send cd (hex) on lora port 2
+> - UI:   Device Time Max Age
 > - Mode: RW
 > - Unit: Seconds
 > - Default: 0
 > - Min: 0
 > - Max: 4294967295
-Read/Set GPS time maximum age. Reads 0 if no GPS time is set.
-Once this maximum age has passed the device will no longer trust its GPS_TIME.
+Once this maximum age has passed the device will no longer trust its GPS_TIME and GNSS scans become autonomous.
 Also, it will start emitting DEVICE_TIME requests on the LoRaWan network once 80% of this time has passed.
+Typically the clock drift is a few seconds per 24 hrs. Gps time should be correct within 30s for good assisted scans.
+Outdoor use tends to increase clock drift.
 
 
 ### Register LINKCHECK_TIME
 
 > - Request current value: Send d0 (hex) on lora port 2
-> Mode: RW
-> Unit: seconds
-> Min: 300
-> Max: 2592000
-> Default: 86400
-Once 80% of this time has passed, the device will make all messages confirmed until it gets a confirmation.
-Should this time pass without the device hearing a confirmed response, it will go to DEVICE_STATE_ACTIVE_UNJOINED.
-
-
-### Register STREAMING_RATE
-
-> - Request current value: Send d6 (hex) on lora port 2
+> - UI:   Downlink Timeout
 > - Mode: RW
 > - Unit: Seconds
+> - Min: 300
+> - Max: 2592000
+> - Default: 86400
+Once 80% of this time has passed, the device will make all messages confirmed until it gets a downlink.
+Should this time pass without the device hearing a confirmed response, it will go to unjoined state.
+In the unjoined state the applications specified rejoin method will be used.
 
-The average rate at which the device streams data, e.g. delay between lora transactions.
-Actual rate is randomized at this value +- 50% to avoid potential repeat collisions, for instance if the device is
-triggered by sound or acceleration.
 
 ## Meta-Information for this application version
 

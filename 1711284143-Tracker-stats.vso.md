@@ -129,53 +129,34 @@ Measured voltage on the board.
 ## Application Registers used (device controls)
 
 
-### Register BATTERY_PERCENT
-
-> - Request current value: Send f4 (hex) on lora port 2
-Percent of (non-zero) battery capacity used
-> - Mode: R-
-> - Unit: mAh
-
-### Register GPS_TIME
-
-> - Request current value: Send c7 (hex) on lora port 2
-> - Mode: R-
-> - Unit: Seconds
-
-Current device time (GPS epoch)
-
-
 ### Register GPS_TIME_MAX_AGE
 
 > - Request current value: Send cd (hex) on lora port 2
+> - UI:   Device Time Max Age
 > - Mode: RW
 > - Unit: Seconds
 > - Default: 0
 > - Min: 0
 > - Max: 4294967295
-Read/Set GPS time maximum age. Reads 0 if no GPS time is set.
-Once this maximum age has passed the device will no longer trust its GPS_TIME.
+Once this maximum age has passed the device will no longer trust its GPS_TIME and GNSS scans become autonomous.
 Also, it will start emitting DEVICE_TIME requests on the LoRaWan network once 80% of this time has passed.
+Typically the clock drift is a few seconds per 24 hrs. Gps time should be correct within 30s for good assisted scans.
+Outdoor use tends to increase clock drift.
 
 
 ### Register LINKCHECK_TIME
 
 > - Request current value: Send d0 (hex) on lora port 2
-> Mode: RW
-> Unit: seconds
-> Min: 300
-> Max: 2592000
-> Default: 86400
-Once 80% of this time has passed, the device will make all messages confirmed until it gets a confirmation.
-Should this time pass without the device hearing a confirmed response, it will go to DEVICE_STATE_ACTIVE_UNJOINED.
+> - UI:   Downlink Timeout
+> - Mode: RW
+> - Unit: Seconds
+> - Min: 300
+> - Max: 2592000
+> - Default: 86400
+Once 80% of this time has passed, the device will make all messages confirmed until it gets a downlink.
+Should this time pass without the device hearing a confirmed response, it will go to unjoined state.
+In the unjoined state the applications specified rejoin method will be used.
 
-
-### Register RSSI
-
-> - Request current value: Send d9 (hex) on lora port 2
-RSSI for last downlink / join response
-> - Mode: R-
-> - Unit: dBm
 
 ### Register SATELLITE_COUNT
 

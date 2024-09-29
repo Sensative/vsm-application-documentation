@@ -1,5 +1,5 @@
 
-# Application Sniffer
+# Application Airport-int-R6-fw-patch
 
 
 ## Application Outputs
@@ -11,15 +11,6 @@
 ## Application Sensors (logical sensors)
 
 
-### Sensor BUTTON
-
-> - Request current value: Send 01 (hex) on lora port 2
-> - Mode: R-
-> - Type: Enumeration
-
-Physical button readout sensor
-
-
 ## Application Registers used (device controls)
 
 
@@ -29,11 +20,11 @@ Physical button readout sensor
 
 ### Application CRC (decimal)
 
- > 1047034189
+ > 4058561182
 
 ### Application Sensor Mask (hex)
 
- > 2
+ > 0
 
 ### Map Data for vsm-translator-open-source
 

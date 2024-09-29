@@ -53,13 +53,6 @@ Physical button readout sensor
 ## Application Registers used (device controls)
 
 
-### Register BATTERY_PERCENT
-
-> - Request current value: Send f4 (hex) on lora port 2
-Percent of (non-zero) battery capacity used
-> - Mode: R-
-> - Unit: mAh
-
 ### Register SATELLITE_COUNT
 
 > - Request current value: Send ce (hex) on lora port 2

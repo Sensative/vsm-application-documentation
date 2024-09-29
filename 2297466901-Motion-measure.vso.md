@@ -289,35 +289,20 @@ NFC field present sensor (logical)
 ## Application Registers used (device controls)
 
 
-### Register BATTERY_PERCENT
-
-> - Request current value: Send f4 (hex) on lora port 2
-Percent of (non-zero) battery capacity used
-> - Mode: R-
-> - Unit: mAh
-
 ### Register GPS_TIME_MAX_AGE
 
 > - Request current value: Send cd (hex) on lora port 2
+> - UI:   Device Time Max Age
 > - Mode: RW
 > - Unit: Seconds
 > - Default: 0
 > - Min: 0
 > - Max: 4294967295
-Read/Set GPS time maximum age. Reads 0 if no GPS time is set.
-Once this maximum age has passed the device will no longer trust its GPS_TIME.
+Once this maximum age has passed the device will no longer trust its GPS_TIME and GNSS scans become autonomous.
 Also, it will start emitting DEVICE_TIME requests on the LoRaWan network once 80% of this time has passed.
+Typically the clock drift is a few seconds per 24 hrs. Gps time should be correct within 30s for good assisted scans.
+Outdoor use tends to increase clock drift.
 
-
-### Register STREAMING_RATE
-
-> - Request current value: Send d6 (hex) on lora port 2
-> - Mode: RW
-> - Unit: Seconds
-
-The average rate at which the device streams data, e.g. delay between lora transactions.
-Actual rate is randomized at this value +- 50% to avoid potential repeat collisions, for instance if the device is
-triggered by sound or acceleration.
 
 ## Meta-Information for this application version
 

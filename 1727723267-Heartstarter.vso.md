@@ -254,34 +254,19 @@ Measured voltage on the board.
 ## Application Registers used (device controls)
 
 
-### Register BATTERY_PERCENT
-
-> - Request current value: Send f4 (hex) on lora port 2
-Percent of (non-zero) battery capacity used
-> - Mode: R-
-> - Unit: mAh
-
 ### Register LINKCHECK_TIME
 
 > - Request current value: Send d0 (hex) on lora port 2
-> Mode: RW
-> Unit: seconds
-> Min: 300
-> Max: 2592000
-> Default: 86400
-Once 80% of this time has passed, the device will make all messages confirmed until it gets a confirmation.
-Should this time pass without the device hearing a confirmed response, it will go to DEVICE_STATE_ACTIVE_UNJOINED.
-
-
-### Register STREAMING_RATE
-
-> - Request current value: Send d6 (hex) on lora port 2
+> - UI:   Downlink Timeout
 > - Mode: RW
 > - Unit: Seconds
+> - Min: 300
+> - Max: 2592000
+> - Default: 86400
+Once 80% of this time has passed, the device will make all messages confirmed until it gets a downlink.
+Should this time pass without the device hearing a confirmed response, it will go to unjoined state.
+In the unjoined state the applications specified rejoin method will be used.
 
-The average rate at which the device streams data, e.g. delay between lora transactions.
-Actual rate is randomized at this value +- 50% to avoid potential repeat collisions, for instance if the device is
-triggered by sound or acceleration.
 
 ## Meta-Information for this application version
 
