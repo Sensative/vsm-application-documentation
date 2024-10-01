@@ -1,8 +1,6 @@
 
 # Application Square-comfort
 
-## Introduction
-
 The comfort application reads temperature and humidity values on regular intervals and sends updates when values change more than a set treshold value.
 
 ## Roaming module

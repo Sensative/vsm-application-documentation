@@ -1,6 +1,7 @@
 
 # Application Square-comfort-sound
 
+Experience the power of intelligent sound detection with Square-comfort-sound. The device captures precise sound levels, enabling real-time monitoring and alerts when noise thresholds are exceeded. Whether you need to track ambient sound for environmental control or detect sudden noise spikes, our solution ensures accuracy and reliability. With customizable thresholds and alarms, the device adapts to your specific needs, making it ideal for both indoor and outdoor use. Enjoy seamless integration with LoRaWAN networks, long-lasting battery life, and flexible reporting intervals. Elevate your sound monitoring with Square-comfort-sound.
 
 ## Roaming module
 
