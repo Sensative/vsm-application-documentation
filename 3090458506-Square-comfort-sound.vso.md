@@ -298,6 +298,7 @@ In case the device needs to rejoin, it will iteratively attempt join in priority
 > - Request current value: Send aa (hex) on lora port 2
 > - Update value to 1: Send aa 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - UI: Sound Alarm Timeout
 > - Unit: minutes
 > - Default: 5
 > - Max: 127
@@ -318,6 +319,7 @@ During this time the sound alarm will not retrigger or reset.
 > - Request current value: Send a9 (hex) on lora port 2
 > - Update value to 1: Send a9 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - UI: Sound Average Time
 > - Unit: Minutes
 > - Default: 15
 > - Min: 1
@@ -331,6 +333,7 @@ The number of minutes between average sound level calculation.
 > - Request current value: Send a8 (hex) on lora port 2
 > - Update value to 1: Send a8 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - UI: Minimum Sound Level
 > - Unit: dB (RMS)
 > - Min: 45 dB
 > - Max: 92 dB
@@ -347,9 +350,10 @@ See soundThreshold for more information.
 > - Request current value: Send a7 (hex) on lora port 2
 > - Update value to 1: Send a7 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - UI: Sound Threshold
 > - Unit: dB (RMS)
-> - Min: 6dB
-> - Max: 18dB
+> - Min: 0
+> - Max: 18
 > - Or set to 0 for internally polled sensor operation
 > - Default: 0
 
@@ -357,6 +361,7 @@ This can be set to enable a wake-on-sound operation mode, where the threshold va
 will make the device wake up automatically when the sound level changes more than the
 set dB value (and above the soundMinLevel). This has the advantage of detecting sudden sounds, but has the disadvantage
 of an increased power consumption. The default 0 is recommended in most applications.
+The effective range is 6-18dB
 
 
 ### Input tempAlarmHighLevel (unconfirmed)
