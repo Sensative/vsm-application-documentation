@@ -190,7 +190,7 @@ Reads as the number of satellites seen in the last GNSS scan.
 
 ### Application CRC (decimal)
 
- > 1711284143
+ > 2358904552
 
 ### Application Sensor Mask (hex)
 
