@@ -480,16 +480,6 @@ Typically the clock drift is a few seconds per 24 hrs. Gps time should be correc
 Outdoor use tends to increase clock drift.
 
 
-### Register LIGHT_SCALING
-
-> - Request current value: Send ee (hex) on lora port 2
-Light compensation for plastics and placement (applies only to units with Light sensor)
-> - UI:   Light Compensation
-> - Mode: RW
-> - Unit: %
-> - Min:  1
-> - Max:  10000
-
 ## Meta-Information for this application version
 
 
