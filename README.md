@@ -40,7 +40,7 @@
 ### [4058561182](4058561182-Airport-int-R6-fw-patch.vso.md)
 > Versions
 
- R9 R8 R7 R6 R5 R4 R24 R23 R22 R21 R20 R2 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R8 R7 R6 R5 R4 R25 R24 R23 R22 R21 R20 R2 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -107,6 +107,13 @@
 
 
 
+### [3094986737](3094986737-Airport-int.vso.md)
+> Versions
+
+ R25
+
+
+
 ### [3169307235](3169307235-Airport-int.vso.md)
 > Versions
 
@@ -144,7 +151,7 @@
 ### [1319111708](1319111708-Compliance-test.vso.md)
 > Versions
 
- R9 R8 R7 R6 R5 R4 R24 R23 R22 R21 R20 R2 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R8 R7 R6 R5 R4 R25 R24 R23 R22 R21 R20 R2 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -156,7 +163,7 @@
 ### [2132727044](2132727044-Default.vso.md)
 > Versions
 
- R9 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -168,7 +175,7 @@
 ### [1368947946](1368947946-Digital-gpio.vso.md)
 > Versions
 
- R24
+ R25 R24
 
 
 
@@ -202,7 +209,7 @@
 ### [4058561182](4058561182-Empty.vso.md)
 > Versions
 
- R9 R8 R7 R6 R5 R4 R24 R23 R22 R21 R20 R2 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R8 R7 R6 R5 R4 R25 R24 R23 R22 R21 R20 R2 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -214,7 +221,7 @@
 ### [1815337626](1815337626-Gnss-autonomous-test.vso.md)
 > Versions
 
- R9 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -244,7 +251,7 @@
 ### [1727723267](1727723267-Heartstarter.vso.md)
 > Versions
 
- R9 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -269,12 +276,12 @@
 
 > Settings and translation compatible with:
 
-* [3338740039](3338740039-IR-proximity.vso.md) R24 R23 R22
+* [3338740039](3338740039-IR-proximity.vso.md) R25 R24 R23 R22
 
 ### [3338740039](3338740039-IR-proximity.vso.md)
 > Versions
 
- R24 R23 R22
+ R25 R24 R23 R22
 
 
 
@@ -296,7 +303,7 @@
 
 > Settings and translation compatible with:
 
-* [501251891](501251891-Lifefinder-alternating.vso.md) R24
+* [501251891](501251891-Lifefinder-alternating.vso.md) R25 R24
 
 * [1936564868](1936564868-Lifefinder-alternating.vso.md) R23
 
@@ -309,14 +316,14 @@
 
 > Settings and translation compatible with:
 
-* [501251891](501251891-Lifefinder-alternating.vso.md) R24
+* [501251891](501251891-Lifefinder-alternating.vso.md) R25 R24
 
 * [1188116463](1188116463-Lifefinder-alternating.vso.md) R22
 
 ### [501251891](501251891-Lifefinder-alternating.vso.md)
 > Versions
 
- R24
+ R25 R24
 
 
 
@@ -340,7 +347,7 @@
 
 > Settings and translation compatible with:
 
-* [58620517](58620517-Lifefinder-gnss.vso.md) R24
+* [58620517](58620517-Lifefinder-gnss.vso.md) R25 R24
 
 * [2907035249](2907035249-Lifefinder-gnss.vso.md) R22
 
@@ -353,14 +360,14 @@
 
 > Settings and translation compatible with:
 
-* [58620517](58620517-Lifefinder-gnss.vso.md) R24
+* [58620517](58620517-Lifefinder-gnss.vso.md) R25 R24
 
 * [2566472474](2566472474-Lifefinder-gnss.vso.md) R23
 
 ### [58620517](58620517-Lifefinder-gnss.vso.md)
 > Versions
 
- R24
+ R25 R24
 
 
 
@@ -453,7 +460,7 @@
 ### [3862345097](3862345097-Lifefinder-wifi-pos-tester.vso.md)
 > Versions
 
- R24
+ R25 R24
 
 
 
@@ -465,7 +472,7 @@
 ### [1920568829](1920568829-Lifefinder-wifi.vso.md)
 > Versions
 
- R24
+ R25 R24
 
 
 
@@ -511,7 +518,7 @@
 
 * [685004179](685004179-Lifefinder-wifi.vso.md) R22
 
-* [1920568829](1920568829-Lifefinder-wifi.vso.md) R24
+* [1920568829](1920568829-Lifefinder-wifi.vso.md) R25 R24
 
 ### [685004179](685004179-Lifefinder-wifi.vso.md)
 > Versions
@@ -524,7 +531,7 @@
 
 * [493404408](493404408-Lifefinder-wifi.vso.md) R23
 
-* [1920568829](1920568829-Lifefinder-wifi.vso.md) R24
+* [1920568829](1920568829-Lifefinder-wifi.vso.md) R25 R24
 
 ### [691254335](691254335-Lifefinder-wifi.vso.md)
 > Versions
@@ -593,7 +600,7 @@
 ### [4120107816](4120107816-Linkcheck.vso.md)
 > Versions
 
- R9 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -605,7 +612,7 @@
 ### [2297466901](2297466901-Motion-measure.vso.md)
 > Versions
 
- R9 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -673,7 +680,7 @@
 ### [561898260](561898260-Puck-radar.vso.md)
 > Versions
 
- R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13
+ R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13
 
 
 
@@ -711,7 +718,7 @@
 ### [3550461869](3550461869-Radiotest-measure.vso.md)
 > Versions
 
- R24 R23
+ R25 R24 R23
 
 
 
@@ -737,7 +744,7 @@
 ### [78751172](78751172-Radiotest.vso.md)
 > Versions
 
- R24 R23
+ R25 R24 R23
 
 
 
@@ -749,7 +756,7 @@
 ### [1047034189](1047034189-Sniffer.vso.md)
 > Versions
 
- R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12
+ R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12
 
 
 
@@ -792,7 +799,7 @@
 ### [3241343967](3241343967-Square-air.vso.md)
 > Versions
 
- R24 R23 R22 R21 R20 R19 R18 R16
+ R25 R24 R23 R22 R21 R20 R19 R18 R16
 
 
 
@@ -968,7 +975,7 @@
 ### [3437792987](3437792987-Square-comfort-sound.vso.md)
 > Versions
 
- R24 R23
+ R25 R24 R23
 
 
 
@@ -997,7 +1004,7 @@
 ### [2266505222](2266505222-Square-comfort.vso.md)
 > Versions
 
- R24 R23 R22 R21 R20 R19 R18 R16 R15
+ R25 R24 R23 R22 R21 R20 R19 R18 R16 R15
 
 
 
@@ -1014,7 +1021,7 @@
 
 > Settings and translation compatible with:
 
-* [2266505222](2266505222-Square-comfort.vso.md) R24 R23 R22 R21 R20 R19 R18 R16 R15
+* [2266505222](2266505222-Square-comfort.vso.md) R25 R24 R23 R22 R21 R20 R19 R18 R16 R15
 
 ### [3264322911](3264322911-Square-comfort.vso.md)
 > Versions
@@ -1082,7 +1089,7 @@
 ### [1711284143](1711284143-Tracker-stats.vso.md)
 > Versions
 
- R9 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -1113,7 +1120,7 @@
 ### [2029355788](2029355788-Tracker.vso.md)
 > Versions
 
- R24 R23 R22
+ R25 R24 R23 R22
 
 
 
@@ -1147,7 +1154,7 @@
 ### [3999624005](3999624005-US-Frequency-hop-test.vso.md)
 > Versions
 
- R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12
+ R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12
 
 
 
