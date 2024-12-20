@@ -1,5 +1,5 @@
 
-# Application Motion-measure
+# Application Motion-measure-unconf
 
 
 ## Lower Power Temperature Sensing and Reporting Module
@@ -54,27 +54,27 @@ Battery remaining esimates are measured on a weekly basis.
 ## Application Outputs
 
 
-### Output acc (confirmed)
+### Output acc (unconfirmed)
 
 > - Size: 2 bytes
 > - Translation factor: 0.001
 Total acceleration
 
-### Output accX (confirmed)
+### Output accX (unconfirmed)
 
 > - Size: 2 bytes
 > - Translation factor: 0.001
 X acceleration
 > - Unit: m/s/s
 
-### Output accY (confirmed)
+### Output accY (unconfirmed)
 
 > - Size: 2 bytes
 > - Translation factor: 0.001
 Y acceleration
 > - Unit: m/s/s
 
-### Output accZ (confirmed)
+### Output accZ (unconfirmed)
 
 > - Size: 2 bytes
 > - Translation factor: 0.001
@@ -177,8 +177,8 @@ Enable barometric pressure uploading
 
 > - Size: 2 bytes
 > - Translation factor: 0.001
-> - Request current value: Send b3 (hex) on lora port 2
-> - Update value to 1: Send b3 00 00 00 01 (hex) on lora port 2
+> - Request current value: Send b7 (hex) on lora port 2
+> - Update value to 1: Send b7 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 Wakeup sensitivity
 
@@ -357,7 +357,7 @@ Outdoor use tends to increase clock drift.
 
 ### Application CRC (decimal)
 
- > 106634607
+ > 1240817801
 
 ### Application Sensor Mask (hex)
 
@@ -373,12 +373,12 @@ M input averageTempIntervalHours 160 0xa0  1
 M output tempAlarm 128 0x80  1
 M input tempAlarmLowLevel 161 0xa1  1
 M input tempAlarmHighLevel 162 0xa2  1
-M output accX 144 0x90  0.001
-M output accY 145 0x91  0.001
-M output accZ 146 0x92  0.001
-M output acc 147 0x93  0.001
+M output accX 179 0xb3  0.001
+M output accY 180 0xb4  0.001
+M output accZ 181 0xb5  0.001
+M output acc 182 0xb6  0.001
 M output pressure_hPa 184 0xb8  0.01
-M input motionThreshold_m_s2 179 0xb3  0.001
+M input motionThreshold_m_s2 183 0xb7  0.001
 M input sampleInterval_s 163 0xa3  1
 M input sampleCountMax 164 0xa4  1
 M input enableBarometer 165 0xa5  1
