@@ -45,8 +45,9 @@ the sensor will upload a new averageTemp value.
 
 ## Slow Tracker Module
 
-This module enables slow tracking through WIFI scanning or GNSS scans.
-For proper functioning the GNSS almanac and device time needs to be kept up-to-date, for instance through NFC application or through enabling the dots-mqtt-client
+This module enables slow tracking through WIFI scanning or GNSS scans (if device supports GNSS scanning).
+For proper functioning of GNSS enabled devices, the GNSS almanac and device time needs to be kept up-to-date,
+for instance through NFC application or through enabling the vsm-mqtt-client (https:
 
 
 When the button is pressed, a wifi scan will be done.
@@ -55,7 +56,7 @@ When the button is pressed, a wifi scan will be done.
 Daily when the device is joined, it will attempt a wifi scan.
 
 
-Weekly, when the device is joined, it will attempt a GNSS scan.
+Weekly, when the device is joined, it will attempt a GNSS scan (provided the device supports GNSS scanning).
 
 
 ## Daily Rejoin Module
