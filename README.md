@@ -40,7 +40,7 @@
 ### [4058561182](4058561182-Airport-int-R6-fw-patch.vso.md)
 > Versions
 
- R9 R8 R7 R6 R5 R4 R25 R24 R23 R22 R21 R20 R2 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R8 R7 R6 R5 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -151,7 +151,7 @@
 ### [1319111708](1319111708-Compliance-test.vso.md)
 > Versions
 
- R9 R8 R7 R6 R5 R4 R25 R24 R23 R22 R21 R20 R2 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R8 R7 R6 R5 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -209,7 +209,7 @@
 ### [4058561182](4058561182-Empty.vso.md)
 > Versions
 
- R9 R8 R7 R6 R5 R4 R25 R24 R23 R22 R21 R20 R2 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R8 R7 R6 R5 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -224,17 +224,6 @@
  R9 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
-
-### [3099888482](3099888482-Gnss-autonomous-test.vso.md)
-> Versions
-
- R4 R2
-
-
-
-> Settings and translation compatible with:
-
-* [2631574295](2631574295-dots,gnss-autonomous-scan-test.vso.md) R1
 
 ### [584652534](584652534-Gnss-autonomous-test.vso.md)
 > Versions
@@ -593,7 +582,7 @@
 ### [3086277881](3086277881-Linkcheck.vso.md)
 > Versions
 
- R8 R7 R6 R5 R4 R2
+ R8 R7 R6 R5
 
 
 
@@ -730,7 +719,7 @@
 ### [2182170139](2182170139-Radiotest.vso.md)
 > Versions
 
- R9 R8 R7 R6 R5 R4 R2 R11 R10
+ R9 R8 R7 R6 R5 R11 R10
 
 
 
@@ -763,7 +752,7 @@
 ### [3509502476](3509502476-Sniffer.vso.md)
 > Versions
 
- R9 R8 R7 R6 R5 R4 R2 R11 R10
+ R9 R8 R7 R6 R5 R11 R10
 
 
 
