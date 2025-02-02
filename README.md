@@ -40,7 +40,7 @@
 ### [4058561182](4058561182-Airport-int-R6-fw-patch.vso.md)
 > Versions
 
- R9 R8 R7 R6 R5 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R8 R7 R6 R5 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -110,7 +110,7 @@
 ### [3094986737](3094986737-Airport-int.vso.md)
 > Versions
 
- R25
+ R26 R25
 
 
 
@@ -151,7 +151,7 @@
 ### [1319111708](1319111708-Compliance-test.vso.md)
 > Versions
 
- R9 R8 R7 R6 R5 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R8 R7 R6 R5 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -163,7 +163,7 @@
 ### [2132727044](2132727044-Default.vso.md)
 > Versions
 
- R9 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -179,6 +179,10 @@
 
 
 
+> Settings and translation compatible with:
+
+* [1625058930](1625058930-Digital-gpio.vso.md) R26
+
 ### [1617091456](1617091456-Digital-gpio.vso.md)
 > Versions
 
@@ -189,6 +193,17 @@
 > Settings and translation compatible with:
 
 * [3497448490](3497448490-Digital-gpio.vso.md) R12 R11
+
+### [1625058930](1625058930-Digital-gpio.vso.md)
+> Versions
+
+ R26
+
+
+
+> Settings and translation compatible with:
+
+* [1368947946](1368947946-Digital-gpio.vso.md) R25 R24
 
 ### [3497448490](3497448490-Digital-gpio.vso.md)
 > Versions
@@ -209,7 +224,7 @@
 ### [4058561182](4058561182-Empty.vso.md)
 > Versions
 
- R9 R8 R7 R6 R5 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R8 R7 R6 R5 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -221,7 +236,7 @@
 ### [1815337626](1815337626-Gnss-autonomous-test.vso.md)
 > Versions
 
- R9 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -237,12 +252,27 @@
 > Documented CRCs
 
 
+### [1657727329](1657727329-Heartstarter.vso.md)
+> Versions
+
+ R26
+
+
+
+> Settings and translation compatible with:
+
+* [1727723267](1727723267-Heartstarter.vso.md) R9 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+
 ### [1727723267](1727723267-Heartstarter.vso.md)
 > Versions
 
  R9 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
+
+> Settings and translation compatible with:
+
+* [1657727329](1657727329-Heartstarter.vso.md) R26
 
 ### [3886254671](3886254671-Heartstarter.vso.md)
 > Versions
@@ -267,6 +297,8 @@
 
 * [3338740039](3338740039-IR-proximity.vso.md) R25 R24 R23 R22
 
+* [3813895388](3813895388-IR-proximity.vso.md) R26
+
 ### [3338740039](3338740039-IR-proximity.vso.md)
 > Versions
 
@@ -277,6 +309,21 @@
 > Settings and translation compatible with:
 
 * [2355202201](2355202201-IR-proximity.vso.md) R23 R22 R21 R20 R19 R18 R16
+
+* [3813895388](3813895388-IR-proximity.vso.md) R26
+
+### [3813895388](3813895388-IR-proximity.vso.md)
+> Versions
+
+ R26
+
+
+
+> Settings and translation compatible with:
+
+* [2355202201](2355202201-IR-proximity.vso.md) R23 R22 R21 R20 R19 R18 R16
+
+* [3338740039](3338740039-IR-proximity.vso.md) R25 R24 R23 R22
 
 ## Lifefinder-alternating
 
@@ -295,6 +342,13 @@
 * [501251891](501251891-Lifefinder-alternating.vso.md) R25 R24
 
 * [1936564868](1936564868-Lifefinder-alternating.vso.md) R23
+
+### [1592932210](1592932210-Lifefinder-alternating.vso.md)
+> Versions
+
+ R26
+
+
 
 ### [1936564868](1936564868-Lifefinder-alternating.vso.md)
 > Versions
@@ -352,6 +406,13 @@
 * [58620517](58620517-Lifefinder-gnss.vso.md) R25 R24
 
 * [2566472474](2566472474-Lifefinder-gnss.vso.md) R23
+
+### [3441810944](3441810944-Lifefinder-gnss.vso.md)
+> Versions
+
+ R26
+
+
 
 ### [58620517](58620517-Lifefinder-gnss.vso.md)
 > Versions
@@ -449,7 +510,7 @@
 ### [3862345097](3862345097-Lifefinder-wifi-pos-tester.vso.md)
 > Versions
 
- R25 R24
+ R26 R25 R24
 
 
 
@@ -475,6 +536,13 @@
 > Versions
 
  R21 R20 R19 R18 R16
+
+
+
+### [232953314](232953314-Lifefinder-wifi.vso.md)
+> Versions
+
+ R26
 
 
 
@@ -589,7 +657,19 @@
 ### [4120107816](4120107816-Linkcheck.vso.md)
 > Versions
 
- R9 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+
+
+
+## Motion-measure-unconf
+
+> Documented CRCs
+
+
+### [1304526571](1304526571-Motion-measure-unconf.vso.md)
+> Versions
+
+ R26
 
 
 
@@ -602,6 +682,25 @@
 > Versions
 
  R9 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+
+
+
+### [40829709](40829709-Motion-measure.vso.md)
+> Versions
+
+ R26
+
+
+
+## Motion-spectrum
+
+> Documented CRCs
+
+
+### [1367119623](1367119623-Motion-spectrum.vso.md)
+> Versions
+
+ R26
 
 
 
@@ -669,7 +768,7 @@
 ### [561898260](561898260-Puck-radar.vso.md)
 > Versions
 
- R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13
+ R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13
 
 
 
@@ -707,7 +806,7 @@
 ### [3550461869](3550461869-Radiotest-measure.vso.md)
 > Versions
 
- R25 R24 R23
+ R26 R25 R24 R23
 
 
 
@@ -733,7 +832,7 @@
 ### [78751172](78751172-Radiotest.vso.md)
 > Versions
 
- R25 R24 R23
+ R26 R25 R24 R23
 
 
 
@@ -745,7 +844,7 @@
 ### [1047034189](1047034189-Sniffer.vso.md)
 > Versions
 
- R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12
+ R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12
 
 
 
@@ -792,6 +891,10 @@
 
 
 
+> Settings and translation compatible with:
+
+* [3906402051](3906402051-Square-air.vso.md) R26
+
 ### [3634715455](3634715455-Square-air.vso.md)
 > Versions
 
@@ -808,6 +911,17 @@
 * [1128699053](1128699053-Square-air.vso.md) R9 R10
 
 * [4002204643](4002204643-Square-air.vso.md) R14
+
+### [3906402051](3906402051-Square-air.vso.md)
+> Versions
+
+ R26
+
+
+
+> Settings and translation compatible with:
+
+* [3241343967](3241343967-Square-air.vso.md) R25 R24 R23 R22 R21 R20 R19 R18 R16
 
 ### [4002204643](4002204643-Square-air.vso.md)
 > Versions
@@ -968,6 +1082,21 @@
 
 
 
+> Settings and translation compatible with:
+
+* [3842802183](3842802183-Square-comfort-sound.vso.md) R26
+
+### [3842802183](3842802183-Square-comfort-sound.vso.md)
+> Versions
+
+ R26
+
+
+
+> Settings and translation compatible with:
+
+* [3437792987](3437792987-Square-comfort-sound.vso.md) R25 R24 R23
+
 ### [517999093](517999093-Square-comfort-sound.vso.md)
 > Versions
 
@@ -1001,6 +1130,8 @@
 
 * [2696231198](2696231198-Square-comfort.vso.md) R14
 
+* [2935762138](2935762138-Square-comfort.vso.md) R26
+
 ### [2696231198](2696231198-Square-comfort.vso.md)
 > Versions
 
@@ -1011,6 +1142,21 @@
 > Settings and translation compatible with:
 
 * [2266505222](2266505222-Square-comfort.vso.md) R25 R24 R23 R22 R21 R20 R19 R18 R16 R15
+
+* [2935762138](2935762138-Square-comfort.vso.md) R26
+
+### [2935762138](2935762138-Square-comfort.vso.md)
+> Versions
+
+ R26
+
+
+
+> Settings and translation compatible with:
+
+* [2266505222](2266505222-Square-comfort.vso.md) R25 R24 R23 R22 R21 R20 R19 R18 R16 R15
+
+* [2696231198](2696231198-Square-comfort.vso.md) R14
 
 ### [3264322911](3264322911-Square-comfort.vso.md)
 > Versions
@@ -1078,7 +1224,7 @@
 ### [1711284143](1711284143-Tracker-stats.vso.md)
 > Versions
 
- R9 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -1113,6 +1259,21 @@
 
 
 
+> Settings and translation compatible with:
+
+* [2093063534](2093063534-Tracker.vso.md) R26
+
+### [2093063534](2093063534-Tracker.vso.md)
+> Versions
+
+ R26
+
+
+
+> Settings and translation compatible with:
+
+* [2029355788](2029355788-Tracker.vso.md) R25 R24 R23 R22
+
 ### [489186430](489186430-Tracker.vso.md)
 > Versions
 
@@ -1143,7 +1304,7 @@
 ### [3999624005](3999624005-US-Frequency-hop-test.vso.md)
 > Versions
 
- R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12
+ R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12
 
 
 
