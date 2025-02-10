@@ -242,15 +242,17 @@ Accelerometer mode
 
 Modes to use:
 
-1 - Interval measurement while moving (default)
-2 - Constant measurement while moving
-Note: 0 will put accelerometer in wake on motion, without measuring spectrums
+1 - Interval measurement while moving (default).
+2 - Constant measurement while moving.
+3 - Fixed interval measurement, set the motionPollIntervalMinutes to wanted measurement interval.
+
+Note: 0 will put accelerometer in wake on motion, without measuring spectrums.
 
 > - UI: Spectrum Reporting Mode
 > - Unit: enumeration
 > - Default: 1
 > - Min: 0
-> - Max: 2
+> - Max: 3
 
 ### Input motionThreshold_m_s2 (unconfirmed)
 
