@@ -69,6 +69,9 @@ Weekly, when the device is joined, it will attempt a GNSS scan (provided the dev
 Battery remaining esimates are measured on a weekly basis.
 
 
+Battery voltage is read daily and uplinked if the battery voltage changes by more than 10mV.
+
+
 ## Daily Rejoin Module
 
 Should the device not be joined, it will try to rejoin on 24hr interval.
@@ -93,7 +96,7 @@ The average temperature uploaded with a resolution 0.01C.
 > - Unit: % (estimated)
 
 Estimated remaining % of battery in this unit based on measured use time and power for MCU, Radio, Sensors
-Position Scans, and potential collateral power use.
+Position Scans, and potential collateral power use. Uplinked weekly.
 
 
 ### Output proximityValue (confirmed)
@@ -131,6 +134,10 @@ Confirmed uplink which will indicate if one of the set limits are exceeded
 
 > - Size: 2 bytes
 > - Translation factor: 0.001
+> - Unit: V
+
+Uplinked daily should the battery voltage change by more than 10mV.
+
 
 ## Application Inputs (settings)
 
