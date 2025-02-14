@@ -335,6 +335,8 @@ Number of hours between wifi scans.
 > - Min: 0
 > - Max: 127
 > - Default: 0
+> - Unit: hours
+> - UI: Wifi Scan Interval
 
 When set to 0 or less, the interval scanning is disabled.
 
