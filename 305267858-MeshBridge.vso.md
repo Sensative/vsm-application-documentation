@@ -1,6 +1,11 @@
 
 # Application MeshBridge
 
+The Mesh Bridge application provides back-haul connectivity via LoRaWan for Rutio Mesh enabled devices.
+Once connected to LoRaWan the device with this app will open up a Mesh Network to which other Rutio Mesh 
+enabled devices can connect if they share the same Mesh Key.
+The network has adaptive data rate, and the default rate is relatively low, but it will adapt depending on
+the amount of data being transmitted in the network.
 
 ## Generic RutioMesh Module
 

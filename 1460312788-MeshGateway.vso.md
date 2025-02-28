@@ -1,6 +1,8 @@
 
 # Application MeshGateway
 
+This is an application specifically for the embedded device in Rutio Mesh Gateways.
+Do not use in any other applications since it will in that case disrupt the mesh network.
 Module for package loss / device restart detection
 ## Temperature Sensing and Reporting Module
 
