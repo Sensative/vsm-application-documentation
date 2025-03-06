@@ -100,8 +100,10 @@ This is intended for fixed-mount devices where radio conditions are not expected
 
 ## Orientation tracking module
 
-Reports any updates to orientation in accX, accY and accZ when they happen
-
+Reports any updates to orientation in accX, accY and accZ when they happen,
+>
+> This functionality is reliable only in Spectrum Reporting Modes 0 and 1.
+>
 
 ## Application Outputs
 
@@ -111,6 +113,12 @@ Reports any updates to orientation in accX, accY and accZ when they happen
 > - Size: 2 bytes
 > - Translation factor: 0.001
 X acceleration
+
+Updated when a change happens, and also when the device has been still for a while (~1 minute).
+
+XYZ is normally dominated by the gravitation, so by taking the three XYZ components you will
+be able to determine the orientation of the device. An accelerating device (e.g. subject to
+vibration etc may gove strange values)
 > - Unit: m/s/s
 
 ### Output accY (confirmed)
@@ -118,6 +126,12 @@ X acceleration
 > - Size: 2 bytes
 > - Translation factor: 0.001
 Y acceleration
+
+Updated when a change happens, and also when the device has been still for a while (~1 minute).
+
+XYZ is normally dominated by the gravitation, so by taking the three XYZ components you will
+be able to determine the orientation of the device. An accelerating device (e.g. subject to
+vibration etc may gove strange values)
 > - Unit: m/s/s
 
 ### Output accZ (confirmed)
@@ -125,6 +139,12 @@ Y acceleration
 > - Size: 2 bytes
 > - Translation factor: 0.001
 Z acceleration
+
+Updated when a change happens, and also when the device has been still for a while (~1 minute).
+
+XYZ is normally dominated by the gravitation, so by taking the three XYZ components you will
+be able to determine the orientation of the device. An accelerating device (e.g. subject to
+vibration etc may gove strange values).
 > - Unit: m/s/s
 
 ### Output acc_128hz (confirmed)
