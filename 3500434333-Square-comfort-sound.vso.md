@@ -69,7 +69,10 @@ The device will do a join attempt if it is not joined and if button is pressed.
 An NFC field can be applied to manually trigger a join attempt
 
 
+## ADR dampening and limiting module
+
 Adaptive LoRaWan data rate dampening and limiter module, allows to limit both adaptability rate and worst data rate / output power.
+This is intended for fixed-mount devices where radio conditions are not expected to change rapidly.
 
 The unit will update sound levels only when it is joined.
 

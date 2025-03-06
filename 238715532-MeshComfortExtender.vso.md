@@ -11,7 +11,10 @@ lorawan module should the device be joined to lorawan network).
 Attempt to join lora every day (if not already joined)
 Join lora on power-on
 
+## ADR dampening and limiting module
+
 Adaptive LoRaWan data rate dampening and limiter module, allows to limit both adaptability rate and worst data rate / output power.
+This is intended for fixed-mount devices where radio conditions are not expected to change rapidly.
 
 ## Temperature Sensing and Reporting Module
 

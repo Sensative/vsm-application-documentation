@@ -52,7 +52,10 @@ Weekly, when the device is joined, it will attempt a GNSS scan (provided the dev
 Battery remaining esimates are measured on a weekly basis.
 
 
+## ADR dampening and limiting module
+
 Adaptive LoRaWan data rate dampening and limiter module, allows to limit both adaptability rate and worst data rate / output power.
+This is intended for fixed-mount devices where radio conditions are not expected to change rapidly.
 
 
 ## Application Outputs
