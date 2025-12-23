@@ -109,7 +109,7 @@ Uplinked as 1 if device is active and positioning. 0 when the device is idle.
 > - Translation factor: 0.01
 > - Unit: rH
 
-Explanation of output
+Relative humidity in percentage
 
 
 ### Output temp (confirmed)

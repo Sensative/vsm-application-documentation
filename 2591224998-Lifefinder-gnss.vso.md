@@ -106,7 +106,7 @@ Position Scans, and potential collateral power use. Uplinked weekly.
 > - Translation factor: 0.01
 > - Unit: rH
 
-Explanation of output
+Relative humidity in percentage
 
 
 ### Output nfcDisabledAlarm (confirmed)
