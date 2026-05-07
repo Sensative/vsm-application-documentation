@@ -40,7 +40,7 @@
 ### [4058561182](4058561182-Airport-int-R6-fw-patch.vso.md)
 > Versions
 
- R9 R8 R7 R6 R5 R29 R28 R27 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R8 R7 R6 R5 R30 R29 R28 R27 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -110,7 +110,7 @@
 ### [3094986737](3094986737-Airport-int.vso.md)
 > Versions
 
- R29 R28 R27 R26 R25
+ R30 R29 R28 R27 R26 R25
 
 
 
@@ -151,7 +151,7 @@
 ### [1319111708](1319111708-Compliance-test.vso.md)
 > Versions
 
- R9 R8 R7 R6 R5 R29 R28 R27 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R8 R7 R6 R5 R30 R29 R28 R27 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -163,7 +163,7 @@
 ### [2132727044](2132727044-Default.vso.md)
 > Versions
 
- R9 R29 R28 R27 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R30 R29 R28 R27 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -205,6 +205,13 @@
 
 * [1368947946](1368947946-Digital-gpio.vso.md) R25 R24
 
+### [3392161576](3392161576-Digital-gpio.vso.md)
+> Versions
+
+ R30
+
+
+
 ### [3409025270](3409025270-Digital-gpio.vso.md)
 > Versions
 
@@ -231,7 +238,7 @@
 ### [4058561182](4058561182-Empty.vso.md)
 > Versions
 
- R9 R8 R7 R6 R5 R29 R28 R27 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R8 R7 R6 R5 R30 R29 R28 R27 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -243,7 +250,7 @@
 ### [1815337626](1815337626-Gnss-autonomous-test.vso.md)
 > Versions
 
- R9 R29 R28 R27 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R30 R29 R28 R27 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -262,7 +269,7 @@
 ### [1657727329](1657727329-Heartstarter.vso.md)
 > Versions
 
- R29 R28 R27 R26
+ R30 R29 R28 R27 R26
 
 
 
@@ -279,7 +286,7 @@
 
 > Settings and translation compatible with:
 
-* [1657727329](1657727329-Heartstarter.vso.md) R29 R28 R27 R26
+* [1657727329](1657727329-Heartstarter.vso.md) R30 R29 R28 R27 R26
 
 ### [3886254671](3886254671-Heartstarter.vso.md)
 > Versions
@@ -304,7 +311,7 @@
 
 * [3338740039](3338740039-IR-proximity.vso.md) R25 R24 R23 R22
 
-* [3813895388](3813895388-IR-proximity.vso.md) R29 R28 R27 R26
+* [3813895388](3813895388-IR-proximity.vso.md) R30 R29 R28 R27 R26
 
 ### [3338740039](3338740039-IR-proximity.vso.md)
 > Versions
@@ -317,12 +324,12 @@
 
 * [2355202201](2355202201-IR-proximity.vso.md) R23 R22 R21 R20 R19 R18 R16
 
-* [3813895388](3813895388-IR-proximity.vso.md) R29 R28 R27 R26
+* [3813895388](3813895388-IR-proximity.vso.md) R30 R29 R28 R27 R26
 
 ### [3813895388](3813895388-IR-proximity.vso.md)
 > Versions
 
- R29 R28 R27 R26
+ R30 R29 R28 R27 R26
 
 
 
@@ -340,7 +347,7 @@
 ### [1161910006](1161910006-Lifefinder-alternating.vso.md)
 > Versions
 
- R29
+ R30 R29
 
 
 
@@ -412,6 +419,30 @@
 
 * [1936564868](1936564868-Lifefinder-alternating.vso.md) R23
 
+## Lifefinder-beacon-nfc
+
+> Documented CRCs
+
+
+### [3459341164](3459341164-Lifefinder-beacon-nfc.vso.md)
+> Versions
+
+ R30
+
+
+
+## Lifefinder-beacon
+
+> Documented CRCs
+
+
+### [3519216112](3519216112-Lifefinder-beacon.vso.md)
+> Versions
+
+ R30
+
+
+
 ## Lifefinder-gnss
 
 > Documented CRCs
@@ -433,7 +464,7 @@
 ### [2591224998](2591224998-Lifefinder-gnss.vso.md)
 > Versions
 
- R29
+ R30 R29
 
 
 
@@ -513,12 +544,12 @@
 
 > Settings and translation compatible with:
 
-* [3907847420](3907847420-Lifefinder-motion-button-both.vso.md) R29
+* [3907847420](3907847420-Lifefinder-motion-button-both.vso.md) R30 R29
 
 ### [3907847420](3907847420-Lifefinder-motion-button-both.vso.md)
 > Versions
 
- R29
+ R30 R29
 
 
 
@@ -534,7 +565,7 @@
 ### [2359357756](2359357756-Lifefinder-motion-button-gnss.vso.md)
 > Versions
 
- R29 R28
+ R30 R29 R28
 
 
 
@@ -551,7 +582,7 @@
 
 > Settings and translation compatible with:
 
-* [2359357756](2359357756-Lifefinder-motion-button-gnss.vso.md) R29 R28
+* [2359357756](2359357756-Lifefinder-motion-button-gnss.vso.md) R30 R29 R28
 
 ## Lifefinder-motion-button-wifi
 
@@ -561,7 +592,7 @@
 ### [2014504806](2014504806-Lifefinder-motion-button-wifi.vso.md)
 > Versions
 
- R29 R28
+ R30 R29 R28
 
 
 
@@ -580,7 +611,7 @@
 ### [1340832739](1340832739-Lifefinder-motion-nfc-both.vso.md)
 > Versions
 
- R29 R28
+ R30 R29 R28
 
 
 
@@ -606,7 +637,7 @@
 ### [4072134224](4072134224-Lifefinder-motion-nfc-gnss.vso.md)
 > Versions
 
- R29 R28
+ R30 R29 R28
 
 
 
@@ -625,7 +656,7 @@
 ### [3251982802](3251982802-Lifefinder-motion-nfc-wifi.vso.md)
 > Versions
 
- R29 R28
+ R30 R29 R28
 
 
 
@@ -712,7 +743,7 @@
 ### [1654085923](1654085923-Lifefinder-wifi-pos-tester.vso.md)
 > Versions
 
- R29 R28
+ R30 R29 R28
 
 
 
@@ -731,7 +762,7 @@
 ### [1005192630](1005192630-Lifefinder-wifi.vso.md)
 > Versions
 
- R29
+ R30 R29
 
 
 
@@ -887,7 +918,7 @@
 ### [4120107816](4120107816-Linkcheck.vso.md)
 > Versions
 
- R9 R29 R28 R27 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R30 R29 R28 R27 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -899,7 +930,7 @@
 ### [1304526571](1304526571-Motion-measure-unconf.vso.md)
 > Versions
 
- R29 R28 R27 R26
+ R30 R29 R28 R27 R26
 
 
 
@@ -907,6 +938,13 @@
 > Versions
 
  R29 R28 R27
+
+
+
+### [3705434392](3705434392-Motion-measure-unconf.vso.md)
+> Versions
+
+ R30
 
 
 
@@ -922,6 +960,13 @@
 
 
 
+### [2473725182](2473725182-Motion-measure.vso.md)
+> Versions
+
+ R30
+
+
+
 ### [289128601](289128601-Motion-measure.vso.md)
 > Versions
 
@@ -932,7 +977,7 @@
 ### [40829709](40829709-Motion-measure.vso.md)
 > Versions
 
- R29 R28 R27 R26
+ R30 R29 R28 R27 R26
 
 
 
@@ -952,6 +997,13 @@
 > Versions
 
  R29 R28 R27
+
+
+
+### [2409246216](2409246216-Motion-spectrum.vso.md)
+> Versions
+
+ R30
 
 
 
@@ -1006,6 +1058,13 @@
 > Versions
 
  R12 R11
+
+
+
+### [1977453069](1977453069-Puck-radar.vso.md)
+> Versions
+
+ R30
 
 
 
@@ -1079,7 +1138,19 @@
 ### [3550461869](3550461869-Radiotest-measure.vso.md)
 > Versions
 
- R29 R28 R27 R26 R25 R24 R23
+ R30 R29 R28 R27 R26 R25 R24 R23
+
+
+
+## Radiotest-ping-pong-ext
+
+> Documented CRCs
+
+
+### [543135441](543135441-Radiotest-ping-pong-ext.vso.md)
+> Versions
+
+ R30
 
 
 
@@ -1105,7 +1176,7 @@
 ### [78751172](78751172-Radiotest.vso.md)
 > Versions
 
- R29 R28 R27 R26 R25 R24 R23
+ R30 R29 R28 R27 R26 R25 R24 R23
 
 
 
@@ -1121,6 +1192,25 @@
 
 
 
+### [3297213463](3297213463-Seat-occupancy.vso.md)
+> Versions
+
+ R30
+
+
+
+## Sniffer-ping-pong-ext
+
+> Documented CRCs
+
+
+### [3101276567](3101276567-Sniffer-ping-pong-ext.vso.md)
+> Versions
+
+ R30
+
+
+
 ## Sniffer
 
 > Documented CRCs
@@ -1129,7 +1219,7 @@
 ### [1047034189](1047034189-Sniffer.vso.md)
 > Versions
 
- R29 R28 R27 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12
+ R30 R29 R28 R27 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12
 
 
 
@@ -1166,6 +1256,13 @@
 > Versions
 
  R8
+
+
+
+### [2878174033](2878174033-Square-air.vso.md)
+> Versions
+
+ R30
 
 
 
@@ -1276,6 +1373,13 @@
 ## Square-comfort-sound
 
 > Documented CRCs
+
+
+### [1030541641](1030541641-Square-comfort-sound.vso.md)
+> Versions
+
+ R30
+
 
 
 ### [1355326083](1355326083-Square-comfort-sound.vso.md)
@@ -1490,6 +1594,13 @@
 
 
 
+### [4055310652](4055310652-Square-comfort.vso.md)
+> Versions
+
+ R30
+
+
+
 ### [4174894842](4174894842-Square-comfort.vso.md)
 > Versions
 
@@ -1530,7 +1641,7 @@
 ### [1711284143](1711284143-Tracker-stats.vso.md)
 > Versions
 
- R9 R29 R28 R27 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
+ R9 R30 R29 R28 R27 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12 R11 R10
 
 
 
@@ -1569,7 +1680,7 @@
 
 * [2093063534](2093063534-Tracker.vso.md) R26
 
-* [3802553086](3802553086-Tracker.vso.md) R29 R28 R27
+* [3802553086](3802553086-Tracker.vso.md) R30 R29 R28 R27
 
 ### [2093063534](2093063534-Tracker.vso.md)
 > Versions
@@ -1582,12 +1693,12 @@
 
 * [2029355788](2029355788-Tracker.vso.md) R25 R24 R23 R22
 
-* [3802553086](3802553086-Tracker.vso.md) R29 R28 R27
+* [3802553086](3802553086-Tracker.vso.md) R30 R29 R28 R27
 
 ### [3802553086](3802553086-Tracker.vso.md)
 > Versions
 
- R29 R28 R27
+ R30 R29 R28 R27
 
 
 
@@ -1627,7 +1738,7 @@
 ### [3999624005](3999624005-US-Frequency-hop-test.vso.md)
 > Versions
 
- R29 R28 R27 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12
+ R30 R29 R28 R27 R26 R25 R24 R23 R22 R21 R20 R19 R18 R16 R15 R14 R13 R12
 
 
 
