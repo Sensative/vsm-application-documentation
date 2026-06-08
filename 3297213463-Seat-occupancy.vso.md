@@ -11,7 +11,7 @@ This is intended for fixed-mount devices where radio conditions are not expected
 Retry join after timeBetweenJoinAttemts minutes
 
 
-ReJoin after timeBeforeUnjoin seconds without any RX
+ReJoin after timeBeforeUnjoin hours without any RX
 
 
 ## Daily Rejoin Module
