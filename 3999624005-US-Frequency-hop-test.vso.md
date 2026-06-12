@@ -40,7 +40,7 @@ prolong the current session.
 
 Number of transmissions to perform
 
-> - Default: 10 * 64
+> - Default: 640 (10 * 64)
 > - Unit: Tranmissions
 
 

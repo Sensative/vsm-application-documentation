@@ -153,7 +153,7 @@ Uplinked daily should the battery voltage change by more than 10mV.
 > - Unit: Minutes
 > - Min: 0
 > - Max: 32767
-> - Default: 600 (10 hours)
+> - Default: 360 (6 hours)
 
 Explanation of input
 

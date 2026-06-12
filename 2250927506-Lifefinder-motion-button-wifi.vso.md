@@ -153,7 +153,7 @@ Uplinked daily should the battery voltage change by more than 10mV.
 > - Unit: Minutes
 > - Min: 0
 > - Max: 32767
-> - Default: 600 (10 hours)
+> - Default: 360 (6 hours)
 
 Explanation of input
 
@@ -234,7 +234,7 @@ Amount of time in minutes between position scans when the device is moving
 > - Unit: ms
 > - Min: 100
 > - Max: 1000
-> - Default: 300
+> - Default: 100
 
 How long time to scan per channel in milliseconds.
 

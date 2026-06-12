@@ -137,7 +137,7 @@ Amount of minutes the Dots will wait to alert that no regular communication with
 > - Unit: C
 > - Min: -50
 > - Max: 80C
-> - Default: 60C (near product max ambient temperature)
+> - Default: 80C (near product max ambient temperature)
 
 The high level for temperature alarm. Set higher than tempAlarmLowLevel or the alarm function is disabled.
 
@@ -231,7 +231,7 @@ How long time to scan per channel in milliseconds.
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: Settings Mode
 > - Unit: Boolean
-> - Default: 1
+> - Default: 0
 > - Min: 0
 > - Max: 1
 
@@ -329,7 +329,7 @@ The interval at which temperature is measured provided.
 > - Unit: C
 > - Min: 0.1
 > - Max: 127
-> - Default: 0.5
+> - Default: 20
 
 The hysteresis for temperature readings. If temperature changes lower than this value are detected
 no temperature report will be generated (saves battery and radio air time).

@@ -224,7 +224,7 @@ Amount humidity must change for a new humidity value to be reported.
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: Limited Wifi Scan Channel Mask
 > - Unit: Wifi scan channel mask (binary)
-> - Default: 1057 (1,6 and 11)
+> - Default: 0 (1,6 and 11)
 > - Min: 0
 > - Max: 65535
 The app has the option to select only certain channels for WiFi scans in the first attempts to scan, to reduce power
@@ -338,7 +338,7 @@ How many resends the device will attempt before unjoining the network.
 > - Unit: ms
 > - Min: 100
 > - Max: 1000
-> - Default: 300
+> - Default: 100
 
 How long time to scan per channel in milliseconds.
 

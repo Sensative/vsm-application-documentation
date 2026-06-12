@@ -570,7 +570,7 @@ There is a high impact on power consumption to turn this up (lower battery time)
 
 ### Application CRC (decimal)
 
- > 2409246216
+ > 4173659976
 
 ### Application Sensor Mask (hex)
 

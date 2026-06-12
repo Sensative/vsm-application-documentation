@@ -301,7 +301,7 @@ Periodic positioning frequency in minutes while not in alarm. If set to 0, no pe
 > - Unit: ms
 > - Min: 100
 > - Max: 1000
-> - Default: 300
+> - Default: 100
 
 How long time to scan per channel in milliseconds.
 

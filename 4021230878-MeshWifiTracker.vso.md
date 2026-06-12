@@ -206,7 +206,7 @@ Motion threshold
 
 > - Min: 0.010
 > - Max: 10.000
-> - Default: 50
+> - Default: 0.5
 > - Unit: mm/s2
 
 ### Input rejoinBudgetMax (unconfirmed)

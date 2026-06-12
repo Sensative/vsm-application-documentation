@@ -260,7 +260,7 @@ Amount of time in minutes between position scans when the device is moving
 > - Unit: ms
 > - Min: 100
 > - Max: 1000
-> - Default: 300
+> - Default: 100
 
 How long time to scan per channel in milliseconds.
 
