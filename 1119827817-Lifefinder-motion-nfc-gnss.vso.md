@@ -442,6 +442,7 @@ M input movingPositionMinutes 166 0xa6  1
 M output accumulatedStationaryTime 147 0x93  1
 M output accumulatedMovingTime 148 0x94  1
 M input positioningFreqency 167 0xa7  1
+C 1119827817 # 0x42bf3769
 
 ```
 

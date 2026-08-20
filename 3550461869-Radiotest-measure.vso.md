@@ -38,6 +38,7 @@ The command can be cancelled when the repetitions is set to zero or less or comm
 ### Map Data for vsm-translator-open-source
 
 ```
+C 3550461869 # 0xd39fbfad
 
 ```
 

@@ -421,6 +421,7 @@ M output accumulatedMovingTime 147 0x93  1
 M input scanTimeMs 182 0xb6  1
 M input limitedScanChannels 184 0xb8  1
 M input minimumWifiResult 166 0xa6  1
+C 3134142741 # 0xbacf3915
 
 ```
 

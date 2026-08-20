@@ -608,6 +608,7 @@ M output accX 144 0x90  0.001
 M output accY 145 0x91  0.001
 M output accZ 146 0x92  0.001
 M input enableXYZ 170 0xaa  1
+C 4173659976 # 0xf8c4ff48
 
 ```
 

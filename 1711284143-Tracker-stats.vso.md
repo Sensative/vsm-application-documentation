@@ -210,6 +210,7 @@ M output downlinkRssi 162 0xa2  1
 M input air_pressure_hysteresis_bar 163 0xa3  1
 M output air_pressure 187 0xbb  0.01
 M output batteryPercent 164 0xa4  1
+C 1711284143 # 0x66001faf
 
 ```
 

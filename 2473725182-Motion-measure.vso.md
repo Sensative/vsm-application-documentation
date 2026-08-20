@@ -458,6 +458,7 @@ M output batteryPercent 167 0xa7  1
 M input powerIndexFilterFactorUp 168 0xa8  1
 M input powerIndexFilterFactorDown 169 0xa9  1
 M input maxPowerIndex 170 0xaa  1
+C 2473725182 # 0x93720cfe
 
 ```
 

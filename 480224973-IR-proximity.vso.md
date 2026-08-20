@@ -366,6 +366,7 @@ M input tempAlarmLowLevel 164 0xa4  1
 M input tempAlarmHighLevel 165 0xa5  1
 M output batteryPercent 166 0xa6  1
 M output volts 144 0x90  0.001
+C 480224973 # 0x1c9fa6cd
 
 ```
 

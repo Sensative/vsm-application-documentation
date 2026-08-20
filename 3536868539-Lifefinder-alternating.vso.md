@@ -537,6 +537,7 @@ M input alarmAck 164 0xa4  1
 M input positioningFreqency 171 0xab  1
 M input scanTimeMs 181 0xb5  1
 M input limitedScanChannels 184 0xb8  1
+C 3536868539 # 0xd2d054bb
 
 ```
 

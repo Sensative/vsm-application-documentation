@@ -1,5 +1,5 @@
 
-# Application MeshWifiTracker
+# Application MeshBasicMotion
 
 
 ## Generic RutioMesh Module
@@ -8,7 +8,12 @@ Generic mesh module allowing both lora wan bridging, network extension or
 (with a setting) the device to behave as a leaf only module (which is same as a regular
 lorawan module should the device be joined to lorawan network).
 
-Module for package loss / device restart detection
+
+## ADR dampening and limiting module
+
+Adaptive LoRaWan data rate dampening and limiter module, allows to limit both adaptability rate and worst data rate / output power.
+This is intended for fixed-mount devices where radio conditions are not expected to change rapidly.
+
 ## Temperature Sensing and Reporting Module
 
 
@@ -29,36 +34,48 @@ When averageTempIntervalMinutes have passed, and if the average temperature has 
 the sensor will upload a new averageTemp value.
 
 
+The device will do a join attempt if it is not joined and if button is pressed.
+
+
+An NFC field can be applied to manually trigger a join attempt
+
+
 ## Battery Reporting Module
 
 Battery remaining esimates are measured on a weekly basis.
 
 
-## Budgeted and configurable rejoin module
+## Daily Rejoin Module
 
-
-### Rejoin Budget Operation
-
-> Counter is incremented every 15 minutes when device is unjoined.
-
-After counter reaches the set rejoinTime value, trigger a rejoin, decrement budget and reset the counter.
-Budget is refilled daily by rejoinBudgetRefill up to rejoinBudgetMax. Excess budget is scraped off the top.
+Should the device not be joined, it will try to rejoin on 24hr interval.
 
 
 The device will always do a LoRaWan join attempt when powered on (which also includes after a restart)
 
 
-# Mesh Wifi Scan Module
-
-When the device is connected wifi scans will be done in the following conditions
-1. When the device remains stationary and the still time has elapsed.
-2. When the device is in motion and the motion time has elapsed.
-3. When the device has stopped moving.
-
-When motion was detected, and then stopped, we do an extra scan
-
 ## Application Outputs
 
+
+### Output accX (confirmed)
+
+> - Size: 2 bytes
+> - Translation factor: 0.001
+X acceleration
+> - Unit: m/s/s
+
+### Output accY (confirmed)
+
+> - Size: 2 bytes
+> - Translation factor: 0.001
+Y acceleration
+> - Unit: m/s/s
+
+### Output accZ (confirmed)
+
+> - Size: 2 bytes
+> - Translation factor: 0.001
+Z acceleration
+> - Unit: m/s/s
 
 ### Output averageTemp (unconfirmed)
 
@@ -79,11 +96,23 @@ Estimated remaining % of battery in this unit based on measured use time and pow
 Position Scans, and potential collateral power use.
 
 
-### Output hours (unconfirmed)
+### Output motion (unconfirmed)
 
-> - Size: 2 bytes
+> - Size: 1 bytes
 > - Translation factor: 1
-The number of hours the device has been on since activated (restarted).
+> - Unit: Enumeration
+> -- 0 = Unknown
+> -- 1 = Immobile
+> -- 2 = Moving
+> -- 3 = Acceleration exceeded 4m/s2 comparred to last sample (e.g. shock)
+Motion detector status
+
+### Output pressure_hPa (unconfirmed)
+
+> - Size: 4 bytes
+> - Translation factor: 0.01
+Air pressure
+> - Unit: m/s/s
 
 ### Output temp (unconfirmed)
 
@@ -113,8 +142,8 @@ Temperature alarm state
 
 > - Size: 1 bytes
 > - Translation factor: 0.1
-> - Request current value: Send a2 (hex) on lora port 2
-> - Update value to 1: Send a2 00 00 00 01 (hex) on lora port 2
+> - Request current value: Send a5 (hex) on lora port 2
+> - Update value to 1: Send a5 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: Average Temperature Threshold
 > - Unit: C
@@ -130,8 +159,8 @@ no report will be generated (saves battery and radio air time).
 
 > - Size: 1 bytes
 > - Translation factor: 1
-> - Request current value: Send a3 (hex) on lora port 2
-> - Update value to 1: Send a3 00 00 00 01 (hex) on lora port 2
+> - Request current value: Send a6 (hex) on lora port 2
+> - Update value to 1: Send a6 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: Average Temperature Interval
 > - Unit: Minutes
@@ -141,6 +170,35 @@ no report will be generated (saves battery and radio air time).
 
 The interval at which average temperature is uploaded provided that it has changed more than the average temperature threshold (hysteresis).
 
+
+### Input enableBarometer (unconfirmed)
+
+> - Size: 1 bytes
+> - Translation factor: 1
+> - Request current value: Send ab (hex) on lora port 2
+> - Update value to 1: Send ab 00 00 00 01 (hex) on lora port 2
+> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - UI: Enable barometer
+> - Unit: Boolean
+> - Default: 0 (false)
+> - Min: 0
+> - Max: 1
+Enable barometric pressure uploading
+
+### Input maxPowerIndex (unconfirmed)
+
+> - Size: 1 bytes
+> - Translation factor: 1
+> - Request current value: Send a4 (hex) on lora port 2
+> - Update value to 1: Send a4 00 00 00 01 (hex) on lora port 2
+> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - UI: Max Power Index
+> - Unit: LoraWan power index (0-16)
+> - Min: 0
+> - Max: 16
+> - Default: 16
+
+maximum power index to use for LoRaWan traffic, including join. Default setting disables DR0
 
 ### Input meshEnableDownside (unconfirmed)
 
@@ -197,72 +255,58 @@ in environments that are relatively static.
 ### Input motionThreshold_m_s2 (unconfirmed)
 
 > - Size: 2 bytes
-> - Translation factor: 0.01
-> - Request current value: Send b6 (hex) on lora port 2
-> - Update value to 1: Send b6 00 00 00 01 (hex) on lora port 2
+> - Translation factor: 0.001
+> - Request current value: Send b4 (hex) on lora port 2
+> - Update value to 1: Send b4 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+Wakeup sensitivity
 
-Motion threshold
+> - UI: Motion threshold
+> - Unit: m/s/s
+> - Default: 0.05
+> - Min: 0.05
+> - Max: 2
 
-> - Min: 0.010
-> - Max: 10.000
-> - Default: 0.5
-> - Unit: mm/s2
-
-### Input rejoinBudgetMax (unconfirmed)
+### Input powerIndexFilterFactorDown (unconfirmed)
 
 > - Size: 1 bytes
 > - Translation factor: 1
-> - Request current value: Send a7 (hex) on lora port 2
-> - Update value to 1: Send a7 00 00 00 01 (hex) on lora port 2
+> - Request current value: Send a3 (hex) on lora port 2
+> - Update value to 1: Send a3 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
-> - UI: Maximum Rejoin Budget
+> - UI: LoRaWan power filter factor down
 > - Unit: Integer
-> - Min: 0
-> - Max: 127
-> - Default:  5
-
-Max amount of rejoins the device is allowed before being throttled.
-
-
-### Input rejoinBudgetRefill (unconfirmed)
-
-> - Size: 1 bytes
-> - Translation factor: 1
-> - Request current value: Send a8 (hex) on lora port 2
-> - Update value to 1: Send a8 00 00 00 01 (hex) on lora port 2
-> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
-> - UI: Daily Rejoin Budget Refill
-> - Unit: Integer
-> - Min: 0
-> - Max: 127
-> - Default: 1
-
-How many rejoin attempts are added to the device every day.
-
-
-### Input rejoinTime (unconfirmed)
-
-> - Size: 2 bytes
-> - Translation factor: 1
-> - Request current value: Send b5 (hex) on lora port 2
-> - Update value to 1: Send b5 00 00 00 01 (hex) on lora port 2
-> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
-> - UI: Quarters Between Rejoins
-> - Unit: 15 minute segments
 > - Min: 1
-> - Max: 32767
-> - Default: 2
+> - Max: 50
+> - Default: 3
 
-How many 15 minute segments of unjoined time before triggering a rejoin, as well as the time between the budgeted rejoin attempts.
+Low pass filter factor. 1 = no low-pass filter. 2 = filter factor 1 (fast) ... 10 = very slow.
+When the built-in ADR function propose a new faster power index, this filter factor is employed in a low pass filter.
+If the filter value is set to 1 the algorithm will use its proposed new value (if below or at max).
 
+### Input powerIndexFilterFactorUp (unconfirmed)
+
+> - Size: 1 bytes
+> - Translation factor: 1
+> - Request current value: Send a2 (hex) on lora port 2
+> - Update value to 1: Send a2 00 00 00 01 (hex) on lora port 2
+> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+> - UI: LoRaWan power filter factor up
+> - Unit: Integer
+> - Min: 1
+> - Max: 50
+> - Default: 3
+
+Low pass filter factor. 1 = no low-pass filter. 2 = filter factor 1 (fast) ... 10 = very slow.
+When the built-in ADR function propose a new slower power index, this filter factor is employed in a low pass filter.
+If the filter value is set to 1 the algorithm will use its proposed new value (if below or at max).
 
 ### Input tempAlarmHighLevel (unconfirmed)
 
 > - Size: 1 bytes
 > - Translation factor: 1
-> - Request current value: Send a5 (hex) on lora port 2
-> - Update value to 1: Send a5 00 00 00 01 (hex) on lora port 2
+> - Request current value: Send a8 (hex) on lora port 2
+> - Update value to 1: Send a8 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: Temperature High Alarm Level
 > - Unit: C
@@ -277,8 +321,8 @@ The high level for temperature alarm. Set higher than tempAlarmLowLevel or the a
 
 > - Size: 1 bytes
 > - Translation factor: 1
-> - Request current value: Send a4 (hex) on lora port 2
-> - Update value to 1: Send a4 00 00 00 01 (hex) on lora port 2
+> - Request current value: Send a7 (hex) on lora port 2
+> - Update value to 1: Send a7 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: Temperature Low Alarm Level
 > - Unit: C
@@ -293,8 +337,8 @@ The low level for temperature alarm. Set lower than tempAlarmHighLevel or the al
 
 > - Size: 2 bytes
 > - Translation factor: 0.01
-> - Request current value: Send b4 (hex) on lora port 2
-> - Update value to 1: Send b4 00 00 00 01 (hex) on lora port 2
+> - Request current value: Send b3 (hex) on lora port 2
+> - Update value to 1: Send b3 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: Temperature Threshold
 > - Unit: C
@@ -306,7 +350,7 @@ The hysteresis for temperature readings. If temperature changes lower than this 
 no temperature report will be generated (saves battery and radio air time).
 
 
-### Input wifiMovingScanInterval_min (unconfirmed)
+### Input wifiScanInterval_h (unconfirmed)
 
 > - Size: 1 bytes
 > - Translation factor: 1
@@ -314,37 +358,41 @@ no temperature report will be generated (saves battery and radio air time).
 > - Update value to 1: Send aa 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 
-Number of minutes between wifi scans while moving.
+Number of hours between wifi scans.
 
 > - Min: 0
 > - Max: 127
-> - Default: 5
-> - Unit: minutes
-> - UI: Wifi Scan Interval while Moving
-
-When set to 0 or less, the interval scanning is disabled.
-
-
-### Input wifiStillScanInterval_h (unconfirmed)
-
-> - Size: 1 bytes
-> - Translation factor: 1
-> - Request current value: Send a9 (hex) on lora port 2
-> - Update value to 1: Send a9 00 00 00 01 (hex) on lora port 2
-> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
-
-Number of hours between wifi scans while still
-
-> - Min: 0
-> - Max: 127
-> - Default: 6
+> - Default: 0
 > - Unit: hours
-> - UI: Wifi Scan Interval while Still
+> - UI: Wifi Scan Interval
 
 When set to 0 or less, the interval scanning is disabled.
 
 
 ## Application Sensors (logical sensors)
+
+
+### Sensor ACC_X
+
+> - Request current value: Send 1a (hex) on lora port 2
+Current accelerometer reading
+
+### Sensor ACC_Y
+
+> - Request current value: Send 1b (hex) on lora port 2
+Current accelerometer reading
+
+### Sensor ACC_Z
+
+> - Request current value: Send 1c (hex) on lora port 2
+Current accelerometer reading
+
+### Sensor AIR_PRESSURE
+
+> - Request current value: Send 06 (hex) on lora port 2
+> - Unit: Pa
+
+Air humidity sensor (logical)
 
 
 ### Sensor AIR_TEMPERATURE
@@ -353,6 +401,15 @@ When set to 0 or less, the interval scanning is disabled.
 > - Unit: CentiCelcius
 
 Air temperature sensor (logical)
+
+### Sensor BUTTON
+
+> - Request current value: Send 01 (hex) on lora port 2
+> - Mode: R-
+> - Type: Enumeration
+
+Physical button readout sensor
+
 
 ### Sensor MOTION
 
@@ -365,7 +422,30 @@ Motion sensor reading, one of
 - 2 : Moving (more than register MOTION_CONTROL mm/s2 acceleration change detected through last minute)
 - 3 : Shocked (more than 4m/s2 change in acceleration detected through last minute)
 
+### Sensor NFC_FIELD
+
+> - Request current value: Send 08 (hex) on lora port 2
+> - Type: Boolean
+
+NFC field present sensor (logical)
+
+
 ## Application Registers used (device controls)
+
+
+### Register TX_POWER_RANGE
+
+> - Request current value: Send d8 (hex) on lora port 2
+Set the power index range for fast ADR, LSB = lowest, MSB = highest
+Range for each is 16 (DR0/Max power) - 0 (regions best), mixing up
+highest and lowest does not matter (firmware always use the highest of the two as the max).
+There is a high impact on power consumption to turn this up (lower battery time).
+
+> - UI:   TX Power Range
+> - Mode: RW
+> - Min: 0
+> - Max: 65535
+> - Unit: 2 bytes
 
 
 ## Meta-Information for this application version
@@ -374,11 +454,11 @@ Motion sensor reading, one of
 
 ### Application CRC (decimal)
 
- > 4021230878
+ > 175381321
 
 ### Application Sensor Mask (hex)
 
- > 400010
+ > 1c400152
 
 ### Map Data for vsm-translator-open-source
 
@@ -386,23 +466,27 @@ Motion sensor reading, one of
 M input meshSyncInterval_minutes 176 0xb0  1
 M input meshEnableUpside 160 0xa0  1
 M input meshEnableDownside 161 0xa1  1
-M output hours 177 0xb1  1
-M output temp 178 0xb2  0.01
-M output averageTemp 179 0xb3  0.01
-M input tempHysteresis 180 0xb4  0.01
-M input averageTempHysteresis 162 0xa2  0.1
-M input averageTempIntervalMinutes 163 0xa3  1
+M input powerIndexFilterFactorUp 162 0xa2  1
+M input powerIndexFilterFactorDown 163 0xa3  1
+M input maxPowerIndex 164 0xa4  1
+M output temp 177 0xb1  0.01
+M output averageTemp 178 0xb2  0.01
+M input tempHysteresis 179 0xb3  0.01
+M input averageTempHysteresis 165 0xa5  0.1
+M input averageTempIntervalMinutes 166 0xa6  1
 M output tempAlarm 128 0x80  1
-M input tempAlarmLowLevel 164 0xa4  1
-M input tempAlarmHighLevel 165 0xa5  1
-M output batteryPercent 166 0xa6  1
-M input rejoinBudgetMax 167 0xa7  1
-M input rejoinBudgetRefill 168 0xa8  1
-M input rejoinTime 181 0xb5  1
-M input wifiStillScanInterval_h 169 0xa9  1
-M input wifiMovingScanInterval_min 170 0xaa  1
-M input motionThreshold_m_s2 182 0xb6  0.01
-C 4021230878 # 0xefaf1d1e
+M input tempAlarmLowLevel 167 0xa7  1
+M input tempAlarmHighLevel 168 0xa8  1
+M output batteryPercent 169 0xa9  1
+M input wifiScanInterval_h 170 0xaa  1
+M output accX 144 0x90  0.001
+M output accY 145 0x91  0.001
+M output accZ 146 0x92  0.001
+M output pressure_hPa 184 0xb8  0.01
+M input motionThreshold_m_s2 180 0xb4  0.001
+M input enableBarometer 171 0xab  1
+M output motion 172 0xac  1
+C 175381321 # 0x0a741b49
 
 ```
 

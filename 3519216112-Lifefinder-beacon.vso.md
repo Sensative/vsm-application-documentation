@@ -367,6 +367,7 @@ M input humAverageMeasurements 168 0xa8  1
 M input positioningFrequency 169 0xa9  1
 M input scanTimeMs 182 0xb6  1
 M input limitedScanChannels 184 0xb8  1
+C 3519216112 # 0xd1c2f9f0
 
 ```
 

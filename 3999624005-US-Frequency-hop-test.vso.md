@@ -82,6 +82,7 @@ Interval in seconds between transmissions
 M input transmitInterval 176 0xb0  1
 M input transmitCount 184 0xb8  1
 M input count 185 0xb9  1
+C 3999624005 # 0xee656b45
 
 ```
 

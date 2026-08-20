@@ -81,6 +81,7 @@ M output numSatellites 160 0xa0  1
 M output bestSatellites 184 0xb8  1
 M output scanCount 185 0xb9  1
 M output batteryPercent 161 0xa1  1
+C 1815337626 # 0x6c33da9a
 
 ```
 

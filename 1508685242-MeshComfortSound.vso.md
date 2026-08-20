@@ -1,39 +1,20 @@
 
-# Application Square-comfort-sound
-
-Experience the power of intelligent sound detection with Square-comfort-sound. The device captures precise sound levels, enabling real-time monitoring and alerts when noise thresholds are exceeded. Whether you need to track ambient sound for environmental control or detect sudden noise spikes, our solution ensures accuracy and reliability. With customizable thresholds and alarms, the device adapts to your specific needs, making it ideal for both indoor and outdoor use. Enjoy seamless integration with LoRaWAN networks, long-lasting battery life, and flexible reporting intervals. Elevate your sound monitoring with Square-comfort-sound.
-
-## Roaming module
-
-Enable the device to roam through multiple LoRaWan networks, but changing the last digit of the NwkKey to the
-currently set network.
+# Application MeshComfortSound
 
 
-Every 24 hours, the join network is reset to 0 (default)
+## Generic RutioMesh Module
+
+Generic mesh module allowing both lora wan bridging, network extension or
+(with a setting) the device to behave as a leaf only module (which is same as a regular
+lorawan module should the device be joined to lorawan network).
 
 
-Should the device enter unjoined state and there are more networks to try, the device will try the next network.
+## ADR dampening and limiting module
 
-## Slow Tracker Module
+Adaptive LoRaWan data rate dampening and limiter module, allows to limit both adaptability rate and worst data rate / output power.
+This is intended for fixed-mount devices where radio conditions are not expected to change rapidly.
 
-This module enables slow tracking through WIFI scanning or GNSS scans (if device supports GNSS scanning).
-For proper functioning of GNSS enabled devices, the GNSS almanac and device time needs to be kept up-to-date,
-for instance through NFC application or through enabling the vsm-mqtt-client (https:
-
-
-When the button is pressed, a wifi scan will be done.
-
-
-Daily when the device is joined, it will attempt a wifi scan.
-
-
-Weekly, when the device is joined, it will attempt a GNSS scan (provided the device supports GNSS scanning).
-
-
-## Battery Reporting Module
-
-Battery remaining esimates are measured on a weekly basis.
-
+Module for package loss / device restart detection
 ## Temperature Sensing and Reporting Module
 
 
@@ -58,21 +39,23 @@ Every minute, the unit will take a humidity sample.
 
 At an interval of averageHumidityIntervalMinutes the unit will recalculate the average humidity value.
 
-## Daily Rejoin Module
-
-Should the device not be joined, it will try to rejoin on 24hr interval.
-
-
 The device will do a join attempt if it is not joined and if button is pressed.
 
 
 An NFC field can be applied to manually trigger a join attempt
 
 
-## ADR dampening and limiting module
+## Battery Reporting Module
 
-Adaptive LoRaWan data rate dampening and limiter module, allows to limit both adaptability rate and worst data rate / output power.
-This is intended for fixed-mount devices where radio conditions are not expected to change rapidly.
+Battery remaining esimates are measured on a weekly basis.
+
+
+## Daily Rejoin Module
+
+Should the device not be joined, it will try to rejoin on 24hr interval.
+
+
+The device will always do a LoRaWan join attempt when powered on (which also includes after a restart)
 
 The unit will update sound levels only when it is joined.
 
@@ -107,6 +90,12 @@ The average temperature uploaded with a resolution 0.01C.
 Estimated remaining % of battery in this unit based on measured use time and power for MCU, Radio, Sensors
 Position Scans, and potential collateral power use.
 
+
+### Output hours (unconfirmed)
+
+> - Size: 2 bytes
+> - Translation factor: 1
+The number of hours the device has been on since activated (restarted).
 
 ### Output humidity (unconfirmed)
 
@@ -181,8 +170,8 @@ Temperature alarm state
 
 > - Size: 1 bytes
 > - Translation factor: 1
-> - Request current value: Send a6 (hex) on lora port 2
-> - Update value to 1: Send a6 00 00 00 01 (hex) on lora port 2
+> - Request current value: Send a9 (hex) on lora port 2
+> - Update value to 1: Send a9 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: Humidity Interval
 > - Unit: Minutes
@@ -197,8 +186,8 @@ Interval between the averageHumidity calculations.
 
 > - Size: 1 bytes
 > - Translation factor: 0.1
-> - Request current value: Send a2 (hex) on lora port 2
-> - Update value to 1: Send a2 00 00 00 01 (hex) on lora port 2
+> - Request current value: Send a5 (hex) on lora port 2
+> - Update value to 1: Send a5 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: Average Temperature Threshold
 > - Unit: C
@@ -214,8 +203,8 @@ no report will be generated (saves battery and radio air time).
 
 > - Size: 1 bytes
 > - Translation factor: 1
-> - Request current value: Send a3 (hex) on lora port 2
-> - Update value to 1: Send a3 00 00 00 01 (hex) on lora port 2
+> - Request current value: Send a6 (hex) on lora port 2
+> - Update value to 1: Send a6 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: Average Temperature Interval
 > - Unit: Minutes
@@ -230,8 +219,8 @@ The interval at which average temperature is uploaded provided that it has chang
 
 > - Size: 2 bytes
 > - Translation factor: 0.01
-> - Request current value: Send b4 (hex) on lora port 2
-> - Update value to 1: Send b4 00 00 00 01 (hex) on lora port 2
+> - Request current value: Send b6 (hex) on lora port 2
+> - Update value to 1: Send b6 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: Humidity Threshold
 > - Unit: %
@@ -246,8 +235,8 @@ The number of percent change required for an update over LoRaWan of humidity and
 
 > - Size: 1 bytes
 > - Translation factor: 1
-> - Request current value: Send a9 (hex) on lora port 2
-> - Update value to 1: Send a9 00 00 00 01 (hex) on lora port 2
+> - Request current value: Send a4 (hex) on lora port 2
+> - Update value to 1: Send a4 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: Max Power Index
 > - Unit: LoraWan power index (0-16)
@@ -257,12 +246,64 @@ The number of percent change required for an update over LoRaWan of humidity and
 
 maximum power index to use for LoRaWan traffic, including join. Default setting disables DR0
 
+### Input meshEnableDownside (unconfirmed)
+
+> - Size: 1 bytes
+> - Translation factor: 1
+> - Request current value: Send a1 (hex) on lora port 2
+> - Update value to 1: Send a1 00 00 00 01 (hex) on lora port 2
+> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+
+Enable this node as extender
+
+> - UI: Enable Mesh Downside (Extension)
+> - Unit: boolean
+> - Min: 0
+> - Max: 1
+> - Default: 0
+
+### Input meshEnableUpside (unconfirmed)
+
+> - Size: 1 bytes
+> - Translation factor: 1
+> - Request current value: Send a0 (hex) on lora port 2
+> - Update value to 1: Send a0 00 00 00 01 (hex) on lora port 2
+> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+
+Enable this node to join a mesh network (when not joined to LoRaWan network)
+
+> - UI: Enable Mesh Upside (Synchronization)
+> - Unit: boolean
+> - Min: 0
+> - Max: 1
+> - Default: 1
+
+### Input meshSyncInterval_minutes (unconfirmed)
+
+> - Size: 2 bytes
+> - Translation factor: 1
+> - Request current value: Send b0 (hex) on lora port 2
+> - Update value to 1: Send b0 00 00 00 01 (hex) on lora port 2
+> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+
+Synchronization interval
+
+Synchronization is a relatively expensive operation, so we avoid doing this frequently
+should the unit fall outside the mesh. It is recommended to set this to longer times in
+in environments that are relatively static.
+
+> - UI: Mesh Sync Interval
+> - Unit: minutes
+> - Min: 1
+> - Max: 65535
+> - Default: 120
+
 ### Input powerIndexFilterFactorDown (unconfirmed)
 
 > - Size: 1 bytes
 > - Translation factor: 1
-> - Request current value: Send a8 (hex) on lora port 2
-> - Update value to 1: Send a8 00 00 00 01 (hex) on lora port 2
+> - Request current value: Send a3 (hex) on lora port 2
+> - Update value to 1: Send a3 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: LoRaWan power filter factor down
 > - Unit: Integer
@@ -278,8 +319,8 @@ If the filter value is set to 1 the algorithm will use its proposed new value (i
 
 > - Size: 1 bytes
 > - Translation factor: 1
-> - Request current value: Send a7 (hex) on lora port 2
-> - Update value to 1: Send a7 00 00 00 01 (hex) on lora port 2
+> - Request current value: Send a2 (hex) on lora port 2
+> - Update value to 1: Send a2 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: LoRaWan power filter factor up
 > - Unit: Integer
@@ -291,31 +332,12 @@ Low pass filter factor. 1 = no low-pass filter. 2 = filter factor 1 (fast) ... 1
 When the built-in ADR function propose a new slower power index, this filter factor is employed in a low pass filter.
 If the filter value is set to 1 the algorithm will use its proposed new value (if below or at max).
 
-### Input roamNetworkCount (unconfirmed)
-
-> - Size: 1 bytes
-> - Translation factor: 1
-> - Request current value: Send a0 (hex) on lora port 2
-> - Update value to 1: Send a0 00 00 00 01 (hex) on lora port 2
-> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
-> - UI: Roaming Network Count
-> - Unit: Integer
-> - Min: 1
-> - Max: 15
-> - Default: 1
-
-The number of LoRaWan network identities this device shall have.
-In case the device needs to rejoin, it will iteratively attempt join in priority order from 0 to this value.
-
-> The device replaces the last digit of the network key with hexadecimal value 0-F when joining.
-> Setting this to more than 1 incurs extra time and power consumption when joining.
-
 ### Input soundAlarmTimeoutMinutes (unconfirmed)
 
 > - Size: 1 bytes
 > - Translation factor: 1
-> - Request current value: Send ad (hex) on lora port 2
-> - Update value to 1: Send ad 00 00 00 01 (hex) on lora port 2
+> - Request current value: Send af (hex) on lora port 2
+> - Update value to 1: Send af 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: Sound Alarm Timeout
 > - Unit: minutes
@@ -335,8 +357,8 @@ During this time the sound alarm will not retrigger or reset.
 
 > - Size: 1 bytes
 > - Translation factor: 1
-> - Request current value: Send ac (hex) on lora port 2
-> - Update value to 1: Send ac 00 00 00 01 (hex) on lora port 2
+> - Request current value: Send ae (hex) on lora port 2
+> - Update value to 1: Send ae 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: Sound Average Time
 > - Unit: Minutes
@@ -349,8 +371,8 @@ The number of minutes between average sound level calculation.
 
 > - Size: 1 bytes
 > - Translation factor: 1
-> - Request current value: Send ab (hex) on lora port 2
-> - Update value to 1: Send ab 00 00 00 01 (hex) on lora port 2
+> - Request current value: Send ad (hex) on lora port 2
+> - Update value to 1: Send ad 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: Minimum Sound Level
 > - Unit: dB (RMS)
@@ -366,8 +388,8 @@ See soundThreshold for more information.
 
 > - Size: 1 bytes
 > - Translation factor: 1
-> - Request current value: Send aa (hex) on lora port 2
-> - Update value to 1: Send aa 00 00 00 01 (hex) on lora port 2
+> - Request current value: Send ac (hex) on lora port 2
+> - Update value to 1: Send ac 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: Sound Threshold
 > - Unit: dB (RMS)
@@ -387,8 +409,8 @@ The effective range is 6-18dB
 
 > - Size: 1 bytes
 > - Translation factor: 1
-> - Request current value: Send a5 (hex) on lora port 2
-> - Update value to 1: Send a5 00 00 00 01 (hex) on lora port 2
+> - Request current value: Send a8 (hex) on lora port 2
+> - Update value to 1: Send a8 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: Temperature High Alarm Level
 > - Unit: C
@@ -403,8 +425,8 @@ The high level for temperature alarm. Set higher than tempAlarmLowLevel or the a
 
 > - Size: 1 bytes
 > - Translation factor: 1
-> - Request current value: Send a4 (hex) on lora port 2
-> - Update value to 1: Send a4 00 00 00 01 (hex) on lora port 2
+> - Request current value: Send a7 (hex) on lora port 2
+> - Update value to 1: Send a7 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: Temperature Low Alarm Level
 > - Unit: C
@@ -419,8 +441,8 @@ The low level for temperature alarm. Set lower than tempAlarmHighLevel or the al
 
 > - Size: 2 bytes
 > - Translation factor: 0.01
-> - Request current value: Send b2 (hex) on lora port 2
-> - Update value to 1: Send b2 00 00 00 01 (hex) on lora port 2
+> - Request current value: Send b4 (hex) on lora port 2
+> - Update value to 1: Send b4 00 00 00 01 (hex) on lora port 2
 > - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
 > - UI: Temperature Threshold
 > - Unit: C
@@ -430,6 +452,25 @@ The low level for temperature alarm. Set lower than tempAlarmHighLevel or the al
 
 The hysteresis for temperature readings. If temperature changes lower than this value are detected
 no temperature report will be generated (saves battery and radio air time).
+
+
+### Input wifiScanInterval_h (unconfirmed)
+
+> - Size: 1 bytes
+> - Translation factor: 1
+> - Request current value: Send ab (hex) on lora port 2
+> - Update value to 1: Send ab 00 00 00 01 (hex) on lora port 2
+> - *Note: It is highly recommended to ensure that you use higher level applications to update settings so that the correct version of this application is used as reference (these data may change or differ between sensors)*
+
+Number of hours between wifi scans.
+
+> - Min: 0
+> - Max: 127
+> - Default: 0
+> - Unit: hours
+> - UI: Wifi Scan Interval
+
+When set to 0 or less, the interval scanning is disabled.
 
 
 ## Application Sensors (logical sensors)
@@ -476,21 +517,6 @@ Sound sensor
 ## Application Registers used (device controls)
 
 
-### Register GPS_TIME_MAX_AGE
-
-> - Request current value: Send cd (hex) on lora port 2
-> - UI:   Device Time Max Age
-> - Mode: RW
-> - Unit: Seconds
-> - Default: 0
-> - Min: 0
-> - Max: 4294967295
-Once this maximum age has passed the device will no longer trust its GPS_TIME and GNSS scans become autonomous.
-Also, it will start emitting DEVICE_TIME requests on the LoRaWan network once 80% of this time has passed.
-Typically the clock drift is a few seconds per 24 hrs. Gps time should be correct within 30s for good assisted scans.
-Outdoor use tends to increase clock drift.
-
-
 ### Register TX_POWER_RANGE
 
 > - Request current value: Send d8 (hex) on lora port 2
@@ -512,7 +538,7 @@ There is a high impact on power consumption to turn this up (lower battery time)
 
 ### Application CRC (decimal)
 
- > 1030541641
+ > 1508685242
 
 ### Application Sensor Mask (hex)
 
@@ -521,31 +547,35 @@ There is a high impact on power consumption to turn this up (lower battery time)
 ### Map Data for vsm-translator-open-source
 
 ```
-M input roamNetworkCount 160 0xa0  1
-M output batteryPercent 161 0xa1  1
-M output temp 176 0xb0  0.01
-M output averageTemp 177 0xb1  0.01
-M input tempHysteresis 178 0xb2  0.01
-M input averageTempHysteresis 162 0xa2  0.1
-M input averageTempIntervalMinutes 163 0xa3  1
+M input meshSyncInterval_minutes 176 0xb0  1
+M input meshEnableUpside 160 0xa0  1
+M input meshEnableDownside 161 0xa1  1
+M input powerIndexFilterFactorUp 162 0xa2  1
+M input powerIndexFilterFactorDown 163 0xa3  1
+M input maxPowerIndex 164 0xa4  1
+M output hours 177 0xb1  1
+M output temp 178 0xb2  0.01
+M output averageTemp 179 0xb3  0.01
+M input tempHysteresis 180 0xb4  0.01
+M input averageTempHysteresis 165 0xa5  0.1
+M input averageTempIntervalMinutes 166 0xa6  1
 M output tempAlarm 128 0x80  1
-M input tempAlarmLowLevel 164 0xa4  1
-M input tempAlarmHighLevel 165 0xa5  1
-M output humidity 179 0xb3  0.01
+M input tempAlarmLowLevel 167 0xa7  1
+M input tempAlarmHighLevel 168 0xa8  1
+M output humidity 181 0xb5  0.01
 M output averageHumidity 144 0x90  0.01
-M input humidityTreshold 180 0xb4  0.01
-M input averageHumidityIntervalMinutes 166 0xa6  1
-M input powerIndexFilterFactorUp 167 0xa7  1
-M input powerIndexFilterFactorDown 168 0xa8  1
-M input maxPowerIndex 169 0xa9  1
-M output soundLevel 181 0xb5  0.1
-M input soundThreshold 170 0xaa  1
-M input soundMinLevel 171 0xab  1
-M input soundAvgMinutes 172 0xac  1
+M input humidityTreshold 182 0xb6  0.01
+M input averageHumidityIntervalMinutes 169 0xa9  1
+M output batteryPercent 170 0xaa  1
+M input wifiScanInterval_h 171 0xab  1
+M output soundLevel 183 0xb7  0.1
+M input soundThreshold 172 0xac  1
+M input soundMinLevel 173 0xad  1
+M input soundAvgMinutes 174 0xae  1
 M output soundAlarm 129 0x81  1
-M input soundAlarmTimeoutMinutes 173 0xad  1
+M input soundAlarmTimeoutMinutes 175 0xaf  1
 M output soundAvgMax 184 0xb8  0.1
-C 1030541641 # 0x3d6cd149
+C 1508685242 # 0x59ecb5ba
 
 ```
 

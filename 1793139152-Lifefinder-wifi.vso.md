@@ -539,6 +539,7 @@ M input positioningFreqency 171 0xab  1
 M input scanTimeMs 181 0xb5  1
 M input limitedScanChannels 184 0xb8  1
 M input wifiDoubleScan 172 0xac  1
+C 1793139152 # 0x6ae121d0
 
 ```
 

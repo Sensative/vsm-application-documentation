@@ -89,6 +89,7 @@ Physical button readout sensor
 M input scanFrequency 176 0xb0  1
 M input scanTimeMs 177 0xb1  1
 M input limitedScanChannels 184 0xb8  1
+C 1654085923 # 0x62975923
 
 ```
 

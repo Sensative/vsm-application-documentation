@@ -185,6 +185,7 @@ M input averageTempIntervalMinutes 161 0xa1  1
 M output tempAlarm 128 0x80  1
 M input tempAlarmLowLevel 162 0xa2  1
 M input tempAlarmHighLevel 163 0xa3  1
+C 2767105504 # 0xa4eeade0
 
 ```
 

@@ -61,6 +61,7 @@ In the unjoined state the applications specified rejoin method will be used.
 
 ```
 M input frequency 184 0xb8  1
+C 78751172 # 0x04b1a5c4
 
 ```
 

@@ -461,6 +461,7 @@ M output accumulatedMovingTime 148 0x94  1
 M input scanTimeMs 182 0xb6  1
 M input limitedScanChannels 185 0xb9  1
 M input positioningFreqency 167 0xa7  1
+C 1042039355 # 0x3e1c423b
 
 ```
 

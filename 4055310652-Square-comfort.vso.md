@@ -424,6 +424,7 @@ M input averageHumidityIntervalMinutes 166 0xa6  1
 M input powerIndexFilterFactorUp 167 0xa7  1
 M input powerIndexFilterFactorDown 168 0xa8  1
 M input maxPowerIndex 169 0xa9  1
+C 4055310652 # 0xf1b7213c
 
 ```
 

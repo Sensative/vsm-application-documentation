@@ -496,6 +496,7 @@ M input scanTimeMs 182 0xb6  1
 M input limitedScanChannels 185 0xb9  1
 M input minimumWifiResult 167 0xa7  1
 M input positioningFreqency 168 0xa8  1
+C 1996989331 # 0x7707a393
 
 ```
 

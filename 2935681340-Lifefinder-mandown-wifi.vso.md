@@ -446,6 +446,7 @@ M output accumulatedStationaryTime 147 0x93  1
 M output accumulatedMovingTime 148 0x94  1
 M input scanTimeMs 183 0xb7  1
 M input limitedScanChannels 184 0xb8  1
+C 2935681340 # 0xaefaf13c
 
 ```
 

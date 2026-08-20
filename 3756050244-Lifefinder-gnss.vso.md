@@ -527,6 +527,7 @@ M input positioningFreqency 171 0xab  1
 M output numSatellites 172 0xac  1
 M output bestSatellites 184 0xb8  1
 M output scanCount 185 0xb9  1
+C 3756050244 # 0xdfe0c744
 
 ```
 

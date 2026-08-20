@@ -303,6 +303,7 @@ M output soundRepeat 131 0x83  1
 M input motionThresholdG 180 0xb4  0.001
 M output volts 181 0xb5  0.001
 M output batteryPercent 164 0xa4  1
+C 1657727329 # 0x62cee961
 
 ```
 

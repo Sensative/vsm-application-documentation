@@ -33,6 +33,7 @@ In this mode the device will run in ADR mode, and will handle compliance test ac
 ### Map Data for vsm-translator-open-source
 
 ```
+C 1319111708 # 0x4ea00c1c
 
 ```
 

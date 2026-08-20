@@ -385,6 +385,7 @@ M input sampleCountMax 164 0xa4  1
 M input enableBarometer 165 0xa5  1
 M output motion 166 0xa6  1
 M output batteryPercent 167 0xa7  1
+C 1304526571 # 0x4dc17eeb
 
 ```
 

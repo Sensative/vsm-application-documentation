@@ -527,6 +527,7 @@ M input soundAvgMinutes 171 0xab  1
 M output soundAlarm 129 0x81  1
 M input soundAlarmTimeoutMinutes 172 0xac  1
 M output soundAvgMax 184 0xb8  0.1
+C 2292020255 # 0x889d741f
 
 ```
 

@@ -508,6 +508,7 @@ M output distance 145 0x91  0.01
 M output amplitude2 146 0x92  1
 M output distance2 147 0x93  0.01
 M output state 182 0xb6  1
+C 3297213463 # 0xc4877c17
 
 ```
 
