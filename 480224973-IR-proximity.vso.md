@@ -332,9 +332,19 @@ Outdoor use tends to increase clock drift.
 > - Min: 300
 > - Max: 2592000
 > - Default: 86400
-Once 80% of this time has passed, the device will make all messages confirmed until it gets a downlink.
-Should this time pass without the device hearing a confirmed response, it will go to unjoined state.
-In the unjoined state the applications specified rejoin method will be used.
+How long the device goes without hearing anything from the network before it gives the network up and
+goes to unjoined. Any downlink starts the time again, an acknowledgement as much as a message.
+
+It asks for an answer well before then. From half of this time on, every uplink it sends is confirmed.
+From 80% on it also sends a confirmed link check of its own, even with nothing else to send, and
+repeats it until something comes back. Those uplinks count towards LORA_RESEND_COUNT as well, so when
+the network has really gone away the device usually unjoins through that count before this time is up.
+
+0 turns the check off, and then reads back as 0xFFFFFFFF. Any other value outside 300-2592000 is ignored
+and the previous one kept. The firmware sets it back to 86400 on every boot, so an application that
+wants another value writes it in a once rule.
+
+In the unjoined state the application's own rejoin method is used; the firmware does not rejoin by itself.
 
 
 ## Meta-Information for this application version
