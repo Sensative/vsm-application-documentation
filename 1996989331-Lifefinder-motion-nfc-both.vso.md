@@ -448,7 +448,7 @@ Measured voltage on the board.
 > - UI:   Device Time Max Age
 > - Mode: RW
 > - Unit: Seconds
-> - Default: 0
+> - Default: 604800
 > - Min: 0
 > - Max: 4294967295
 Once this maximum age has passed the device will no longer trust its GPS_TIME and GNSS scans become autonomous.

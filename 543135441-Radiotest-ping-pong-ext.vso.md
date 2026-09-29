@@ -38,7 +38,7 @@ NFC field present sensor (logical)
 > - Unit: Seconds
 > - Min: 300
 > - Max: 2592000
-> - Default: 86400
+> - Default: 0
 How long the device goes without hearing anything from the network before it gives the network up and
 goes to unjoined. Any downlink starts the time again, an acknowledgement as much as a message.
 
